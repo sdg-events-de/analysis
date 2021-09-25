@@ -51,6 +51,21 @@ $ dokku git:initialize analysis
 -----> Initializing git repository for analysis
 ```
 
+### Setting environment variables
+
+**Currently, the project uses no environment variables.**
+
+To import environment variables from .env to Dokku, run the following command:
+
+```
+$ grep -v '^#' .env | xargs -d '\n' ssh dokku@api.sdg-events.de config:set analysis
+-----> Setting config vars
+       VAR1:  abc
+       VAR2:  def
+-----> Restarting app analysis
+-----> Releasing analysis...
+```
+
 ### Deploying the application
 
 **On your local machine**, add the new git remote and push:
