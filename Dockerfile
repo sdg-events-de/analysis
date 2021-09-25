@@ -44,5 +44,11 @@ RUN poetry export -f "requirements.txt" --without-hashes --with-credentials > re
 RUN sed -e 's/^-e //' < "requirements.txt.orig" > "requirements.txt" && rm "requirements.txt.orig"
 
 # Read python version
-RUN PYTHON_RUNTIME_VERSION="$(sed -n -e '/^\[metadata\]/,/^\[/p' poetry.lock | sed -n -e 's/^python-versions\s*=\s*//p' | tr -d \"\')"
-RUN echo "python-$PYTHON_RUN_TIME_VERSION" > runtime.txt
+ENV PYTHON_RUNTIME_VERSION="$(sed -n -e '/^\[metadata\]/,/^\[/p' poetry.lock | sed -n -e 's/^python-versions\s*=\s*//p' | tr -d \"\')"
+RUN echo "python-$PYTHON_RUNTIME_VERSION" > runtime.txt
+
+# Install dependencies
+RUN pip install --no-cache-dir -r ./requirements.txt
+
+# Set up the app (this is where the image expects files)
+COPY ./app /app
