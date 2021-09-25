@@ -46,6 +46,3 @@ RUN sed -e 's/^-e //' < "requirements.txt.orig" > "requirements.txt" && rm "requ
 # Read python version
 RUN PYTHON_RUNTIME_VERSION="$(sed -n -e '/^\[metadata\]/,/^\[/p' poetry.lock | sed -n -e 's/^python-versions\s*=\s*//p' | tr -d \"\')"
 RUN echo "python-$PYTHON_RUN_TIME_VERSION" > runtime.txt
-
-# Copy /api to /app (that's where fastapi expects our entrypoint)
-COPY ./api /app
