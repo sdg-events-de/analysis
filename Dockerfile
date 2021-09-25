@@ -34,21 +34,13 @@ ENV PATH="$POETRY_HOME/bin:$VENV_PATH/bin:$PATH"
 # install poetry - respects $POETRY_VERSION & $POETRY_HOME
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
 
-# Copy poetry version file
+# copy project requirement files here to ensure they will be cached.
+WORKDIR $PYSETUP_PATH
 COPY poetry.lock pyproject.toml ./
 
-# Export to requirements.txt
-# pip can't handle vcs & editable dependencies when requiring hashes (https://github.com/pypa/pip/issues/4995)
-# poetry exports local dependencies as editable by default (https://github.com/python-poetry/poetry/issues/897)
-RUN poetry export -f "requirements.txt" --without-hashes --with-credentials > requirements.txt.orig
-RUN sed -e 's/^-e //' < "requirements.txt.orig" > "requirements.txt" && rm "requirements.txt.orig"
-
-# Read python version
-ENV PYTHON_RUNTIME_VERSION="$(sed -n -e '/^\[metadata\]/,/^\[/p' poetry.lock | sed -n -e 's/^python-versions\s*=\s*//p' | tr -d \"\')"
-RUN echo "python-$PYTHON_RUNTIME_VERSION" > runtime.txt
-
-# Install dependencies
-RUN pip install --no-cache-dir -r ./requirements.txt
+# install runtime deps - uses $POETRY_VIRTUALENVS_IN_PROJECT internally
+RUN poetry install --no-dev
 
 # Set up the app (this is where the image expects files)
 COPY ./app /app
+WORKDIR /app
