@@ -51,11 +51,35 @@ $ dokku git:initialize analysis
 -----> Initializing git repository for analysis
 ```
 
+### Creating the database
+
+Install the postgres plugin (from `root`!):
+
+```
+$ sudo dokku plugin:install https://github.com/dokku/dokku-postgres.git
+```
+
+Set up the postgres container:
+
+```
+$ dokku postgres:create analysisdb
+$ dokku postgreas:link analysisdb analysis
+```
+
+This automatically creates the `DATABASE_URL` env var in Dokku, but we need to
+replace the adapter from `postgres` to `postgresql` for use with SQLAlchemy:
+
+```
+$ dokku config:get analysis DATABASE_URL
+postgres://<user>:<password>@<hostname>:5432/analysisdb
+$ dokku config:set analysis DATABASE_URL=postgresql://...
+```
+
 ### Setting environment variables
 
-**Currently, the project uses no environment variables.**
+**NOTE: Currently, the project uses no environment variables (other than the ones set via `dokku`).**
 
-To import environment variables from .env to Dokku, run the following command:
+To import environment variables from `.env` to Dokku, run the following command:
 
 ```
 $ grep -v '^#' .env | xargs -d '\n' ssh dokku@api.sdg-events.de config:set analysis
@@ -120,26 +144,44 @@ The container will be removed automatically once the process has ended.
 
 ## Development
 
-Install [poetry](https://github.com/python-poetry/poetry), then run
-`poetry install` in the repo to install all required Python dependencies.
+We use docker-compose to run the application in development.
 
-To start the FastAPI server, run:
-
-```
-$ uvicorn api:api --reload
-```
-
-### Docker
-
-You can also run the code inside a Docker container:
+To build and start the containers (`api` and `database`), run:
 
 ```
-$ docker build -t sdg-events-analysis .
-$ docker run -dp 8000:80 --name sdg-events-analysis sdg-events-analysis
+$ docker-compose -d up
 ```
 
-To examine the contents of the container, run:
+The directory is automatically mounted into the container (`api`) under /app.
+
+### Hot Reloading
+
+Hot reloading is enabled, so any changes made to the code will instantly
+reload the FastAPI server.
+
+### Managing dependencies
+
+[Poetry](https://github.com/python-poetry/poetry) is used to manage Python
+dependencies. You can install it locally. Alternatively, you can use it within
+the `api` container:
 
 ```
-$ docker exec -it sdg-events-analysis bash
+$ docker-compose exec api bash
+$ poetry add <new-package>
 ```
+
+### Managing migrations
+
+The database is started automatically via docker-compose (`database`). To manage
+migrations, enter the `api` container:
+
+```
+$ docker-compose exec api bash
+$ alembic upgrade head
+INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
+INFO  [alembic.runtime.migration] Will assume transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade  -> 0fda6ea241e1, create account table
+```
+
+The database has a dedicated volume mounted, so the database is persisted even
+when the container is destroyed/recreated.
