@@ -40,6 +40,7 @@ COPY poetry.lock pyproject.toml ./
 
 # install runtime deps - uses $POETRY_VIRTUALENVS_IN_PROJECT internally
 RUN poetry install --no-dev
+RUN echo 'source $VENV_PATH/bin/activate' >> ~/.bashrc
 
 # Set up the app (this is where the image expects files)
 COPY ./ /app

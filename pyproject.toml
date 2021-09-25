@@ -8,6 +8,8 @@ authors = ["Finn Woelm"]
 python = "^3.9"
 fastapi = {extras = ["all"], version = "^0.68.1"}
 SQLAlchemy = "^1.4.23"
+alembic = "^1.7.3"
+psycopg2 = "^2.9.1"
 
 [tool.poetry.dev-dependencies]
 
