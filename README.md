@@ -2,6 +2,25 @@
 
 This repo contains the code for scraping and analyzing SDG events.
 
+## Table of Contents
+
+- [sdg-events.de: analysis](#sdg-eventsde-analysis)
+  - [Table of Contents](#table-of-contents)
+  - [Deployment](#deployment)
+    - [Creating VPS](#creating-vps)
+    - [Configuring Dokku](#configuring-dokku)
+    - [Upgrading Dokku](#upgrading-dokku)
+    - [Creating the application](#creating-the-application)
+    - [Creating the database](#creating-the-database)
+    - [Setting environment variables](#setting-environment-variables)
+    - [Deploying the application](#deploying-the-application)
+    - [Enabling HTTPS](#enabling-https)
+  - [Running one-off tasks](#running-one-off-tasks)
+  - [Development](#development)
+    - [Hot Reloading](#hot-reloading)
+    - [Managing dependencies](#managing-dependencies)
+    - [Managing migrations](#managing-migrations)
+
 ## Deployment
 
 ### Creating VPS
@@ -13,6 +32,20 @@ marketplace.
 
 After setting up the droplet, make sure to set up Dokku by going to the droplet
 IP address and filling in the hostname: `api.sdg-events.de`
+
+We may need to double check the hostname. We can check the hostname using:
+
+```
+$ dokku domains:report --global
+       Domains global enabled:        true
+       Domains global vhosts:         api.sdg-events.de
+```
+
+If this does not return `api.sdg-events.de`, we need to set it manually:
+
+```
+$ dokku domains:set-global api.sdg-events.de
+```
 
 ### Upgrading Dokku
 
@@ -125,7 +158,33 @@ python3.7: Pulling from tiangolo/uvicorn-gunicorn-fastapi
        http://api.sdg-events.de
 ```
 
-Visit `http://api-sdg-events.de` and see the API response.
+Visit [http://api-sdg-events.de](http://api-sdg-events.de) and see the API
+response.
+
+### Enabling HTTPS
+
+Thanks to Dokku, setting up https is very easy. Run as `root`:
+
+```
+$ sudo dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
+```
+
+Then set your email address:
+
+```
+$ dokku config:set --no-restart analysis DOKKU_LETSENCRYPT_EMAIL=your@email.tld
+```
+
+Then enable encryption and set up a cron job for automatic renewal:
+
+```
+$ dokku letsencrypt:enable analysis
+=====> Let's Encrypt analysis... [lots of output]
+$ dokku letsencrypt:cron-job --add
+```
+
+Traffic is automatically rerouted to HTTPS.
+Visit [https://api.sdgindex.org](https://api.sdgindex.org) to see.
 
 ## Running one-off tasks
 
