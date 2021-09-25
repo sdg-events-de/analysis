@@ -126,5 +126,5 @@ Install [poetry](https://github.com/python-poetry/poetry), then run
 To start the FastAPI server, run:
 
 ```
-uvicorn --app-dir=app main:app --reload
+$ uvicorn api:api --reload
 ```

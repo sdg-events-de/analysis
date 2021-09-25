@@ -1,14 +1,14 @@
 from fastapi import FastAPI
 
-app = FastAPI()
+api = FastAPI()
 
 
-@app.get("/")
+@api.get("/")
 async def root():
     return {"message": "Hello World"}
 
 
-@app.get("/items/{item_id}")
+@api.get("/items/{item_id}")
 async def read_item(item_id: str):
     return {"item_id": item_id}
 
@@ -26,7 +26,7 @@ fake_items_db = [
 ]
 
 
-@app.get("/items/")
+@api.get("/items/")
 async def read_item(skip: int = 0, limit: int = 10):
     return fake_items_db[skip : skip + limit]
 
@@ -42,6 +42,6 @@ class Item(BaseModel):
     tax: Optional[float] = None
 
 
-@app.post("/items/")
+@api.post("/items/")
 async def create_item(item: Item):
     return item.description

@@ -42,5 +42,9 @@ COPY poetry.lock pyproject.toml ./
 RUN poetry install --no-dev
 
 # Set up the app (this is where the image expects files)
-COPY ./app /app
+COPY ./ /app
 WORKDIR /app
+
+# Set the FastAPI entry point (api.py with variable api)
+ENV MODULE_NAME=api \
+    VARIABLE_NAME=api
