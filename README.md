@@ -128,3 +128,18 @@ To start the FastAPI server, run:
 ```
 $ uvicorn api:api --reload
 ```
+
+### Docker
+
+You can also run the code inside a Docker container:
+
+```
+$ docker build -t sdg-events-analysis .
+$ docker run -dp 8000:80 --name sdg-events-analysis sdg-events-analysis
+```
+
+To examine the contents of the container, run:
+
+```
+$ docker exec -it sdg-events-analysis bash
+```
