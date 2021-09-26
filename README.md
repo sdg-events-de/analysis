@@ -84,6 +84,16 @@ $ dokku git:initialize analysis
 -----> Initializing git repository for analysis
 ```
 
+We also need to enable Docker Buildkit support (for caching dependencies
+between builds for faster deployments):
+
+```
+$ dokku config:set --global DOCKER_BUILDKIT=1 BUILDKIT_PROGRESS=plain
+-----> Setting config vars
+       BUILDKIT_PROGRESS:  plain
+       DOCKER_BUILDKIT:    1
+```
+
 ### Creating the database
 
 Install the postgres plugin (from `root`!):
@@ -204,6 +214,10 @@ The container will be removed automatically once the process has ended.
 ## Development
 
 We use docker-compose to run the application in development.
+
+Buildkit needs to be enabled. This is done by setting the env var
+`DOCKER_BUILDKIT` to `1`. For example, by adding `export DOCKER_BUILDKIT=1`
+in `~/.bashrc`.
 
 To build and start the containers (`api` and `database`), run:
 

@@ -33,24 +33,24 @@ ENV PATH="$POETRY_HOME/bin:$VIRTUAL_ENV/bin:$PATH"
 # Create non-root user
 ENV UNAME=user
 RUN useradd -m -u 1000 -o -s /bin/bash $UNAME
-RUN mkdir -p $POETRY_HOME $VIRTUAL_ENV
-RUN chown $UNAME $POETRY_HOME $VIRTUAL_ENV /app
+RUN --mount=type=cache,target=/venv mkdir -p $POETRY_HOME $VIRTUAL_ENV
+RUN --mount=type=cache,target=/venv chown $UNAME $POETRY_HOME $VIRTUAL_ENV /app
 USER $UNAME
 
 # Create virtual environment
-RUN python -m venv $VIRTUAL_ENV
-
-# Copy poetry.lock and pyproject.toml
-WORKDIR /app
-COPY poetry.lock pyproject.toml ./
+RUN --mount=type=cache,target=/venv python -m venv $VIRTUAL_ENV
 
 FROM base as builder
 
 # Install poetry - respects $POETRY_VERSION, etc...
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
 
+# Copy poetry.lock and pyproject.toml
+WORKDIR /app
+COPY poetry.lock pyproject.toml ./
+
 # install runtime deps - uses $POETRY_VIRTUALENVS_IN_PROJECT internally
-RUN poetry install --no-dev
+RUN --mount=type=cache,target=/venv poetry install --no-dev --remove-untracked
 
 # `development` image is used during development / testing
 FROM base as development
@@ -62,7 +62,8 @@ COPY --from=builder $VIRTUAL_ENV $VIRTUAL_ENV
 
 # quicker install as runtime deps are already installed
 WORKDIR /app
-RUN poetry install
+COPY poetry.lock pyproject.toml ./
+RUN --mount=type=cache,target=/venv poetry install
 
 CMD ["/start-reload.sh"]
 
