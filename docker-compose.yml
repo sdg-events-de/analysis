@@ -1,9 +1,9 @@
 version: "3.9"
 services:
   api:
-    build: .
-    # Start with hot reloading
-    command: /bin/sh -c "/start-reload.sh"
+    build:
+      context: .
+      target: development
     volumes:
       - ./:/app
     ports:

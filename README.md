@@ -229,6 +229,9 @@ $ docker-compose exec api bash
 $ poetry add <new-package>
 ```
 
+The first time you run `poetry add ...`, it may take a while because Poetry
+needs to build its cache.
+
 ### Managing migrations
 
 The database is started automatically via docker-compose (`database`). To manage

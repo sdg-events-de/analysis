@@ -1,8 +1,13 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
+FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9 as base
 
 # Adapted from https://github.com/python-poetry/poetry/discussions/1879#discussioncomment-216865
-# python
-ENV PYTHONUNBUFFERED=1 \
+ENV \
+    # Set the FastAPI entry point (api.py with variable api)
+    MODULE_NAME=api \
+    VARIABLE_NAME=api \
+    \
+    # python
+    PYTHONUNBUFFERED=1 \
     # prevents python creating .pyc files
     PYTHONDONTWRITEBYTECODE=1 \
     \
@@ -22,25 +27,50 @@ ENV PYTHONUNBUFFERED=1 \
     # do not ask any interactive question
     POETRY_NO_INTERACTION=1
 
+# Set up path
+ENV PATH="$POETRY_HOME/bin:$VIRTUAL_ENV/bin:$PATH"
 
-# Prepare venv
+# Create non-root user
+ENV UNAME=user
+RUN useradd -m -u 1000 -o -s /bin/bash $UNAME
+RUN mkdir -p $POETRY_HOME $VIRTUAL_ENV
+RUN chown $UNAME $POETRY_HOME $VIRTUAL_ENV /app
+USER $UNAME
+
+# Create virtual environment
 RUN python -m venv $VIRTUAL_ENV
-ENV PATH="$VIRTUAL_ENV/bin:$PATH"
 
-# Install poetry - respects $POETRY_VERSION, etc...
-ENV PATH="$POETRY_HOME/bin:$PATH"
-RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
-
-# copy project requirement files here to ensure they will be cached.
+# Copy poetry.lock and pyproject.toml
 WORKDIR /app
 COPY poetry.lock pyproject.toml ./
 
-# install runtime deps
+FROM base as builder
+
+# Install poetry - respects $POETRY_VERSION, etc...
+RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
+
+# install runtime deps - uses $POETRY_VIRTUALENVS_IN_PROJECT internally
+RUN poetry install --no-dev
+
+# `development` image is used during development / testing
+FROM base as development
+ENV FASTAPI_ENV=development
+
+# copy in our built poetry + venv
+COPY --from=builder $POETRY_HOME $POETRY_HOME
+COPY --from=builder $VIRTUAL_ENV $VIRTUAL_ENV
+
+# quicker install as runtime deps are already installed
+WORKDIR /app
 RUN poetry install
 
-# Set up the app (this is where the image expects files)
-COPY ./ /app
+CMD ["/start-reload.sh"]
 
-# Set the FastAPI entry point (api.py with variable api)
-ENV MODULE_NAME=api \
-    VARIABLE_NAME=api
+# `production` image used for runtime
+FROM base as production
+ENV FASTAPI_ENV=production
+COPY --from=builder $VIRTUAL_ENV $VIRTUAL_ENV
+WORKDIR /app
+COPY ./app /.
+
+
