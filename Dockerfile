@@ -71,6 +71,6 @@ FROM base as production
 ENV FASTAPI_ENV=production
 COPY --from=builder $VIRTUAL_ENV $VIRTUAL_ENV
 WORKDIR /app
-COPY ./app /.
+COPY ./ /app
 
 
