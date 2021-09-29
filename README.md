@@ -233,21 +233,19 @@ reload the FastAPI server.
 ### Managing dependencies
 
 [Poetry](https://github.com/python-poetry/poetry) is used to manage Python
-dependencies. You can install it locally. Alternatively, you can use it within
-the `api` container:
+dependencies. You need to install it locally and the run `poetry install` from
+within the repo. Adding and removing dependencies via `poetry add <name>` and
+`poetry remove <name>`.
 
-```
-$ docker-compose exec api bash
-$ poetry add <new-package>
-```
-
-The first time you run `poetry add ...`, it may take a while because Poetry
-needs to build its cache.
+When adding new dependencies, the container needs to be rebuilt with
+`docker-compose build api`.
 
 ### Managing migrations
 
-The database is started automatically via docker-compose (`database`). To manage
-migrations, enter the `api` container:
+The database is started automatically via docker-compose (`database`).
+Migrations are automatically run when the `api` container starts.
+
+To manually manage migrations, enter the `api` container:
 
 ```
 $ docker-compose exec api bash

@@ -5,7 +5,7 @@ services:
       context: .
       target: development
     volumes:
-      - ./:/app
+      - ./:/app:ro
     ports:
       - "8000:80"
     environment:
