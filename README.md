@@ -88,10 +88,8 @@ We also need to enable Docker Buildkit support (for caching dependencies
 between builds for faster deployments):
 
 ```
-$ dokku config:set --global DOCKER_BUILDKIT=1 BUILDKIT_PROGRESS=plain
------> Setting config vars
-       BUILDKIT_PROGRESS:  plain
-       DOCKER_BUILDKIT:    1
+$ echo "export DOCKER_BUILDKIT=1" | sudo tee -a /etc/default/dokku
+$ echo "export BUILDKIT_PROGRESS=plain" | sudo tee -a /etc/default/dokku
 ```
 
 ### Creating the database
@@ -106,7 +104,7 @@ Set up the postgres container:
 
 ```
 $ dokku postgres:create analysisdb
-$ dokku postgreas:link analysisdb analysis
+$ dokku postgres:link analysisdb analysis
 ```
 
 This automatically creates the `DATABASE_URL` env var in Dokku, but we need to
