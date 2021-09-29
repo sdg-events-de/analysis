@@ -16,61 +16,56 @@ ENV \
     PIP_DISABLE_PIP_VERSION_CHECK=on \
     PIP_DEFAULT_TIMEOUT=100 \
     \
-    # python venv
-    VIRTUAL_ENV="/venv" \
-    \
     # poetry
     # https://python-poetry.org/docs/configuration/#using-environment-variables
     POETRY_VERSION=1.1.9 \
     # make poetry install to this location
     POETRY_HOME="/opt/poetry" \
     # do not ask any interactive question
-    POETRY_NO_INTERACTION=1
+    # make poetry create the virtual environment in the project's root
+    # it gets named `.venv`
+    POETRY_VIRTUALENVS_IN_PROJECT=true \
+    # do not ask any interactive question
+    POETRY_NO_INTERACTION=1 \
+    \
+    # paths
+    # this is where our requirements + virtual environment will live
+    BUILDER_PATH="/builder" \
+    VENV_PATH="/builder/.venv"
 
 # Set up path
-ENV PATH="$POETRY_HOME/bin:$VIRTUAL_ENV/bin:$PATH"
+ENV PATH="$POETRY_HOME/bin:$VENV_PATH/bin:$PATH"
 
-# Create non-root user
-ENV UNAME=user
-RUN useradd -m -u 1000 -o -s /bin/bash $UNAME
-RUN --mount=type=cache,target=/venv mkdir -p $POETRY_HOME $VIRTUAL_ENV
-RUN --mount=type=cache,target=/venv chown $UNAME $POETRY_HOME $VIRTUAL_ENV /app
-USER $UNAME
-
-# Create virtual environment
-RUN --mount=type=cache,target=/venv python -m venv $VIRTUAL_ENV
-
+# Install poetry and dependencies
 FROM base as builder
 
 # Install poetry - respects $POETRY_VERSION, etc...
 RUN curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-poetry.py | python -
 
 # Copy poetry.lock and pyproject.toml
-WORKDIR /app
+WORKDIR $BUILDER_PATH
 COPY poetry.lock pyproject.toml ./
 
-# install runtime deps - uses $POETRY_VIRTUALENVS_IN_PROJECT internally
-RUN --mount=type=cache,target=/venv poetry install --no-dev --remove-untracked
+RUN --mount=type=cache,target=/builder/.venv poetry install --no-dev --remove-untracked
+RUN --mount=type=cache,target=/builder/.venv cp -rT $VENV_PATH $VENV_PATH-prod
+
+# Install dev dependencies as well
+FROM builder as builder-dev
+RUN --mount=type=cache,target=/builder/.venv,id=dev cp -rT $VENV_PATH-prod $VENV_PATH
+RUN --mount=type=cache,target=/builder/.venv,id=dev poetry install --remove-untracked
+RUN --mount=type=cache,target=/builder/.venv,id=dev cp -rT $VENV_PATH $VENV_PATH-dev
 
 # `development` image is used during development / testing
 FROM base as development
 ENV FASTAPI_ENV=development
-
-# copy in our built poetry + venv
-COPY --from=builder $POETRY_HOME $POETRY_HOME
-COPY --from=builder $VIRTUAL_ENV $VIRTUAL_ENV
-
-# quicker install as runtime deps are already installed
+COPY --from=builder-dev $VENV_PATH-dev $VENV_PATH
 WORKDIR /app
-COPY poetry.lock pyproject.toml ./
-RUN --mount=type=cache,target=/venv poetry install
-
 CMD ["/start-reload.sh"]
 
 # `production` image used for runtime
 FROM base as production
 ENV FASTAPI_ENV=production
-COPY --from=builder $VIRTUAL_ENV $VIRTUAL_ENV
+COPY --from=builder $VENV_PATH-prod $VENV_PATH
 WORKDIR /app
 COPY ./ /app
 
