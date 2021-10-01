@@ -20,6 +20,7 @@ This repo contains the code for scraping and analyzing SDG events.
     - [Hot Reloading](#hot-reloading)
     - [Managing dependencies](#managing-dependencies)
     - [Managing migrations](#managing-migrations)
+  - [Testing](#testing)
 
 ## Deployment
 
@@ -245,15 +246,32 @@ When adding new dependencies, the container needs to be rebuilt with
 The database is started automatically via docker-compose (`database`).
 Migrations are automatically run when the `api` container starts.
 
-To manually manage migrations, enter the `api` container:
+To autogenerate or manually manage revisions, enter the `api` container:
 
 ```
 $ docker-compose exec api bash
-$ alembic upgrade head
-INFO  [alembic.runtime.migration] Context impl PostgresqlImpl.
-INFO  [alembic.runtime.migration] Will assume transactional DDL.
-INFO  [alembic.runtime.migration] Running upgrade  -> 0fda6ea241e1, create account table
+$ alembic revision --autogenerate -m "create accounts"
 ```
 
 The database has a dedicated volume mounted, so the database is persisted even
 when the container is destroyed/recreated.
+
+## Testing
+
+We use pytest to test the application. Tests are defined in the `/tests`
+directory.
+
+To run the tests, start the testing container and the testing database:
+
+```
+$ docker-compose up -d api-test database-test
+```
+
+You can then follow the test output with
+
+```
+$ docker-compose logs -f api-test
+```
+
+The container is started with `pytest-watch`, which automatically reruns all
+tests when a test is modified, added, or removed.

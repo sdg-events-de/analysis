@@ -58,7 +58,14 @@ RUN --mount=type=cache,target=/builder/.venv,id=dev cp -rT $VENV_PATH $VENV_PATH
 # `development` image is used during development / testing
 FROM base as development
 ENV FASTAPI_ENV=development
+
+# Copy virtual environment
 COPY --from=builder-dev $VENV_PATH-dev $VENV_PATH
+
+# Switch to non-root user (for generating migrations inside container)
+RUN useradd -m -u 1000 -o -s /bin/bash user
+USER user
+
 WORKDIR /app
 CMD ["/start-reload.sh"]
 
