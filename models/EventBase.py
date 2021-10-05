@@ -8,6 +8,9 @@ class EventStatus(enum.Enum):
     draft = "draft"
     deleted = "deleted"
 
+    def __str__(self):
+        return str(self.value)
+
 
 # Serves as the foundation for both Event and EventVersion models
 class EventBase(BaseModel):

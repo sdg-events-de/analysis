@@ -44,6 +44,15 @@ class BaseModel(Base, AllFeaturesMixin, TimestampsMixin):
         # Add attributes
         for attr in self.attributes:
             if attr not in kwargs.get("exclude", []):
-                dict[attr] = getattr(self, attr)
+                dict[attr] = getattr(self, attr, None)
 
         return dict
+
+    def on_create(self):
+        pass
+
+    def on_update(self):
+        pass
+
+    def on_delete(self):
+        pass

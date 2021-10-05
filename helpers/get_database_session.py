@@ -19,19 +19,34 @@ def get_database_session():
     return database_session.get()
 
 
+def run_lifecycle_hooks(session, done):
+    # If we run any lifecycle hooks, we need to rerun this method, because
+    # lifecycle hooks could have added new instances to the session.
+    # This flag is used to keep track if any hooks were run.
+    rerun = False
+
+    for instance in filter(lambda x: x not in done["new"], session.new):
+        instance.on_create()
+        done["new"].append(instance)
+        rerun = True
+
+    for instance in filter(lambda x: x not in done["dirty"], session.dirty):
+        instance.on_update()
+        done["dirty"].append(instance)
+        rerun = True
+
+    for instance in filter(lambda x: x not in done["deleted"], session.deleted):
+        instance.on_delete()
+        done["deleted"].append(instance)
+        rerun = True
+
+    if rerun:
+        run_lifecycle_hooks(session, done)
+
+
 # Listen for lifecycle events
-def orm_lifecycle_events(session, _flush_context, _instances):
-    for instance in session.new:
-        if callable(getattr(instance, "on_create", None)):
-            instance.on_create()
-
-    for instance in session.dirty:
-        if callable(getattr(instance, "on_update", None)):
-            instance.on_update()
-
-    for instance in session.deleted:
-        if callable(getattr(instance, "on_delete", None)):
-            instance.on_delete()
+def orm_lifecycle_events(session, _abc, _def):
+    run_lifecycle_hooks(session, {"new": [], "dirty": [], "deleted": []})
 
 
 listen(Session, "before_flush", orm_lifecycle_events)
