@@ -10,7 +10,6 @@ Base = declarative_base()
 
 class BaseModel(Base, AllFeaturesMixin, TimestampsMixin):
     __abstract__ = True
-    attributes = []
 
     # Generate __tablename__ automatically
     @declared_attr
@@ -23,30 +22,6 @@ class BaseModel(Base, AllFeaturesMixin, TimestampsMixin):
     @classproperty
     def session(cls):
         return get_database_session()
-
-    # Extend the constructor, so that custom attributes are also set
-    def __init__(self, **kwargs):
-        for attr in self.attributes:
-            if attr in kwargs:
-                setattr(self, attr, kwargs.pop(attr))
-        super().__init__(**kwargs)
-
-    # Extend settable_attributes, so that custom plain attributes are also set
-    # by the .fill() method
-    @classproperty
-    def settable_attributes(cls):
-        return super().settable_attributes + cls.attributes
-
-    # Extend to_dict, so that custom plain attributes are also serialized
-    def to_dict(self, **kwargs):
-        dict = super().to_dict(**kwargs)
-
-        # Add attributes
-        for attr in self.attributes:
-            if attr not in kwargs.get("exclude", []):
-                dict[attr] = getattr(self, attr, None)
-
-        return dict
 
     def on_create(self):
         pass

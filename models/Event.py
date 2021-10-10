@@ -4,7 +4,7 @@ from .EventVersion import EventVersion
 
 
 class Event(EventBase):
-    attributes = ["action"]
+    action = None
 
     versions = relationship(
         "EventVersion",
@@ -24,11 +24,16 @@ class Event(EventBase):
     # Create an event versions snapshot based on current attributes
     def create_version(self, default_action):
         params = self.to_dict(exclude=["id", "created_at", "updated_at"])
-        params["action"] = params["action"] or default_action
+        params["action"] = getattr(self, "action") or default_action
         for key in list(params):
             if key not in EventVersion.columns:
                 del params[key]
         self.versions.append(EventVersion().fill(**params))
+        self.action = None
+
+    def fill(self, **kwargs):
+        self.action = kwargs.pop("action", self.action)
+        return super().fill(**kwargs)
 
     # Mark the event as deleted (via status column)
     # Does not actually delete the event, just sets all fields to None and
