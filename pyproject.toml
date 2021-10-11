@@ -11,6 +11,7 @@ SQLAlchemy = "^1.4.23"
 alembic = "^1.7.3"
 psycopg2 = "^2.9.1"
 sqlalchemy-mixins = "^1.5"
+SQLAlchemy-Utils = "^0.37.8"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"

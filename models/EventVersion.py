@@ -11,8 +11,6 @@ class VersionAction(enum.Enum):
     review = "review"
     suggest = "suggest"
 
-    def __str__(self):
-        return str(self.value)
 
 
 class EventVersion(EventBase):

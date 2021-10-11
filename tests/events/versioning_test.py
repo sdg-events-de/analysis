@@ -11,10 +11,10 @@ def test_it_creates_a_version_on_create():
     # Version has the same attributes as event
     version = event.versions[0]
     assert version.url == "https://my-event.de"
-    assert str(version.status) == "draft"
+    assert version.status.value == "draft"
 
     # Version action is create
-    assert str(version.action) == "create"
+    assert version.action.value == "create"
 
 
 def test_it_creates_a_version_on_update():
@@ -27,11 +27,11 @@ def test_it_creates_a_version_on_update():
     # Version has the same attributes as event
     version = event.versions[0]
     assert version.url == "https://my-event.de"
-    assert str(version.status) == "published"
+    assert version.status.value == "published"
     assert version.title == "My Event"
 
     # Version action is edit
-    assert str(version.action) == "edit"
+    assert version.action.value == "edit"
 
 
 def test_it_creates_a_version_on_delete():
@@ -46,11 +46,11 @@ def test_it_creates_a_version_on_delete():
     # Version has attributes reset to null
     version = event.versions[0]
     assert version.url == "https://my-event.de"
-    assert str(version.status) == "deleted"
+    assert version.status.value == "deleted"
     assert version.summary == None
 
     # Version action is edit
-    assert str(version.action) == "edit"
+    assert version.action.value == "edit"
 
 
 def test_it_gets_all_versions_in_descending_order():
@@ -62,8 +62,8 @@ def test_it_gets_all_versions_in_descending_order():
 
     # Edit is the latest version
     versions = event.versions
-    assert str(versions[0].action) == "edit"
-    assert str(versions[1].action) == "create"
+    assert versions[0].action.value == "edit"
+    assert versions[1].action.value == "create"
 
 
 def test_it_does_not_create_version_on_timestamp_change():

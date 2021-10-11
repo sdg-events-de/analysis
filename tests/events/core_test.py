@@ -18,7 +18,7 @@ def test_it_sets_status_deleted_on_delete():
     event.delete()
 
     assert Event.query.count() == 1
-    assert str(event.status) == "deleted"
+    assert event.status.value == "deleted"
     assert event.title == None
     assert event.url == "test.com"
 
@@ -27,7 +27,7 @@ def test_it_can_set_note_on_delete():
     event = Event.create(url="test.com", status="draft", title="My title")
     event.delete(status_note="Duplicate of 37")
 
-    assert str(event.status) == "deleted"
+    assert event.status.value == "deleted"
     assert event.status_note == "Duplicate of 37"
 
 
@@ -48,8 +48,16 @@ def test_it_can_discover_events():
     assert event.status.value == "draft"
 
     # Sets event versions action to discover
-    assert str(event.versions[0].action) == "discover"
+    assert event.versions[0].action.value == "discover"
 
     # Creates event and version
     assert Event.query.count() == 1
     assert EventVersion.query.with_parent(event).count() == 1
+
+
+def test_it_correctly_identifies_enum_updates():
+    event = Event.create(url="test", status="draft")
+
+    # This should not treat event as changed
+    event.fill(status="draft")
+    assert event.changed == []
