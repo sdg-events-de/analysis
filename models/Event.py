@@ -21,13 +21,16 @@ class Event(EventBase):
         kwargs["action"] = kwargs.get("action", "discover")
         return cls.create(**kwargs)
 
+    @property
+    def versioned_attributes(self):
+        return list(set(self.columns) - set(["id", "created_at", "updated_at"]))
+
     # Create an event versions snapshot based on current attributes
-    def create_version(self, default_action):
-        params = self.to_dict(exclude=["id", "created_at", "updated_at"])
-        params["action"] = getattr(self, "action") or default_action
-        for key in list(params):
-            if key not in EventVersion.columns:
-                del params[key]
+    def create_version(self, default_action=None):
+        params = {}
+        params["action"] = self.action or default_action
+        for attribute in self.versioned_attributes:
+            params[attribute] = getattr(self, attribute)
         self.versions.append(EventVersion().fill(**params))
         self.action = None
 
@@ -58,7 +61,8 @@ class Event(EventBase):
 
     # Create version on update
     def on_update(self):
-        self.create_version(default_action="edit")
+        if set(self.changed) & set(self.versioned_attributes):
+            self.create_version(default_action="edit")
 
     # Raise error on delete
     # Event records should not be deleted. Use .delete() instead to set
