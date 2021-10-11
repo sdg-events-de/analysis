@@ -2,6 +2,7 @@ import enum
 from sqlalchemy import Column, Integer, ForeignKey, Enum
 from sqlalchemy.orm import relationship
 from .EventBase import EventBase
+from .WithSuggestion import WithSuggestion
 
 
 class VersionAction(enum.Enum):
@@ -12,8 +13,7 @@ class VersionAction(enum.Enum):
     suggest = "suggest"
 
 
-
-class EventVersion(EventBase):
+class EventVersion(EventBase, WithSuggestion):
     event_id = Column(Integer, ForeignKey("event.id"), nullable=False, index=True)
     action = Column(Enum(VersionAction), nullable=False)
 

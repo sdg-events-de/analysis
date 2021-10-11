@@ -1,10 +1,31 @@
+from sqlalchemy import Column, String, Index, or_, and_
 from sqlalchemy.orm import relationship
-from .EventBase import EventBase
+from sqlalchemy_utils import ChoiceType
+from .EventBase import EventBase, EventStatus
+from .WithSuggestion import WithSuggestion
 from .EventVersion import EventVersion
+from .EventSuggestion import EventSuggestion
 
 
-class Event(EventBase):
+class Event(EventBase, WithSuggestion):
     action = None
+
+    # Make status and url non-nullable
+    status = Column(ChoiceType(EventStatus), nullable=False)
+    url = Column(String, nullable=False, index=True)
+
+    # Add index to starts_at and ends_at
+    __table_args__ = (
+        Index("ix_event_starts_at", "starts_at"),
+        Index("ix_event_ends_at", "ends_at"),
+    )
+
+    # Backpopulate suggestions
+    suggestion = relationship(
+        "EventSuggestion",
+        back_populates="event",
+        foreign_keys="Event.suggestion_id",
+    )
 
     versions = relationship(
         "EventVersion",
@@ -12,6 +33,17 @@ class Event(EventBase):
         foreign_keys="EventVersion.event_id",
         order_by="desc(EventVersion.id)",
     )
+
+    @classmethod
+    def filter_needing_review(cls):
+        return cls.query.filter(
+            or_(
+                # Mismatching suggestion and revision
+                cls.suggestion_id != cls.revision_id,
+                # Has suggestion but no revision
+                and_(cls.suggestion_id != None, cls.revision_id == None),
+            )
+        ).order_by(cls.id)
 
     # Create a new event with status draft and action discover.
     # Used by the AI when it finds a new event via one of its pipelines.
@@ -23,7 +55,19 @@ class Event(EventBase):
 
     @property
     def versioned_attributes(self):
-        return list(set(self.columns) - set(["id", "created_at", "updated_at"]))
+        return list(
+            set(self.settable_attributes)
+            - {"id", "created_at", "updated_at", "versions"}
+        )
+
+    @property
+    def needs_review(self):
+        return self.suggestion_id != self.revision_id
+
+    # Return a list of attributes that need to be reviewed
+    @property
+    def attributes_to_review(self):
+        return (self.suggestion or EventSuggestion(event=self)).attributes_to_review
 
     # Create an event versions snapshot based on current attributes
     def create_version(self, default_action=None):
@@ -37,6 +81,18 @@ class Event(EventBase):
     def fill(self, **kwargs):
         self.action = kwargs.pop("action", self.action)
         return super().fill(**kwargs)
+
+    # Create new suggestion and save
+    def suggest(self, **kwargs):
+        suggestion = self.suggestion or EventSuggestion()
+        suggestion.fill(**kwargs)
+
+        if suggestion.changed:
+            self.update(action="suggest", suggestion=suggestion.dup())
+
+    def review(self, **kwargs):
+        revision = self.suggestion.review(**kwargs)
+        self.update(action="review", revision=revision, **kwargs)
 
     # Mark the event as deleted (via status column)
     # Does not actually delete the event, just sets all fields to None and

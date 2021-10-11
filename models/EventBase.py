@@ -15,13 +15,13 @@ class EventBase(BaseModel):
     __abstract__ = True
 
     id = Column(Integer, primary_key=True)
-    url = Column(String, nullable=False, index=True)
+    url = Column(String)
     title = Column(String)
     summary = Column(String)
     description = Column(String)
-    starts_at = Column(TIMESTAMP(timezone=False), index=True)
-    ends_at = Column(TIMESTAMP(timezone=False), index=True)
+    starts_at = Column(TIMESTAMP(timezone=False))
+    ends_at = Column(TIMESTAMP(timezone=False))
     address = Column(String)
     is_online = Column(Boolean)
-    status = Column(ChoiceType(EventStatus), nullable=False)
+    status = Column(ChoiceType(EventStatus))
     status_note = Column(String)

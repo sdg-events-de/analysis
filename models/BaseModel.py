@@ -50,6 +50,12 @@ class BaseModel(Base, AllFeaturesMixin, TimestampsMixin):
         # Otherwise, rely on SQL Alchemy history
         return attr.history.has_changes()
 
+    # Make a clone of the instance
+    def dup(self):
+        return type(self)().fill(
+            **self.to_dict(exclude=["id", "created_at", "updated_at"])
+        )
+
     # Get all changed attributes
     # Mirrors ActiveRecord .changed property
     @property
