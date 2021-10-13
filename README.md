@@ -16,6 +16,7 @@ This repo contains the code for scraping and analyzing SDG events.
     - [Deploying the application](#deploying-the-application)
     - [Enabling HTTPS](#enabling-https)
   - [Running one-off tasks](#running-one-off-tasks)
+    - [Scraping](#scraping)
   - [Development](#development)
     - [Hot Reloading](#hot-reloading)
     - [Managing dependencies](#managing-dependencies)
@@ -209,6 +210,11 @@ $ ssh root@api.sdg-events.de docker logs -f <NAME>
 ```
 
 The container will be removed automatically once the process has ended.
+
+### Scraping
+
+To run all scrapers, simply run `python ./scrape.py`. Scrapers can be run in a
+one-off task as described above.
 
 ## Development
 
