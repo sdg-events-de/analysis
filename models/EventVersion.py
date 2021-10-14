@@ -5,7 +5,7 @@ from .EventBase import EventBase
 from .WithSuggestion import WithSuggestion
 
 
-class VersionAction(enum.Enum):
+class VersionAction(str, enum.Enum):
     create = "create"
     discover = "discover"
     edit = "edit"

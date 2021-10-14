@@ -4,7 +4,7 @@ from sqlalchemy_utils import ChoiceType
 from . import BaseModel
 
 
-class EventStatus(enum.Enum):
+class EventStatus(str, enum.Enum):
     published = "published"
     draft = "draft"
     deleted = "deleted"

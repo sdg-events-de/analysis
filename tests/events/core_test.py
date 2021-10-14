@@ -1,6 +1,6 @@
 import re
 import pytest
-from models import Event, EventVersion
+from models import Event
 
 
 def test_it_can_create_event():
@@ -39,20 +39,6 @@ def test_it_cannot_be_deleted():
     with pytest.raises(Exception, match=error):
         Event.session.delete(event)
         Event.session.flush()
-
-
-def test_it_can_discover_events():
-    event = Event.discover(url="https://google.com")
-
-    # Sets status to draft
-    assert event.status.value == "draft"
-
-    # Sets event versions action to discover
-    assert event.versions[0].action.value == "discover"
-
-    # Creates event and version
-    assert Event.query.count() == 1
-    assert EventVersion.query.with_parent(event).count() == 1
 
 
 def test_it_correctly_identifies_enum_updates():

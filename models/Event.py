@@ -48,10 +48,19 @@ class Event(EventBase, WithSuggestion):
     # Create a new event with status draft and action discover.
     # Used by the AI when it finds a new event via one of its pipelines.
     @classmethod
-    def discover(cls, **kwargs):
-        kwargs["status"] = kwargs.get("status", "draft")
-        kwargs["action"] = kwargs.get("action", "discover")
-        return cls.create(**kwargs)
+    def discover(cls, url, **kwargs):
+        # If event with this url already exists, do not do anything
+        if cls.query.filter(cls.url == url).first():
+            return
+
+        # Create new event
+        event = cls.create(url=url, status="draft", action="discover")
+
+        # Create a suggestion from any additional parameters
+        if kwargs:
+            event.suggest(**kwargs)
+
+        return event
 
     @property
     def versioned_attributes(self):
@@ -68,6 +77,10 @@ class Event(EventBase, WithSuggestion):
     @property
     def attributes_to_review(self):
         return (self.suggestion or EventSuggestion(event=self)).attributes_to_review
+
+    @property
+    def display_title(self):
+        return self.title or (self.suggestion or EventSuggestion(event=self)).title
 
     # Create an event versions snapshot based on current attributes
     def create_version(self, default_action=None):
