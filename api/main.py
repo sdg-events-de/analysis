@@ -1,7 +1,7 @@
 from typing import Optional
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from models import Event, EventSuggestion
+from models import Event
 from sqlalchemy.orm import joinedload, contains_eager
 
 api = FastAPI()
@@ -10,6 +10,7 @@ api = FastAPI()
 class EventResponse(BaseModel):
     id: int
     url: str
+    host: Optional[str]
     display_title: Optional[str]
     status: str
     needs_review: bool

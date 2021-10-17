@@ -1,4 +1,4 @@
-import furl
+from furl import furl
 from sqlalchemy import Column, String, Index, or_, and_
 from sqlalchemy.orm import relationship
 from sqlalchemy_utils import ChoiceType
@@ -83,6 +83,10 @@ class Event(EventBase, WithSuggestion):
     def display_title(self):
         return self.title or (self.suggestion or EventSuggestion(event=self)).title
 
+    @property
+    def host(self):
+        return furl(self.url).host
+
     # Create an event versions snapshot based on current attributes
     def create_version(self, default_action=None):
         params = {}
@@ -124,9 +128,6 @@ class Event(EventBase, WithSuggestion):
             params[key] = None
 
         self.update(**params)
-
-    def host(self):
-        return furl(self.url).host
 
     # Create version on create
     def on_create(self):

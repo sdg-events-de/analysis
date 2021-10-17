@@ -47,3 +47,8 @@ def test_it_correctly_identifies_enum_updates():
     # This should not treat event as changed
     event.fill(status="draft")
     assert event.changed == []
+
+
+def test_it_can_return_the_url_host():
+    event = Event().fill(url="https://www.sdg-events.de/events")
+    assert event.host == "www.sdg-events.de"
