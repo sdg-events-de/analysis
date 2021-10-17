@@ -1,10 +1,23 @@
 from typing import Optional
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from models import Event
 from sqlalchemy.orm import joinedload, contains_eager
 
 api = FastAPI()
+
+api.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://sdg-events.de",
+        "https://api.sdg-events.de",
+        "http://localhost:3000",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 class EventResponse(BaseModel):
