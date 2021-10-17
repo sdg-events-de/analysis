@@ -39,6 +39,18 @@ class BaseModel(Base, AllFeaturesMixin, TimestampsMixin):
     def session(cls):
         return get_database_session()
 
+    @classproperty
+    def settable_hybrid_properties(cls):
+        return list(
+            filter(lambda p: getattr(cls, p).fset is not None, cls.hybrid_properties)
+        )
+
+    # Overwrite settable properties to exclude hybrid properties, since hybrid
+    # properties usually are not settable
+    @classproperty
+    def settable_attributes(cls):
+        return cls.columns + cls.settable_hybrid_properties + cls.settable_relations
+
     # Return True if the given attribute has been modified
     def has_attribute_changed(self, attribute):
         attr = getattr(inspect(self).attrs, attribute)
@@ -69,7 +81,10 @@ class BaseModel(Base, AllFeaturesMixin, TimestampsMixin):
     @property
     def changed(self):
         return list(
-            filter(lambda x: self.has_attribute_changed(x), self.settable_attributes)
+            filter(
+                lambda x: self.has_attribute_changed(x),
+                self.columns + self.settable_relations,
+            )
         )
 
     def on_create(self):

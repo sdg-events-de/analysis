@@ -7,11 +7,11 @@ class WithSuggestion:
 
     @declared_attr
     def suggestion_id(cls):
-        return Column(Integer, ForeignKey("eventsuggestion.id"), nullable=True)
+        return Column(Integer, ForeignKey("eventsuggestion.id"), nullable=False)
 
     @declared_attr
     def revision_id(cls):
-        return Column(Integer, ForeignKey("eventsuggestion.id"), nullable=True)
+        return Column(Integer, ForeignKey("eventsuggestion.id"), nullable=False)
 
     @declared_attr
     def suggestion(cls):

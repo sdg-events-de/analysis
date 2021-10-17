@@ -10,8 +10,8 @@ def test_it_can_discover_events():
     # Sets event versions action to discover
     assert event.versions[0].action.value == "discover"
 
-    # Creates no suggestion
-    assert event.suggestion == None
+    # Creates suggestion with url
+    assert event.suggestion.url == event.url
 
     # Creates event and version
     assert Event.query.count() == 1
@@ -35,5 +35,6 @@ def test_it_creates_suggestion_from_additional_params():
     assert event.summary == None
 
     # Creates suggestion
+    assert event.suggestion.url == "example.com"
     assert event.suggestion.summary == "Lorem ipsum"
     assert event.attributes_to_review == ["summary"]

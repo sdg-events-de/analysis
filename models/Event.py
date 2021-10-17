@@ -1,6 +1,7 @@
 from furl import furl
-from sqlalchemy import Column, String, Index, or_, and_
+from sqlalchemy import Column, String, Index
 from sqlalchemy.orm import relationship
+from sqlalchemy.ext.hybrid import hybrid_property
 from sqlalchemy_utils import ChoiceType
 from .EventBase import EventBase, EventStatus
 from .WithSuggestion import WithSuggestion
@@ -35,16 +36,10 @@ class Event(EventBase, WithSuggestion):
         order_by="desc(EventVersion.id)",
     )
 
-    @classmethod
-    def filter_needing_review(cls):
-        return cls.query.filter(
-            or_(
-                # Mismatching suggestion and revision
-                cls.suggestion_id != cls.revision_id,
-                # Has suggestion but no revision
-                and_(cls.suggestion_id != None, cls.revision_id == None),
-            )
-        ).order_by(cls.id)
+    def __init__(self, **kwargs):
+        self.suggestion = EventSuggestion()
+        self.revision = self.suggestion
+        super()
 
     # Create a new event with status draft and action discover.
     # Used by the AI when it finds a new event via one of its pipelines.
@@ -55,11 +50,12 @@ class Event(EventBase, WithSuggestion):
             return
 
         # Create new event
-        event = cls.create(url=url, status="draft", action="discover")
-
-        # Create a suggestion from any additional parameters
-        if kwargs:
-            event.suggest(**kwargs)
+        event = cls.create(
+            url=url,
+            status="draft",
+            action="discover",
+            suggestion=EventSuggestion(url=url, **kwargs),
+        )
 
         return event
 
@@ -70,18 +66,18 @@ class Event(EventBase, WithSuggestion):
             - {"id", "created_at", "updated_at", "versions"}
         )
 
-    @property
+    @hybrid_property
     def needs_review(self):
         return self.suggestion_id != self.revision_id
 
     # Return a list of attributes that need to be reviewed
     @property
     def attributes_to_review(self):
-        return (self.suggestion or EventSuggestion(event=self)).attributes_to_review
+        return self.suggestion.attributes_to_review
 
     @property
     def display_title(self):
-        return self.title or (self.suggestion or EventSuggestion(event=self)).title
+        return self.title or self.suggestion.title
 
     @property
     def host(self):
@@ -102,8 +98,7 @@ class Event(EventBase, WithSuggestion):
 
     # Create new suggestion and save
     def suggest(self, **kwargs):
-        new_suggestion = (self.suggestion or EventSuggestion()).dup()
-        new_suggestion.fill(**kwargs)
+        new_suggestion = self.suggestion.dup().fill(**kwargs)
 
         if not new_suggestion.is_identical(self.suggestion):
             self.update(action="suggest", suggestion=new_suggestion)
@@ -121,10 +116,18 @@ class Event(EventBase, WithSuggestion):
         self.status_note = status_note or self.status_note
 
         # Reset all parameters to None
-        params = self.to_dict(
-            exclude=["id", "url", "status", "status_note", "created_at", "updated_at"]
-        )
-        for key in list(params):
+        params = {}
+        exclude = {
+            "id",
+            "url",
+            "suggestion_id",
+            "revision_id",
+            "status",
+            "status_note",
+            "created_at",
+            "updated_at",
+        }
+        for key in set(self.columns) - exclude:
             params[key] = None
 
         self.update(**params)

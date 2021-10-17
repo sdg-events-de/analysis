@@ -98,4 +98,4 @@ def test_it_can_get_all_events_needing_reviews():
 
     Event.create(url="test", status="published")
 
-    assert Event.filter_needing_review().all() == [event1, event2]
+    assert Event.query.filter(Event.needs_review).all() == [event1, event2]
