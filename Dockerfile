@@ -2,8 +2,8 @@ FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9 as base
 
 # Adapted from https://github.com/python-poetry/poetry/discussions/1879#discussioncomment-216865
 ENV \
-    # Set the FastAPI entry point (api.py with variable api)
-    MODULE_NAME=api \
+    # Set the FastAPI entry point (api/main.py with variable api)
+    MODULE_NAME=api.main \
     VARIABLE_NAME=api \
     \
     # python
