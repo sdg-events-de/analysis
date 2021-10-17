@@ -21,6 +21,20 @@ def test_it_can_suggest_changes():
     assert event.versions[0].suggestion_id == event.suggestion_id
 
 
+def test_it_can_suggest_more_changes():
+    # Create a suggestion
+    event = Event.create(url="test", status="draft")
+    event.suggest(description="lorem ipsum")
+    suggestion_id = event.suggestion_id
+    assert suggestion_id != None
+
+    # Create another suggestion
+    event.suggest(summary="my summary")
+    assert event.suggestion_id != suggestion_id
+    assert event.suggestion.description == "lorem ipsum"
+    assert event.suggestion.summary == "my summary"
+
+
 def test_it_does_not_create_new_suggestion_when_equal_to_current_suggestion():
     event = Event.create(url="https://google.com", status="draft")
     event.suggest(status="published", title="My title", summary="Lorem ipsum")

@@ -98,11 +98,11 @@ class Event(EventBase, WithSuggestion):
 
     # Create new suggestion and save
     def suggest(self, **kwargs):
-        suggestion = self.suggestion or EventSuggestion()
-        suggestion.fill(**kwargs)
+        new_suggestion = (self.suggestion or EventSuggestion()).dup()
+        new_suggestion.fill(**kwargs)
 
-        if suggestion.changed:
-            self.update(action="suggest", suggestion=suggestion.dup())
+        if not new_suggestion.is_identical(self.suggestion):
+            self.update(action="suggest", suggestion=new_suggestion)
 
     def review(self, **kwargs):
         revision = self.suggestion.review(**kwargs)

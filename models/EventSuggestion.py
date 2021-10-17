@@ -35,7 +35,7 @@ class EventSuggestion(EventBase):
             setattr(revision, attr, getattr(self, attr))
 
         # If suggestion and revision are the same, reuse suggestion as revision
-        return self if self.is_equal(revision) else revision
+        return self if self.is_identical(revision) else revision
 
     # Return a list of attributes that need to be reviewed
     @property
@@ -50,14 +50,6 @@ class EventSuggestion(EventBase):
     @property
     def revision(self):
         return self.event.revision
-
-    # Return True if two event suggestion instances are equal
-    def is_equal(self, other):
-        for attr in self.suggestable_attributes:
-            if not getattr(self, attr) == getattr(other, attr):
-                return False
-
-        return True
 
     def on_update(self):
         raise Exception("Event suggestions cannot be updated.")

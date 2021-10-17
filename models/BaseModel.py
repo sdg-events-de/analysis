@@ -56,6 +56,14 @@ class BaseModel(Base, AllFeaturesMixin, TimestampsMixin):
             **self.to_dict(exclude=["id", "created_at", "updated_at"])
         )
 
+    # Check if this record is identical to other (aside from ID and timestamps)
+    def is_identical(self, other):
+        if other is None:
+            return False
+
+        exclude = ["id", "created_at", "updated_at"]
+        return self.to_dict(exclude=exclude) == other.to_dict(exclude=exclude)
+
     # Get all changed attributes
     # Mirrors ActiveRecord .changed property
     @property
