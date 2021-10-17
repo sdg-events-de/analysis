@@ -4,7 +4,7 @@ from scrape.pipelines import DiscoveryPipeline
 from scrape.helpers.Parser import Parser
 
 
-class EventListingSpiderBase(scrapy.Spider):
+class ListingSpiderBase(scrapy.Spider):
     custom_settings = {
         "ITEM_PIPELINES": {
             DiscoveryPipeline: 100,

@@ -1,7 +1,7 @@
-from scrape.helpers.EventListingSpiderBase import EventListingSpiderBase
+from .ListingSpiderBase import ListingSpiderBase
 
 
-class DgvnListingSpider(EventListingSpiderBase):
+class DgvnListingSpider(ListingSpiderBase):
     name = "DgvnListing"
     allowed_domains = ["dgvn.de"]
     start_urls = ["https://dgvn.de/aktivitaeten/veranstaltungen/"]
