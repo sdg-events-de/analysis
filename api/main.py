@@ -50,7 +50,14 @@ def root():
 
 @api.get("/events", response_model=list[EventResponse])
 def events():
-    return Event.with_joined("suggestion").all()
+    return Event.with_joined("suggestion").order_by("id").all()
+
+
+@api.get("/events/review", response_model=list[EventResponse])
+def events_to_review():
+    return (
+        Event.with_joined("suggestion").filter(Event.needs_review).order_by("id").all()
+    )
 
 
 @api.get("/events/{id}", response_model=DetailedEventResponse)
