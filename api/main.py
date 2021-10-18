@@ -11,7 +11,7 @@ api.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://sdg-events.de",
-        "https://api.sdg-events.de",
+        "https://admin.sdg-events.de",
         "http://localhost:3000",
     ],
     allow_credentials=True,
