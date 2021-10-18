@@ -22,9 +22,9 @@ def scrape_events():
     process.start()
 
 
-# p = Process(target=scrape_listings)
-# p.start()
-# p.join()
+p = Process(target=scrape_listings)
+p.start()
+p.join()
 
 p = Process(target=scrape_events)
 p.start()
