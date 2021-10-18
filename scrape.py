@@ -18,7 +18,7 @@ def scrape_events():
     for event in Event.all():
         for spider in event_spiders:
             if event.host in spider.allowed_domains:
-                process.crawl(spider, start_urls=[event.url.url], event_id=event.id)
+                process.crawl(spider, start_urls=[event.url], event_id=event.id)
     process.start()
 
 
