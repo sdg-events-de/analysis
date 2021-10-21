@@ -9,3 +9,9 @@ def reset_database():
     with BaseModel.session.begin():
         for table in BaseModel.metadata.tables:
             BaseModel.session.execute("TRUNCATE TABLE {} CASCADE".format(table))
+
+
+@pytest.fixture(scope="session")
+def vcr_config():
+    # Change record_mode to "once" to temporarily record new casettes/requests
+    return {"record_mode": "none"}

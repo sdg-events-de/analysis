@@ -29,7 +29,7 @@ services:
       target: development
     command: bash -c "alembic upgrade head && ptw"
     volumes:
-      - ./:/app:ro
+      - ./:/app
     environment:
       - DATABASE_URL=postgresql://postgres:docker@database-test:5432/testdb
     depends_on:

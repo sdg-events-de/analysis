@@ -35,7 +35,6 @@ class EventSpiderBase(scrapy.Spider):
         event = Parser(response.css(self.EVENT_TAG), response)
 
         yield EventItem(
-            id=self.event_id,
             url=response.url,
             title=self.extract_title(event),
             # "date": extract_text_from(event, self.event_date_tag),

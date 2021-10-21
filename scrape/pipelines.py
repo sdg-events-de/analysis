@@ -11,6 +11,6 @@ class DiscoveryPipeline:
 class SuggestionPipeline:
     def process_item(self, item, spider):
         suggestion = copy.deepcopy(item)
-        event = Event.find(suggestion.pop("id"))
+        event = Event.find(spider.event_id)
         event.suggest(**suggestion)
         return item
