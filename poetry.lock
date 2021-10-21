@@ -699,6 +699,17 @@ toml = "*"
 testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
 
 [[package]]
+name = "pytest-only"
+version = "1.2.2"
+description = "Use @pytest.mark.only to run a single test"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+pytest = ">=2.6"
+
+[[package]]
 name = "pytest-recording"
 version = "0.12.0"
 description = "A pytest plugin that allows you recording of network interactions via VCR.py"
@@ -1133,7 +1144,7 @@ testing = ["coverage (>=5.0.3)", "zope.event", "zope.testing"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "b5b7a420e5650cc471faa6ea62e872e177327be25cbe4efb8471de873d9e98a1"
+content-hash = "50f2fd4a1f7ba1d1d1499acad76e09d93d6f52ff786a06c50282a7c8cd822885"
 
 [metadata.files]
 aiofiles = [
@@ -1737,6 +1748,9 @@ pypydispatcher = [
 pytest = [
     {file = "pytest-6.2.5-py3-none-any.whl", hash = "sha256:7310f8d27bc79ced999e760ca304d69f6ba6c6649c0b60fb0e04a4a77cacc134"},
     {file = "pytest-6.2.5.tar.gz", hash = "sha256:131b36680866a76e6781d13f101efb86cf674ebb9762eb70d3082b6f29889e89"},
+]
+pytest-only = [
+    {file = "pytest-only-1.2.2.tar.gz", hash = "sha256:90789b1f6d867f14ad2935f6499f44b66338a92d6d6aa53819203c8411c59ba3"},
 ]
 pytest-recording = [
     {file = "pytest-recording-0.12.0.tar.gz", hash = "sha256:9039bf488f80c016055ffd039a91e33b1e89f3ee2ee0005c0bbce298fd417ee1"},
