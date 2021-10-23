@@ -1,5 +1,5 @@
 from fastapi.testclient import TestClient
-from tests.helpers import matches_dict
+from helpers import matches_dict
 from api import api
 from models import Event
 

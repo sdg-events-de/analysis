@@ -2,8 +2,10 @@ import re
 
 # Helper class for parsing a HTML/CSS object
 class Parser:
-    def __init__(self, response):
+    def __init__(self, response, base_css=None):
         self.response = response
+        if base_css is not None:
+            self.base_css = base_css
 
     # Appends default_selector (such as ' *::text') to the query, unless
     # the query already has a selector set
@@ -41,4 +43,4 @@ class Parser:
         return self.response.urljoin(url)
 
     def css(self, *args, **kwargs):
-        return self.response.css(*args, **kwargs)
+        return self.base_css.css(*args, **kwargs)

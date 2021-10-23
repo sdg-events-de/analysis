@@ -4,7 +4,7 @@ import pytest
 from freezegun import freeze_time
 from scrapy.http import HtmlResponse
 from scrape.spiders.events.DgvnEventSpider import DgvnEventSpider
-from tests.helpers import matches_dict
+from helpers import matches_dict
 
 
 @pytest.mark.vcr
@@ -63,6 +63,24 @@ def test_it_scrapes_multi_day_event_across_two_months():
         "title": "#DieUNundWIR",
         "starts_at": datetime.fromisoformat("2020-02-17T12:00:00"),
         "ends_at": datetime.fromisoformat("2020-03-06T18:00:00"),
+    } == matches_dict(event)
+
+
+@pytest.mark.vcr(record_mode="once")
+def test_it_scrapes_event_without_time():
+    url = "https://dgvn.de/aktivitaeten/einzelansicht/dieunundwir-4/"
+
+    # forge a scrapy response to test
+    scrapy_response = HtmlResponse(body=requests.get(url).content, url=url)
+
+    results = DgvnEventSpider().parse(scrapy_response)
+    event = next(results)
+
+    assert {
+        "url": url,
+        "title": "#DieUNundWIR",
+        "starts_at": datetime.fromisoformat("2021-10-04T00:00:00"),
+        "ends_at": datetime.fromisoformat("2021-10-04T00:00:00"),
     } == matches_dict(event)
 
 

@@ -2,7 +2,7 @@ from datetime import datetime
 import scrapy
 from scrape.items import EventItem
 from scrape.pipelines import SuggestionPipeline
-from scrape.helpers import Parser
+from scrape.Parser import Parser
 
 
 class EventBase(Parser):
@@ -24,11 +24,11 @@ class EventBase(Parser):
     def time_now(self):
         return datetime.now()
 
-    def base_css(self):
-        return self.response
+    def time_midnight(self):
+        return datetime.min.time()
 
     def css(self, *args, **kwargs):
-        return self.base_css().css(*args, **kwargs)
+        return self.base_css.css(*args, **kwargs)
 
 
 class EventSpiderBase(scrapy.Spider):

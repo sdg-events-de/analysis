@@ -16,6 +16,7 @@ class DgvnEvent(EventBase):
         "status_note",
     ]
 
+    @property
     def base_css(self):
         return self.response.css("div.tx-event")
 
@@ -100,10 +101,16 @@ class DgvnEvent(EventBase):
 
     @property
     def start_time(self):
+        if not self.time:
+            return self.time_midnight()
+
         return self.strptime(self.time.split(" - ")[0], "%H:%Mh").time()
 
     @property
     def end_time(self):
+        if not self.time:
+            return self.time_midnight()
+
         return self.strptime(self.time.split(" - ")[-1], "%H:%Mh").time()
 
     @property
@@ -113,7 +120,7 @@ class DgvnEvent(EventBase):
     @property
     def mentions_sdgs(self):
         if matches_sdgs(self.description):
-                return True
+            return True
 
         return False
 
