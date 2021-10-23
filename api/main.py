@@ -2,8 +2,8 @@ from typing import Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from models import Event
-from sqlalchemy.orm import joinedload, contains_eager
+from models import Event, EventSuggestion
+from sqlalchemy.orm import contains_eager
 
 api = FastAPI()
 
@@ -55,8 +55,27 @@ def events():
 
 @api.get("/events/review", response_model=list[EventResponse])
 def events_to_review():
+    print(
+        Event.query.join(Event.suggestion)
+        .options(contains_eager(Event.suggestion))
+        .filter(Event.needs_review)
+        .filter(
+            (Event.status == "published")
+            | ((Event.status == "draft") & (EventSuggestion.status == "published"))
+        )
+        .order_by("id")
+    )
+
     return (
-        Event.with_joined("suggestion").filter(Event.needs_review).order_by("id").all()
+        Event.query.join(Event.suggestion)
+        .options(contains_eager(Event.suggestion))
+        .filter(Event.needs_review)
+        .filter(
+            (Event.status == "published")
+            | ((Event.status == "draft") & (EventSuggestion.status == "published"))
+        )
+        .order_by("id")
+        .all()
     )
 
 

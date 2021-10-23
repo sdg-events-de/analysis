@@ -40,6 +40,27 @@ class TestEventsReview:
             "needs_review": True,
         } == matches_dict(response.json()[0])
 
+    def test_it_does_not_include_deleted_events(self):
+        Event.create(url="example.com", status="deleted").suggest(title="abc")
+        Event.create(url="example.com", status="deleted").suggest(status="published")
+        response = client.get("/events/review")
+        assert response.status_code == 200
+        assert len(response.json()) == 0
+
+    def test_it_only_includes_drafted_events_when_publication_is_suggested(self):
+        Event.create(url="testA", status="draft").suggest(title="new title")
+        Event.create(url="testB", status="draft").suggest(status="published")
+
+        response = client.get("/events/review")
+        assert response.status_code == 200
+        assert len(response.json()) == 1
+        assert {
+            "url": "testB",
+            "display_title": None,
+            "status": "draft",
+            "needs_review": True,
+        } == matches_dict(response.json()[0])
+
 
 class TestEventRead:
     def test_it_can_read_one_event(self):
