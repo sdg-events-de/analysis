@@ -1,7 +1,34 @@
+from datetime import datetime
 import scrapy
 from scrape.items import EventItem
 from scrape.pipelines import SuggestionPipeline
-from scrape.helpers.Parser import Parser
+from scrape.helpers import Parser
+
+
+class EventBase(Parser):
+    ATTRIBUTES = []
+
+    @property
+    def url(self):
+        return self.response.url
+
+    def __iter__(self):
+        return iter({key: getattr(self, key) for key in self.ATTRIBUTES}.items())
+
+    def strptime(self, *args, **kwargs):
+        return datetime.strptime(*args, **kwargs)
+
+    def combine_date_and_time(self, *args, **kwargs):
+        return datetime.combine(*args, **kwargs)
+
+    def time_now(self):
+        return datetime.now()
+
+    def base_css(self):
+        return self.response
+
+    def css(self, *args, **kwargs):
+        return self.base_css().css(*args, **kwargs)
 
 
 class EventSpiderBase(scrapy.Spider):
@@ -10,34 +37,7 @@ class EventSpiderBase(scrapy.Spider):
             SuggestionPipeline: 100,
         }
     }
-
-    EVENT_TAG = None
-    TITLE_TAG = None
-    SUMMARY_TAG = None
-    DESCRIPTION_TAG = None
-
-    def extract_title(self, event):
-        if self.TITLE_TAG is None:
-            return None
-        return event.extract_text(self.TITLE_TAG)
-
-    def extract_summary(self, event):
-        if self.SUMMARY_TAG is None:
-            return None
-        return event.extract_text(self.SUMMARY_TAG)
-
-    def extract_description(self, event):
-        if self.DESCRIPTION_TAG is None:
-            return None
-        return event.extract_text(self.DESCRIPTION_TAG)
+    EventClass = EventBase
 
     def parse(self, response):
-        event = Parser(response.css(self.EVENT_TAG), response)
-
-        yield EventItem(
-            url=response.url,
-            title=self.extract_title(event),
-            # "date": extract_text_from(event, self.event_date_tag),
-            summary=self.extract_summary(event),
-            description=self.extract_description(event),
-        )
+        yield EventItem(**dict(self.EventClass(response)))

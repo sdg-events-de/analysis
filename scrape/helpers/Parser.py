@@ -1,7 +1,8 @@
+import re
+
 # Helper class for parsing a HTML/CSS object
 class Parser:
-    def __init__(self, css_object, response):
-        self.css_object = css_object
+    def __init__(self, response):
         self.response = response
 
     # Appends default_selector (such as ' *::text') to the query, unless
@@ -25,6 +26,10 @@ class Parser:
     def extract_text(self, tag):
         return self.join_texts((self.extract_text_list(tag)))
 
+    # Collapse whitespace characters into a single whitespace
+    def squish_whitespace(self, text):
+        return re.sub(r"\s+", " ", text).strip()
+
     def extract_text_list(self, tag):
         full_selector = self.format_selector(tag, " *::text")
         return map(lambda x: x.strip(), self.css(full_selector).getall())
@@ -36,4 +41,4 @@ class Parser:
         return self.response.urljoin(url)
 
     def css(self, *args, **kwargs):
-        return self.css_object.css(*args, **kwargs)
+        return self.response.css(*args, **kwargs)

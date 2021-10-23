@@ -1,4 +1,5 @@
 from fastapi.testclient import TestClient
+from tests.helpers import matches_dict
 from api import api
 from models import Event
 
@@ -16,13 +17,13 @@ class TestEventsIndex:
             "display_title": "event A",
             "status": "draft",
             "needs_review": False,
-        }.items() <= response.json()[0].items()
+        } == matches_dict(response.json()[0])
         assert {
             "url": "testB",
             "display_title": "suggested title",
             "status": "published",
             "needs_review": True,
-        }.items() <= response.json()[1].items()
+        } == matches_dict(response.json()[1])
 
 
 class TestEventsReview:
@@ -37,7 +38,7 @@ class TestEventsReview:
             "display_title": "suggested title",
             "status": "published",
             "needs_review": True,
-        }.items() <= response.json()[0].items()
+        } == matches_dict(response.json()[0])
 
 
 class TestEventRead:
@@ -45,7 +46,7 @@ class TestEventRead:
         event = Event.create(url="example.com", status="draft")
         response = client.get(f"/events/{event.id}")
         assert response.status_code == 200
-        assert {"url": "example.com"}.items() <= response.json().items()
+        assert {"url": "example.com"} == matches_dict(response.json())
 
     def test_it_responds_with_404_if_not_found(self):
         response = client.get("/events/1")
