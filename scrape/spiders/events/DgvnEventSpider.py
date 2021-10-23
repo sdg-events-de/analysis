@@ -1,5 +1,5 @@
 from .EventSpiderBase import EventSpiderBase, EventBase
-from scrape.helpers import SDG_KEYWORD_PATTERNS
+from helpers import matches_sdgs
 
 
 class DgvnEvent(EventBase):
@@ -112,8 +112,7 @@ class DgvnEvent(EventBase):
 
     @property
     def mentions_sdgs(self):
-        for pattern in SDG_KEYWORD_PATTERNS:
-            if pattern.search(self.description):
+        if matches_sdgs(self.description):
                 return True
 
         return False
