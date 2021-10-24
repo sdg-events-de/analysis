@@ -45,7 +45,10 @@ def test_it_does_not_create_new_suggestion_when_equal_to_current_suggestion():
     assert suggestion_id != None
 
     # Does not create a new identical suggestion
-    event.suggest(status="published", title="My title", summary="Lorem ipsum")
+    assert (
+        event.suggest(status="published", title="My title", summary="Lorem ipsum")
+        == False
+    )
     assert len(event.versions) == 2
     assert event.suggestion_id == suggestion_id
 
@@ -62,7 +65,7 @@ def test_it_identifies_attributes_to_review():
 
 def test_it_can_be_reviewed():
     event = Event.create(url="https://google.com", status="draft")
-    event.suggest(status="published", title="My title", summary="Lorem ipsum")
+    assert event.suggest(status="published", title="My title", summary="Lorem ipsum")
     assert event.needs_review == True
 
     event.review(status="published", title="My reviewed title", summary=None)

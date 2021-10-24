@@ -87,6 +87,10 @@ class BaseModel(Base, AllFeaturesMixin, TimestampsMixin):
             )
         )
 
+    def reload(self):
+        self.session.refresh(self)
+        return self
+
     def on_create(self):
         pass
 

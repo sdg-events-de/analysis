@@ -41,23 +41,23 @@ class Event(EventBase, WithSuggestion):
         self.revision = self.suggestion
         super()
 
+    @classmethod
+    def find_by_url(cls, url):
+        return cls.query.filter(cls.url == url).first()
+
     # Create a new event with status draft and action discover.
     # Used by the AI when it finds a new event via one of its pipelines.
     @classmethod
     def discover(cls, url, **kwargs):
-        # If event with this url already exists, do not do anything
-        if cls.query.filter(cls.url == url).first():
-            return
+        if cls.find_by_url(url):
+            return False
 
-        # Create new event
-        event = cls.create(
+        return cls.create(
             url=url,
             status="draft",
             action="discover",
             suggestion=EventSuggestion(url=url, **kwargs),
         )
-
-        return event
 
     @property
     def versioned_attributes(self):
@@ -100,8 +100,11 @@ class Event(EventBase, WithSuggestion):
     def suggest(self, **kwargs):
         new_suggestion = self.suggestion.dup().fill(**kwargs)
 
-        if not new_suggestion.is_identical(self.suggestion):
-            self.update(action="suggest", suggestion=new_suggestion)
+        if new_suggestion.is_identical(self.suggestion):
+            return False
+
+        self.update(action="suggest", suggestion=new_suggestion)
+        return True
 
     def review(self, **kwargs):
         revision = self.suggestion.review(**kwargs)

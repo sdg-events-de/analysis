@@ -1,16 +1,17 @@
-import copy
 from models import Event
+from scrape.scrape_log import scrape_log
 
 
 class DiscoveryPipeline:
     def process_item(self, item, spider):
-        Event.discover(**item)
+        if Event.discover(**item):
+            scrape_log.info(f"Event discovered: {item['url']}")
         return item
 
 
 class SuggestionPipeline:
     def process_item(self, item, spider):
-        suggestion = copy.deepcopy(item)
         event = Event.find(spider.event_id)
-        event.suggest(**suggestion)
+        if event.suggest(**item):
+            scrape_log.info(f"Event #{event.id} updated: {event.url}")
         return item

@@ -23,7 +23,7 @@ def test_it_can_discover_events_only_once():
     assert Event.query.count() == 1
 
     # Subsequent discoveries of the same URL do not create new events
-    Event.discover(url="example.com")
+    assert Event.discover(url="example.com") == False
     assert Event.query.count() == 1
 
 
