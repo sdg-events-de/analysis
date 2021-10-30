@@ -1,2 +1,4 @@
 from .DetailedEventResponse import DetailedEventResponse
 from .EventResponse import EventResponse
+from .LogResponse import LogResponse
+from .LogWithMessagesResponse import LogWithMessagesResponse

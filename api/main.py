@@ -2,7 +2,12 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import contains_eager
 from models import Event, EventSuggestion, Log
-from api.models import EventResponse, DetailedEventResponse
+from api.models import (
+    EventResponse,
+    DetailedEventResponse,
+    LogResponse,
+    LogWithMessagesResponse,
+)
 
 api = FastAPI()
 
@@ -68,3 +73,18 @@ def read_event(id):
         return event
 
     raise HTTPException(status_code=404, detail="Event not found")
+
+
+@api.get("/logs", response_model=list[LogResponse])
+def logs():
+    return Log.query.order_by(Log.id.desc()).all()
+
+
+@api.get("/logs/{id}", response_model=LogWithMessagesResponse)
+def logs(id):
+    log = Log.with_joined("messages").filter(Log.id == id).first()
+
+    if log:
+        return log
+
+    raise HTTPException(status_code=404, detail="Log not found")
