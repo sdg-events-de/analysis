@@ -1,9 +1,8 @@
-from typing import Optional
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from models import Event, EventSuggestion
 from sqlalchemy.orm import contains_eager
+from models import Event, EventSuggestion, Log
+from api.models import EventResponse, DetailedEventResponse
 
 api = FastAPI()
 
@@ -18,29 +17,6 @@ api.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-class EventResponse(BaseModel):
-    id: int
-    url: str
-    host: Optional[str]
-    display_title: Optional[str]
-    status: str
-    needs_review: bool
-
-    class Config:
-        orm_mode = True
-
-
-class DetailedEventResponse(BaseModel):
-    id: int
-    url: str
-    display_title: Optional[str]
-    needs_review: bool
-    attributes_to_review: Optional[list]
-
-    class Config:
-        orm_mode = True
 
 
 @api.get("/")
