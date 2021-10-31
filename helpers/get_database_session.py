@@ -7,7 +7,10 @@ from sqlalchemy.orm import sessionmaker, Session
 # Using context var, we get a database session that is unique to the current
 # thread
 database_session = contextvars.ContextVar("database_session", default=None)
-engine = create_engine(os.environ.get("DATABASE_URL"))
+# pool_pre_ping=True is needed for DigitalOcean's $5 droplet to prevent errors
+# from the DB connection timing out.
+# See: https://stackoverflow.com/a/66515677/6451879
+engine = create_engine(os.environ.get("DATABASE_URL"), pool_pre_ping=True)
 establish_session = sessionmaker(bind=engine, autocommit=True)
 
 
