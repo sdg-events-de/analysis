@@ -17,8 +17,8 @@ class Parser:
         else:
             return query + default_selector
 
-    def join_texts(self, texts):
-        return u"\n".join(texts).strip()
+    def join_texts(self, texts, token=u"\n"):
+        return token.join(texts).strip()
 
     def extract_href(self, tag):
         full_selector = self.format_selector(tag, " *::attr(href)")
@@ -26,7 +26,7 @@ class Parser:
         return self.full_url(url)
 
     def extract_text(self, tag):
-        return self.join_texts((self.extract_text_list(tag)))
+        return self.join_texts(self.extract_text_list(tag))
 
     # Collapse whitespace characters into a single whitespace
     def squish_whitespace(self, text):
@@ -35,6 +35,11 @@ class Parser:
     def extract_text_list(self, tag):
         full_selector = self.format_selector(tag, " *::text")
         return map(lambda x: x.strip(), self.css(full_selector).getall())
+
+    def element_to_text(self, element):
+        return self.join_texts(
+            [text.strip() for text in element.css("*::text").getall()]
+        )
 
     def full_url(self, url):
         if url is None:

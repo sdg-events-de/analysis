@@ -25,8 +25,15 @@ class ListingSpiderBase(scrapy.Spider):
     def events(self, response):
         return []
 
+    def next_page(self, response):
+        return None
+
     def parse(self, response):
         for event_css in self.events(response):
             yield EventItem(
                 **dict(self.EventListingClass(response, base_css=event_css))
             )
+
+        next_page = self.next_page(response)
+        if next_page:
+            yield from response.follow_all(next_page, callback=self.parse)

@@ -1,0 +1,455 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+    method: GET
+    uri: https://skew.engagement-global.de/veranstaltung-detail/6-vernetzungstreffen-club-der-agenda-2030-kommunen.html
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html prefix=\"og: http://ogp.me/ns#\" lang=\"de\">\n<head>\n\n
+        \     <meta charset=\"utf-8\">\n    <title>6. Vernetzungstreffen Club der
+        Agenda 2030 Kommunen - SKEW</title>\n    <base href=\"https://skew.engagement-global.de/\">\n\n
+        \         <meta name=\"robots\" content=\"index,nofollow\">\n      <meta name=\"description\"
+        content=\"Club der Agenda 2030\">\n      <meta name=\"keywords\" content=\"\">\n
+        \     <meta name=\"generator\" content=\"Contao Open Source CMS\">\n      <meta
+        name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n    \n
+        \   <link href=\"/favicon.ico\" type=\"image/vnd.microsoft.icon\" rel=\"icon\"
+        />\n    <link href=\"/favicon.ico\" type=\"image/vnd.microsoft.icon\" rel=\"shortcut
+        icon\" />\n\n  <script type=\"text/javascript\" src=\"assets/eg/cookie-bar/cookiebar-latest.min.js?theme=grey&always=1\"></script>\n
+        \           <link rel=\"stylesheet\" href=\"assets/css/landkarte_kepol.css,landkarte_fachkraefte.css-753e8917.css\">
+        \       <link id=\"maincss\" rel=\"stylesheet\" href=\"assets/eg/css/global.css\"
+        /><meta property=\"og:site_name\" content=\"SKEW [DE]\"/><meta property=\"og:title\"
+        content=\"Veranstaltung Detail\"/><meta property=\"og:description\" content=\"Club
+        der Agenda 2030\"/><script src=\"https://cookies.engagement-global.de/ccm19/public/ccm19.js?apiKey=7ec8993ccce746a8da6220800b0595a3abe8d6c11385d131&amp;domain=90645ff\"
+        referrerpolicy=\"origin\"></script>\n<!--<link id=\"maincss\" rel=\"stylesheet\"
+        href=\"assets/eg/css/global.css\" />-->\n\n          <!--[if lt IE 9]><script
+        src=\"assets/html5shiv//html5shiv-printshiv.min.js\"></script><![endif]-->\n
+        \     \n</head>\n<body id=\"top\" class=\"unknown other  development program
+        skew content lang-de\">\n\n  <div id=\"skiplinks\">\n    <!--skiplinks-->\n
+        \   <a class=\"skip\" title=\"skip link\" href=\"veranstaltung-detail.html#target_nav\">Zur
+        Hauptnavigation springen</a><span class=\"hideme\">.</span>\n    <a class=\"skip\"
+        title=\"skip link\" href=\"veranstaltung-detail.html#target_content\">Zum
+        Seiteninhalt springen</a><span class=\"hideme\">.</span>\n  </div>\n\n      \n
+        \   <div class=\"wrapper\">\n\n            <header class=\"topheader\">\n
+        \       <div class=\"topheader__inside\">\n          \n<div class=\"funcnavigation\">\n\t<ul>\n\t\t<li
+        class=\"ico-contrast\"><a id=\"contrast_toggle\" href=\"javascript:;\">Kontrast</a></li>\n\t\t<li
+        class=\"ico-lang langnav\">\n\t\t\t<a id=\"lang_toggle\" href=\"javascript:;\">Sprachen</a>\n\t\t\t<div
+        class=\"level2_container\">\n\t\t\t\t<div class=\"level2_container__inside\">\n\t\t\t\t\t<ul>\n\t\t\t\t\t\t<li
+        class=\"active\">\n\t\t\t\t\t\t\t<a href=\"skew-de.html\">Deutsch</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li
+        class=\"\" ><a href=\"home.html\">English</a></li>\n\t\t\t\t\t\t<li class=\"active\">\n\t\t\t\t\t\t\t<a
+        href=\"accueil.html\">Fran\xE7ais</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li
+        class=\"active\">\n\t\t\t\t\t\t\t<a href=\"inicio.html\">Espa\xF1ol</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li
+        class=\"active\">\n\t\t\t\t\t\t\t<a href=\"pagina-inicial.html\">Portugu\xEAs</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t\t<li
+        class=\"active\">\n\t\t\t\t\t\t\t<a href=\"golovna.html\">\u0443\u043A\u0440\u0430\u0457\u043D\u0441\u044C\u043A\u0430</a>\n\t\t\t\t\t\t</li>\n\t\t\t\t\t</ul>\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t</li>\n\t</ul>\n</div>\n<div
+        class=\"logo\">\n\t<a href=\"http://www.engagement-global.de\" title=\"zur
+        Startseite Engagement Global\"><img src=\"files/framework/img/logo_eg.png\"
+        alt=\"Logo Engagement Global\" /></a>\n</div>\n<div class=\"infophone hide-inter-down\">\n\t<a
+        id=\"infotel-1\" href=tel:+498001887188 target=\"_blank\">Infotelefon: 0800
+        188 7 188</a>\n</div>        </div>\n      </header>\n      \n                        <header
+        class=\"header\">\n            <!--<div class=\"header__inside\">-->\n              <!--
+        indexer::stop -->\n  <h6 class=\"hideme\">Hauptnavigation</h6>\n\n<nav class=\"mod_navigation
+        mainnavigation program with-search block\" id=\"target_nav\">\n\n<div class=\"nav__inside\">\n
+        \ \n<a href=\"veranstaltung-detail/6-vernetzungstreffen-club-der-agenda-2030-kommunen.html#skipNavigation49\"
+        class=\"skipinvisible\">Navigation \xFCberspringen</a>\n<ul class=\"level_1\"
+        >\n    <li><a href=\"http://www.engagement-global.de\" title=\"zur Startseite
+        Engagement Global\"><img src=\"files/framework/img/logo_eg_small.png\" alt=\"Logo
+        Engagement Global\" /></a></li>\n    \n  \n                <li style=\"\"
+        class=\"first   with-focus \"><a href=\"./\" title=\"SKEW Start\" class=\"first\"
+        >SKEW Start</a></li>\n      \n    \n  \n  \n                <li style=\"\"
+        class=\"submenu   with-focus \"><a href=\"themen.html\" title=\"Themen\" class=\"submenu\"
+        \ aria-haspopup=\"true\">Themen</a><div class=\"level2_container\"><div class=\"level2_container__inside\"><div
+        class=\"selflink\"><a href=\"themen.html\" title=\"Themen\" class=\"submenu\"
+        \   aria-haspopup=\"true\">Themen</a></div><ul class=\"level_2\" >\n    \n
+        \ \n        <!--<div class=\"row foundation col-50x50\">-->\n      <!--<div
+        class=\"columns small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Themen/HdFH_Preisverleihung_2021_112_125_800_c_Steffen_Oliver_Riese.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"fairer-handel-und-faire-beschaffung.html\"
+        title=\"Fairer Handel und Faire Beschaffung\" class=\"first with-image\" >Fairer
+        Handel und Faire Beschaffung</a><p>Kommunales Engagement f\xFCr faire Produktions-
+        und Handelsbedingungen weltweit.</p></li>\n      \n    \n  \n  \n            <!--</div><div
+        class=\"columns small-6\">-->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Themen/Global_nachhaltige_Kommune.jpg')\"
+        class=\" with-image liright   \"><a href=\"global-nachhaltige-kommune.html\"
+        title=\"Global Nachhaltige Kommune\" class=\" with-image\" >Global Nachhaltige
+        Kommune</a><p>Die Agenda 2030 mit ihren 17 Nachhaltigkeitszielen auf kommunaler
+        Ebene umsetzen.</p></li>\n          <!--</div></div>-->\n  \n    \n  \n  \n
+        \       <!--<div class=\"row foundation col-50x50\">-->\n      <!--<div class=\"columns
+        small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Themen/KommunalePartnerschaften_c_Andreas-Grasser.jpg')\"
+        class=\" with-image lileft   \"><a href=\"kommunale-partnerschaften-und-internationale-kommunalbeziehungen.html\"
+        title=\"Kommunale Partnerschaften\" class=\" with-image\" >Kommunale Partnerschaften</a><p>Durch
+        internationale Kommunalbeziehungen globale Herausforderungen gemeinsam angehen.</p></li>\n
+        \     \n    \n  \n  \n            <!--</div><div class=\"columns small-6\">-->\n
+        \           <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Themen/MigrationundEntwicklung_c_Andreas-Grasser.jpg')\"
+        class=\" with-image liright   \"><a href=\"migration-und-entwicklung.html\"
+        title=\"Migration und Entwicklung\" class=\" with-image\" >Migration und Entwicklung</a><p>Interkulturelle
+        Zusammenarbeit von Kommunen und migrantischen Organisationen.</p></li>\n          <!--</div></div>-->\n
+        \ \n    \n  \n  \n        <!--<div class=\"row foundation col-50x50\">-->\n
+        \     <!--<div class=\"columns small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Themen/Navilayer_KommuneEntwicklungspolitik_c_MartinMagunia.jpg')\"
+        class=\"last with-image lileft   \"><a href=\"kommunale-entwicklungspolitik-einfuehrung.html\"
+        title=\"Kommunale Entwicklungspolitik\" class=\"last with-image\" >Einf\xFChrung
+        und Grundlagen</a><p>Geschichte, internationaler Rahmen und Beschl\xFCsse
+        Kommunaler Entwicklungspolitik.</p></li>\n      \n    \n  </ul>\n</div></div></li>\n
+        \     \n    \n  \n  \n                <li style=\"\" class=\"submenu   with-focus
+        \"><a href=\"unsere-angebote.html\" title=\"Unsere Angebote\" class=\"submenu\"
+        \ aria-haspopup=\"true\">Unsere Angebote</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"unsere-angebote.html\"
+        title=\"Unsere Angebote\" class=\"submenu\"    aria-haspopup=\"true\">Unsere
+        Angebote</a></div><ul class=\"level_2\" >\n    \n  \n        <!--<div class=\"row
+        foundation col-50x50\">-->\n      <!--<div class=\"columns small-6\">-->\n
+        \             <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Unsere_Angebote/12671770225_4da8d8caef_o_c_Thomas-Ecke_layer.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"beratung.html\" title=\"Beratung\"
+        class=\"first with-image\" >Beratung</a><p>Der Einstieg in Ihr entwicklungspolitisches
+        Engagement.</p></li>\n      \n    \n  \n  \n            <!--</div><div class=\"columns
+        small-6\">-->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Unsere_Angebote/10687416803_50f33677b3_o_c_UN-habitat-archiv_layer.jpg')\"
+        class=\" with-image liright   \"><a href=\"vernetzung.html\" title=\"Vernetzung\"
+        class=\" with-image\" >Vernetzung</a><p>Dialog, Austausch und Begegnung stehen
+        im Zentrum unserer Arbeit.</p></li>\n          <!--</div></div>-->\n  \n    \n
+        \ \n  \n        <!--<div class=\"row foundation col-50x50\">-->\n      <!--<div
+        class=\"columns small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Unsere_Angebote/Finanzielle_Unterstuetzung_c_panthermedia.net_spukkato_klein3.jpg')\"
+        class=\" with-image lileft   \"><a href=\"finanzielle-unterstuetzung.html\"
+        title=\"Finanzielle Unterst\xFCtzung\" class=\" with-image\" >Finanzielle
+        Unterst\xFCtzung</a><p>Wir f\xF6rdern Ihre Ideen und Projekte der kommunalen
+        Entwicklungspolitik.</p></li>\n      \n    \n  \n  \n            <!--</div><div
+        class=\"columns small-6\">-->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Unsere_Angebote/Personelle_Unterstuetzung.jpg')\"
+        class=\" with-image liright   \"><a href=\"personelle-unterstuetzung.html\"
+        title=\"Personelle Unterst\xFCtzung\" class=\" with-image\" >Personelle Unterst\xFCtzung</a><p>Wir
+        vermitteln und f\xF6rdern Fachkr\xE4fte f\xFCr Ihre entwicklungspolitische
+        Arbeit.</p></li>\n          <!--</div></div>-->\n  \n    \n  \n  \n        <!--<div
+        class=\"row foundation col-50x50\">-->\n      <!--<div class=\"columns small-6\">-->\n
+        \             <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Unsere_Angebote/Wettbewerbe_c_Andreas-Grasser.jpg')\"
+        class=\"last with-image lileft   \"><a href=\"wettbewerbe.html\" title=\"Wettbewerbe\"
+        class=\"last with-image\" >Wettbewerbe</a><p>Wir geben Ihren entwicklungspolitischen
+        Projekten eine B\xFChne.</p></li>\n      \n    \n  </ul>\n</div></div></li>\n
+        \     \n    \n  \n  \n                <li style=\"\" class=\"submenu trail
+        \  with-focus \"><a href=\"termine.html\" title=\"Termine\" class=\"submenu
+        trail\"  aria-haspopup=\"true\">Termine</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"termine.html\"
+        title=\"Termine\" class=\"submenu trail\"    aria-haspopup=\"true\">Termine</a></div><ul
+        class=\"level_2\" >\n    \n  \n        <!--<div class=\"row foundation col-50x50\">-->\n
+        \     <!--<div class=\"columns small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Termine/Navigationslayer/Headerbild-Veranstaltungen_c_Andreas-Grasser_layer.jpg')\"
+        class=\"trail first with-image lileft   \"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" class=\"trail first with-image\" >Veranstaltungen</a><p>Unser
+        Terminkalender f\xFCr Fortbildungen, Workshops, Seminare und Konferenzen.</p></li>\n
+        \     \n    \n  \n  \n            <!--</div><div class=\"columns small-6\">-->\n
+        \           <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Termine/Navigationslayer/Bildgroesse_Navigationslayer_layer.jpg')\"
+        class=\"last with-image liright   \"><a href=\"wettbewerbstipps.html\" title=\"Wettbewerbstipps\"
+        class=\"last with-image\" >Wettbewerbstipps</a><p>Aktuelle Wettbewerbe f\xFCr
+        engagierte Kommunen und Initiativen.</p></li>\n          <!--</div></div>-->\n
+        \ \n    \n  </ul>\n</div></div></li>\n      \n    \n  \n  \n                <li
+        style=\"\" class=\"submenu   with-focus \"><a href=\"mediathek.html\" title=\"Mediathek\"
+        class=\"submenu\"  aria-haspopup=\"true\">Mediathek</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"mediathek.html\"
+        title=\"Mediathek\" class=\"submenu\"    aria-haspopup=\"true\">Mediathek</a></div><ul
+        class=\"level_2\" >\n    \n  \n        <!--<div class=\"row foundation col-50x50\">-->\n
+        \     <!--<div class=\"columns small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Unsere_Angebote/Aktuelles_Archiv.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"aktuelles.html\" title=\"Aktuelle
+        Nachrichten\" class=\"first with-image\" >Aktuelles</a><p>Mitteilungen und
+        Neuigkeiten aus der Servicestelle und der kommunalen Einen Welt.</p></li>\n
+        \     \n    \n  \n  \n            <!--</div><div class=\"columns small-6\">-->\n
+        \           <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Service/Thumbnail_ImFokus_c_ClemensGalonska.jpg')\"
+        class=\" with-image liright   \"><a href=\"im-fokus.html\" title=\"Im Fokus\"
+        class=\" with-image\" >Im Fokus</a><p>Fachbeitr\xE4ge und Erfolgsgeschichten
+        aus dem kommunal entwicklungspolitischen Umfeld.</p></li>\n          <!--</div></div>-->\n
+        \ \n    \n  \n  \n        <!--<div class=\"row foundation col-50x50\">-->\n
+        \     <!--<div class=\"columns small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Service/Layerbilder_Publikationen.jpg')\"
+        class=\" with-image lileft   \"><a href=\"publikationen.html\" title=\"Publikationen\"
+        class=\" with-image\" >Publikationen</a><p>Unsere Infomaterialien, Studien
+        und Schriftenreihen als Download oder zum Bestellen.</p></li>\n      \n    \n
+        \ \n  \n            <!--</div><div class=\"columns small-6\">-->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Service/VideoVideo_fotolia_kuzmafoto.jpg')\"
+        class=\" with-image liright   \"><a href=\"videos.html\" title=\"Videos\"
+        class=\" with-image\" >Videos</a><p>Erkl\xE4rfilme, Projektdokumentationen
+        und gute Praxisbeispiele in Bild und Ton.</p></li>\n          <!--</div></div>-->\n
+        \ \n    \n  \n  \n        <!--<div class=\"row foundation col-50x50\">-->\n
+        \     <!--<div class=\"columns small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Service/Navigationslayer/Fotolia_76118100_S_News_c_fotolia-photocrew_layer.jpg')\"
+        class=\"last with-image lileft   \"><a href=\"newsletter.html\" title=\"Newsletter\"
+        class=\"last with-image\" >Newsletter</a><p>Bleiben Sie auf dem Laufenden
+        mit einem Abonnement unserer Eine-Welt-Nachrichten.</p></li>\n      \n    \n
+        \ </ul>\n</div></div></li>\n      \n    \n  \n  \n                <li style=\"\"
+        class=\"submenu   with-focus \"><a href=\"ueber-uns.html\" title=\"\xDCber
+        uns\" class=\"submenu\"  aria-haspopup=\"true\">\xDCber uns</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"ueber-uns.html\"
+        title=\"\xDCber uns\" class=\"submenu\"    aria-haspopup=\"true\">\xDCber
+        uns</a></div><ul class=\"level_2\" >\n    \n  \n        <!--<div class=\"row
+        foundation col-50x50\">-->\n      <!--<div class=\"columns small-6\">-->\n
+        \             <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Ueber_uns/Servicestelle2_Andreas_Grasser.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"ueber-uns-die-servicestelle.html\"
+        title=\"\xDCber die Servicestelle\" class=\"first with-image\" >Die Servicestelle</a><p>Ihre
+        Partnerin zu allen Fragen der Kommunaler Entwicklungspolitik.</p></li>\n      \n
+        \   \n  \n  \n            <!--</div><div class=\"columns small-6\">-->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Service/Navigationslayer/26037778282_be3d18b9f4_o_c_Barbara-Frommann_layer.jpg')\"
+        class=\" with-image liright   \"><a href=\"ueber-uns-die-servicestelle-unsere-geschichte.html\"
+        title=\"Geschichte der SKEW\" class=\" with-image\" >Unsere Geschichte</a><p>Wir
+        unterst\xFCtzen Ihr entwicklungspolitisches Engagement!</p></li>\n          <!--</div></div>-->\n
+        \ \n    \n  \n  \n        <!--<div class=\"row foundation col-50x50\">-->\n
+        \     <!--<div class=\"columns small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Ueber_uns/Team.jpg')\"
+        class=\" with-image lileft   \"><a href=\"das-team.html\" title=\"Das Team
+        der SKEW\" class=\" with-image\" >Das Team</a><p>Wir beraten und unterst\xFCtzen
+        Sie mit Know-how und langj\xE4hriger Erfahrung.</p></li>\n      \n    \n  \n
+        \ \n            <!--</div><div class=\"columns small-6\">-->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Ueber_uns/Beirat.jpg')\"
+        class=\" with-image liright   \"><a href=\"beirat-und-kommission.html\" title=\"Beirat
+        und Kommssion\" class=\" with-image\" >Beirat und Kommission</a><p>Unsere
+        Gremien f\xFCr Strategie- und Programmentwicklung.</p></li>\n          <!--</div></div>-->\n
+        \ \n    \n  \n  \n        <!--<div class=\"row foundation col-50x50\">-->\n
+        \     <!--<div class=\"columns small-6\">-->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Bilder_Navigationslayer/Ueber_uns/Kontakt_kontakt_c_istock-Belinda-Pretorius.jpg')\"
+        class=\"last with-image lileft   \"><a href=\"kontakt.html\" title=\"Kontakt\"
+        class=\"last with-image\" >Kontakt</a><p>Sie haben weitere Fragen oder m\xF6chten
+        beraten werden? Bitte nehmen Sie Kontakt mit uns auf!</p></li>\n      \n    \n
+        \ </ul>\n</div></div></li>\n      \n    \n  \n  \n                <li style=\"\"
+        class=\"last nav-search   with-focus \"><a href=\"suche.html\" title=\"Suche\"
+        class=\"last nav-search\" rel=\"nofollow\" ><span class=\"icon-magnifier\"></span></a></li>\n
+        \     \n    \n  </ul>\n<a id=\"skipNavigation49\" class=\"invisible\">&nbsp;</a>\n\n</div>\n</nav>\n\n\n<div
+        class=\"mainnav_placeholder\"></div>\n\n<!-- indexer::continue -->\n\n<!--
+        indexer::stop -->\n<div class=\"mod_search ce_form block\">\n\n        \n
+        \ \n<div class=\"mod_search_inside\">\n\n    <div class=\"mod_searchform_container\">\n\n
+        \       <form action=\"suche.html\" method=\"get\">\n            <div class=\"formbody\">\n
+        \                                   <input type=\"hidden\" name=\"id\" value=\"333\">\n
+        \                               <label for=\"ctrl_keywords_333\" class=\"invisible\">Suchbegriffe</label>\n
+        \               <input placeholder=\"Suchbegriff\" type=\"search\" name=\"keywords\"
+        id=\"ctrl_keywords_333\" class=\"text\" value=\"\">\n                <!--<input
+        type=\"submit\" id=\"ctrl_submit_333\" class=\"submit\" value=\"Suchen\">-->\n
+        \               <button id=\"ctrl_submit_333\"><span class=\"icon-magnifier\"></span></button>\n
+        \           </div>\n        </form>\n\n    </div>\n\n</div>\n\n<div id=\"acconthead\"
+        class=\"acconthead\"></div>\n\n\n</div>\n<!-- indexer::continue -->\n<!--
+        indexer::stop -->\n\n<nav class=\"mod_navigation mobilenavigation block\"
+        id=\"target_mobilenav\">\n\n  <div class=\"mobilenav__inside\">\n    <div
+        class=\"mobilenav__togglecontainer\">\n      <a class=\"toggle-mobile\" href=\"javascript:;\">\n
+        \       <span class=\"burger-box burger-menu\">\n\t\t  \t  <span class=\"inside\">\n
+        \           <span class=\"elem-1\"></span>\n            <span class=\"elem-2\"></span>\n
+        \           <span class=\"elem-3\"></span>\n            <span class=\"elem-4\"></span>\n\t\t
+        \ \t  </span>\n\t\t  \t</span>\n      </a>\n    </div>\n    <div class=\"mobilenav__title\">\n
+        \     SKEW    </div>\n    <div class=\"mobilenav__searchcontainer\">\n              <a
+        href=\"suche.html\"><div class=\"icon-magnifier\"></div><span class=\"hideme\">Suche</span></a>\n
+        \         </div>\n  </div>\n\n  <div class=\"mobilenav_layer\">\n  \n  <a
+        href=\"veranstaltung-detail/6-vernetzungstreffen-club-der-agenda-2030-kommunen.html#skipNavigation197\"
+        class=\"skipinvisible\">Navigation \xFCberspringen</a>\n\n  \n<ul class=\"level_1\"
+        >\n            <li class=\"first\"><a href=\"./\" title=\"SKEW Start\" class=\"first\"
+        >SKEW Start</a></li>\n                <li><a href=\"themen.html\" title=\"Themen\"
+        >Themen</a></li>\n                <li><a href=\"unsere-angebote.html\" title=\"Unsere
+        Angebote\" >Unsere Angebote</a></li>\n                <li class=\"submenu
+        trail\"><a href=\"termine.html\" title=\"Termine\" class=\"submenu trail\"
+        \ aria-haspopup=\"true\">Termine</a>\n<ul class=\"level_2\" >\n            <li
+        class=\"trail first\"><a href=\"veranstaltungen.html\" title=\"Veranstaltungen\"
+        class=\"trail first\" >Veranstaltungen</a></li>\n                <li class=\"last\"><a
+        href=\"wettbewerbstipps.html\" title=\"Wettbewerbstipps\" class=\"last\" >Wettbewerbstipps</a></li>\n
+        \     </ul>\n</li>\n                <li><a href=\"mediathek.html\" title=\"Mediathek\"
+        >Mediathek</a></li>\n                <li><a href=\"ueber-uns.html\" title=\"\xDCber
+        uns\" >\xDCber uns</a></li>\n                <li class=\"last\"><a href=\"suche.html\"
+        title=\"Suche\" class=\"last\" rel=\"nofollow\" >Suche</a></li>\n      </ul>\n\n
+        \ <a id=\"skipNavigation197\" class=\"invisible\">&nbsp;</a>\n\n  </div>\n\n</nav>\n<div
+        class=\"mobilenav_placeholder\"></div>\n\n\n\n\n\n<!-- indexer::continue -->\n<!--
+        indexer::stop -->\n<div class=\"mod_dz_headerimage_logo mod_dzheaderimage
+        block\">\n\n  <div class=\"dz_headerimage__inside\">\n\n    <div class=\"dz_headerimage__large\"
+        style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Header/Ebene_2/Termine/Veranstaltungen_c_Andreas-Grasser_Desktop.jpg')\"></div>\n
+        \   <div class=\"dz_headerimage__medium\" style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Header/Ebene_2/Termine/Veranstaltungen_c_Andreas-Grasser_Tablet.jpg')\"></div>\n
+        \   <div class=\"dz_headerimage__small\" style=\"background-image:url('files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Header/Ebene_2/Termine/Veranstaltungen_c_Andreas-Grasser_Mobile.jpg')\"></div>\n\n\n
+        \   <div class=\"dz_headerimage__teasercontainer\">\n\n      <div class=\"dz_headerimage__teaser\">\n
+        \       <div class=\"dz_headerimage__teasercontent\">\n          <div class=\"dz_headerimage__logo\">\n
+        \           <img src=\"files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Logos_Sprachen/SKEW_Desktop.png\"
+        alt=\"Logo von SKEW\" class=\"logo-desktop\" />\n            <img src=\"files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Logos_Sprachen/SKEW_Mobile.png\"
+        alt=\"Logo von SKEW\" class=\"logo-mobile\" />\n          </div>\n                  </div>\n
+        \     </div>\n\n    </div>\n\n  </div>\n\n</div>\n<!-- indexer::continue -->\n<!--
+        indexer::stop -->\n<nav class=\"mod_dzbreadcrumb breadcrumbnavigation block\"
+        id=\"target_breadcrumb\">\n\n<a href=\"#skipNavigation19\" class=\"invisible\"></a>\n<a
+        id=\"srct\"></a>\n<div class=\"breadcrumb__inside\">\n  <div class=\"breadcrumb__mask\"></div>\n
+        \ <ul class=\"level_breadcrumb\" role=\"menubar\">\n                                   <li
+        style=\"z-index: 99\" class=\"with-focus    has-subitems\"><a href=\"termine.html\"
+        title=\"Termine\" role=\"menuitem\">Termine</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"termine.html\"
+        title=\"Termine\" class=\"\"    role=\"menuitem\" aria-haspopup=\"true\">Termine</a></div>\n<ul
+        class=\"level_1\" >\n            <li class=\"trail first\"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" class=\"trail first\" >Veranstaltungen</a></li>\n
+        \               <li class=\"last\"><a href=\"wettbewerbstipps.html\" title=\"Wettbewerbstipps\"
+        class=\"last\" >Wettbewerbstipps</a></li>\n      </ul>\n</div></div></li>\n
+        \     \n                                   <li style=\"z-index: 98\" class=\"with-focus
+        \   \"><a href=\"veranstaltungen.html\" title=\"Veranstaltungen\" role=\"menuitem\">Veranstaltungen</a></li>\n
+        \     \n                                   <li style=\"z-index: 97\" class=\"with-focus
+        bc-last active  \"><a href=\"javascript:;\" title=\"Veranstaltung Detail\"
+        role=\"menuitem\">Veranstaltung Detail</a></li>\n      \n      </ul>\n</div>\n<a
+        id=\"skipNavigation19\" class=\"invisible\">&nbsp;</a>\n\n\n</nav>\n<!-- indexer::continue
+        -->            <!--</div>-->\n          </header>\n              \n      \n
+        \             <div class=\"container\">\n          <div class=\"container__inside
+        row\">\n\n                      <div class=\"main columns large-8\">\n              <div
+        id=\"target_content\" class=\"main__inside\">\n                \n<div class=\"mod_article
+        first last block\" id=\"article-2942\">\n  \n  \n<div class=\"mod_eventreader
+        block\">\n\n        \n  \n  \n<div class=\"event layout_full block upcoming\">\n\n
+        \ <div class=\"ce_table header-table table-event block\">\n    <div class=\"table-inner\">\n\n
+        \       \n      <h1>\n        6. Vernetzungstreffen Club der Agenda 2030 Kommunen<span\n
+        \           class=\"invisible\"> (ausgebucht)</span>      </h1>\n\n\n      <table
+        summary=\"Datum: Donnerstag, 4. November und Freitag, 5. November 2021 Uhrzeit:
+        Donnerstag, 11 bis 20 Uhr und Freitag, 9 bis 15 Uhr Ort: Berlin Absender:
+        SKEW - Servicestelle Kommunen in der Einen Welt Anmeldeschluss: Dienstag,
+        28. September 2021\" id=\"table_83\">\n\n        <!--\n        <caption>\n
+        \         6. Vernetzungstreffen Club der Agenda 2030 Kommunen<span class=\"invisible\">
+        (ausgebucht)</span>        </caption>\n        -->\n\n        <tbody>\n\n
+        \       \n          <tr class=\"row_0 row_first even\">\n            <th class=\"col_0
+        col_first\" scope=\"row\">Datum:</th>\n            <td class=\"col_1 col_last\">Donnerstag,
+        4. November und Freitag, 5. November 2021</td>\n          </tr>\n\n          \n\n
+        \                 <tr class=\"row_1 odd\">\n            <th class=\"col_0
+        col_first\" scope=\"row\">Uhrzeit:</th>\n            <td class=\"col_1 col_last\">Donnerstag,
+        11 bis 20 Uhr und Freitag, 9 bis 15 Uhr</td>\n          </tr>\n          \n\n\n
+        \                 <tr class=\"row_1 odd\">\n            <th class=\"col_0
+        col_first\" scope=\"row\">Ort:</th>\n            <td class=\"col_1 col_last\">Berlin</td>\n
+        \         </tr>\n          \n\n                  <tr class=\"row_1 odd\">\n
+        \           <th class=\"col_0 col_first\" scope=\"row\">Absender:</th>\n            <td
+        class=\"col_1 col_last\">SKEW - Servicestelle Kommunen in der Einen Welt</td>\n
+        \         </tr>\n                    <tr class=\"row_1 odd\">\n            <th
+        class=\"col_0 col_first\" scope=\"row\">Anmeldeschluss:</th>\n            <td
+        class=\"col_1 col_last\">Dienstag, 28. September 2021</td>\n          </tr>\n
+        \         \n        \n\n                  <tr class=\"row_1 odd\">\n            <th
+        class=\"col_0 col_first\" scope=\"row\"><span class=\"invisible\">Status der
+        Veranstaltung:</span>&nbsp;</th>\n            <td class=\"col_1 col_last\"
+        style=\"padding-top:13px;\"><span class=\"event-soldout\">ausgebucht!</span></td>\n
+        \         </tr>\n          \n        \n\n        </tbody>\n      </table>\n\n\n
+        \     \n    </div>\n  </div>\n\n\n  <!--<div class=\"ce_text\">-->\n  \n          \n
+        \ \n  <h2 class=\"standard\">Kommunale globale Nachhaltigkeit - wichtiger
+        als je zuvor</h2><div class=\"ce_text standard wo-teaserlink block\"><div
+        class=\"text_container\"><p>Unter dem Titel \u201EKommunale globale Nachhaltigkeit
+        \u2013 wichtiger als je zuvor!\u201C laden der Deutsche St\xE4dtetag (DST),
+        die Deutsche Sektion des Rates der Gemeinden und Regionen Europas (RGRE) und
+        die Servicestelle Kommunen in der Einen Welt (SKEW) von Engagement Global
+        zum sechsten Fach- und Erfahrungsaustausch zur Umsetzung der Agenda 2030 auf
+        kommunaler Ebene ein.</p><p>Herzlich willkommen sind alle Zeichnungskommunen
+        der Musterresolution \u201E2030-Agenda f\xFCr Nachhaltige Entwicklung: Nachhaltigkeit
+        auf kommunaler Ebene gestalten\u201D.</p></div></div><div class=\"ce_text
+        hint-grey wo-teaserlink block\"><div class=\"text_container\"><h2 class=\"standard\">Ihre
+        Teilnahme</h2><p>Die Teilnahme an der Veranstaltung ist f\xFCr Zeichnungskommunen
+        der Musterresolution kostenfrei. Aus jeder Kommune k\xF6nnen aufgrund der
+        coronabedingten Beschr\xE4nkungen maximal zwei Personen an der Veranstaltung
+        teilnehmen.</p><p>Fahrtkosten k\xF6nnen auf Grundlage des Bundesreisekostengesetzes
+        (2. Klasse Deutsche Bahn, 0,20 Euro pro Kilometer, maximal 650 Kilometer)
+        im Nachgang von Engagement Global erstattet werden.</p><p>Bitte beachten Sie,
+        dass nur eine begrenzte Anzahl von Pl\xE4tzen vorhanden ist und melden Sie
+        sich schnell an.</p></div></div><h2 class=\"standard\">Veranstaltungsort</h2><div
+        class=\"ce_text standard wo-teaserlink block\"><div class=\"text_container\"><p>Berlin</p></div></div>
+        \     <div class=\"ce_text links wo-teaserlink block\">\n\n        <h2>Kontakt</h2>\n
+        \       <div class=\"text_container\">\n\n          <p><strong>Livia Pichorner</strong><br>+49
+        228 20717 2377<br><a href=\"mailto:Livia.Pichorner@engagement-global.de\"
+        target=\"_blank\">Livia.Pichorner@engagement-global.de</a></p>        </div>\n
+        \     </div>\n      \n  <!--</div>-->\n\n    \n  \n  \n\n\n\n    \n</div>\n\n\n\n<div
+        class=\"data-rtr-eventdate\" style=\"display:none;\">04.11.2021</div>\n\n<!--\n<div
+        class=\"floatbox\">\n<div class=\"back-bottom\"><a href=\"javascript:back(-1);\">Zur\xFCck<span
+        class=\"invisible\"> zur vorherigen Seite</span></a></div>\n</div>\n-->\n
+        \ <!-- indexer::stop -->\n  <p class=\"back\"><a href=\"javascript:history.go(-1)\"
+        title=\"Zur\xFCck\">Zur\xFCck</a></p>\n  <!-- indexer::continue -->\n\n  \n\n</div>\n\n
+        \ </div>\n              </div>\n                          </div>\n          \n
+        \                               \n                                    <aside
+        class=\"right columns large-4\">\n                <div class=\"right__inside\">\n
+        \                 \n<h2 class=\"hideme\">Weitere Informationen</h2>\n<div
+        class=\"mod_article first last block\" id=\"article-2985\">\n  \n  \n<div
+        class=\"dz-content-pager\">\n\t<h3>Wettbewerbstipps</h3>\n<div class=\"ce_text
+        rc-standard wo-teaserlink block\">\n\n        \n  \n  \n      \n<figure class=\"image_container
+        float_left\">\n  \n  \n\n<img src=\"files/1_Bilder/Bilder_Microsites/Bilder_SKEW/Termine/5120_c_Andreas-Grasser_vereiler.jpg\"
+        width=\"603\" height=\"368\" alt=\"\" title=\"Foto: Andreas Grasser\" itemprop=\"image\">\n\n\n
+        \ \n  </figure>\n  \n      <div class=\"text_container\"><h4>Machen Sie mit!</h4>\n<p>Unsere
+        aktuellen Wettbewerbstipps bieten kommunalen Akteuren aus Verwaltung, Politik
+        und Zivilgesellschaft einen \xDCberblick \xFCber die regionale und nationale
+        Wettbewerbslandschaft, aus der sie f\xFCr ihr Projekt oder ihre Aktion die
+        geeignete Plattform w\xE4hlen k\xF6nnen.</p>\n<p><a title=\"Wettbewerbstipps\"
+        href=\"wettbewerbstipps.html\">Mehr Informationen</a></p></div>  \n\r\n\r\n\r\n
+        \ \r\n\r\n\r\n\n</div>\n\n</div>\n  </div>\n                </div>\n              </aside>\n
+        \                     \n          </div>\n        </div>\n      \n      \n
+        \     \n                        <footer class=\"footer\">\n            <div
+        class=\"footer__inside\">\n              <h2 class=\"ce_headline with-border
+        social-share\">Seite weiterempfehlen</h2>\n<div class=\"shariff\" data-mail-url=\"mailto:\"
+        data-services=\"[&quot;twitter&quot;,&quot;facebook&quot;,&quot;mail&quot;]\"
+        data-lang=\"de\" data-orientation=\"horizontal\" data-theme=\"standard\" data-backend-url=\"/bundles/contaodzsocialshare/backend/\"></div>\n<div
+        class=\"footerlogos\">\n\t<div class=\"row\">\n\t\t<div class=\"columns medium-8\">\n\t\t\t&nbsp;\n\t\t\t<!--\n\t\t\t<ul
+        class=\"mod_dz_sociallinks_skew\">\n\t\t\t\t<li class=\"sociallink_facebook\">\n\t\t\t\t\t<a
+        href=\"https://www.facebook.com/servicestelle.kommunen.in.der.einen.welt/?fref=ts\"
+        target=\"_blank\">SKEW auf facebook</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"sociallink_youtube\">\n\t\t\t\t\t<a
+        href=\"https://www.youtube.com/user/ServiceEineWelt/featured\" target=\"_blank\">SKEW
+        auf youtube</a>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t\t-->\n\t\t</div>\n\t\t<div
+        class=\"columns medium-4\">\n\t\t\t<div class=\"logobmz\">\n\t\t\t\t<a href=\"http://www.bmz.de/\"
+        target=\"_blank\"><img src=\"files/framework/img/logo_bmz.png\" alt=\"Logo
+        des Bundesministerium f\xFCr wirtschaftliche Zusammenarbeit und Entwicklung\"
+        /></a>\n\t\t\t</div>\n\t\t</div>\n\t</div>\n</div>            </div>\n          </footer>\n
+        \             \n            <footer class=\"navifooter\">\n        <div class=\"navifooter__inside\">\n
+        \         \n<div class=\"navfooter__topmobile\"><a href=\"veranstaltung-detail.html#top\">Seitenanfang</a></div>\n<div
+        class=\"infophone show-inter-down\">\n\t<a href=tel:+498001887188 target=\"_blank\">Infotelefon:
+        0800 188 7 188</a>\n</div><!-- indexer::stop -->\n\n<nav class=\"mod_customnav
+        footernavigation block\">\n\n<div class=\"nav__inside\">\n  \n<div class=\"navfooter__top\">\n
+        \ <a href=\"veranstaltung-detail.html#top\">Seitenanfang</a>\n  <!--<span
+        class=\"print-footer\"> | <a href=\"javascript: window.print();\">Drucken</a></span>-->\n</div>\n<ul
+        class=\"level_1\">\n  <li class=\"navfooter__copyright\">\xA9 2021  Engagement
+        Global</li>\n            <li class=\"first\"><a href=\"impressum.html\" title=\"SKEW
+        Impressum\" class=\"first\" >Impressum</a></li>\n                <li><a href=\"datenschutz.html\"
+        title=\"Datenschutzerkl\xE4rung\" >Datenschutz</a></li>\n                <li><a
+        href=\"https://www.engagement-global.de/barrierefreiheit.html\" title=\"Barrierefreiheit\"
+        >Barrierefreiheit</a></li>\n                <li class=\"last\"><a href=\"kontakt.html\"
+        title=\"Kontakt\" class=\"last\" >Kontakt</a></li>\n      </ul>\n\n</div>\n</nav>\n\n\n\n<!--
+        indexer::continue -->\n        </div>\n      </footer>\n      \n    </div>\n\n
+        \     \n  <script type=\"text/javascript\" src=\"files/eg_theme/js/main.min.js\"></script><script
+        src=\"bundles/contaodzsearchext/autocomplete.js\"></script><script src=\"bundles/contaodzsocialshare/shariff.complete.js\"></script><script
+        type=\"application/ld+json\">{\"@context\":{\"contao\":\"https:\\/\\/schema.contao.org\\/\"},\"@type\":\"contao:Page\",\"contao:title\":\"6.
+        Vernetzungstreffen Club der Agenda 2030 Kommunen\",\"contao:pageId\":1099,\"contao:noSearch\":false,\"contao:protected\":false,\"contao:groups\":[],\"contao:fePreview\":false}</script>\n<script
+        type=\"text/javascript\" src=\"files/eg_theme/js/landkarte.js\"></script>\n\n<!--
+        Matomo -->\n<script type=\"text/javascript\">\n  var _paq = window._paq ||
+        [];\n  /* tracker methods like \"setCustomDimension\" should be called before
+        \"trackPageView\" */\n  _paq.push([\"setDocumentTitle\", document.domain +
+        \"/\" + document.title]);\n  _paq.push([\"setDoNotTrack\", true]);\n  _paq.push(['trackPageView']);\n
+        \ _paq.push(['enableLinkTracking']);\n  (function() {\n    var u=\"//track.engagement-global.de/\";\n
+        \   _paq.push(['setTrackerUrl', u+'matomo.php']);\n    _paq.push(['setSiteId',
+        '2']);\n    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n
+        \   g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js';
+        s.parentNode.insertBefore(g,s);\n  })();\n</script>\n<noscript><p><img src=\"//track.engagement-global.de/matomo.php?idsite=2&amp;rec=1\"
+        style=\"border:0;\" alt=\"\" /></p></noscript>\n<!-- End Matomo Code -->\n\n<!--
+        Google Tag Manager -->\n<noscript><iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-N88JQL\"\n
+        \                 height=\"0\" width=\"0\"\n                  style=\"display:none;visibility:hidden\"></iframe></noscript>\n\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n
+        \   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n
+        \   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n
+        \   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-N88JQL');</script>\n<!--
+        End Google Tag Manager -->\n\n\n</body>\n</html>\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private
+      Connection:
+      - Upgrade, Keep-Alive
+      Contao-Cache:
+      - miss
+      Contao-Private-Response-Reason:
+      - session-cookie
+      Content-Length:
+      - '34324'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 01 Nov 2021 13:27:47 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Permissions-Policy:
+      - interest-cohort=()
+      Referrer-Policy:
+      - no-referrer-when-downgrade, strict-origin-when-cross-origin
+      Server:
+      - Apache
+      Set-Cookie:
+      - csrf_https-contao_csrf_token=KSjRDnmgSlq2zlXO07eDNiIP7XX87YB7cV56zeDmjUY;
+        path=/; secure; httponly; samesite=lax
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Upgrade:
+      - h2
+      Vary:
+      - Origin,Cookie
+      X-Content-Type-Options:
+      - nosniff
+      X-XSS-Protection:
+      - 1; mode=block
+      x-powered-by:
+      - PHP/7.4.25
+    status:
+      code: 200
+      message: OK
+version: 1

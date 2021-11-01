@@ -1,0 +1,839 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+    method: GET
+    uri: https://www.engagement-global.de/veranstaltungssuche.html
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html prefix=\"og: http://ogp.me/ns#\" lang=\"de\">\n<head>\n\n
+        \     <meta charset=\"utf-8\">\n    <title>Erweiterte Suche - Engagement Global</title>\n
+        \   <base href=\"https://www.engagement-global.de/\">\n\n          <meta name=\"robots\"
+        content=\"noindex,nofollow\">\n      <meta name=\"description\" content=\"\">\n
+        \     <meta name=\"keywords\" content=\"\">\n      <meta name=\"generator\"
+        content=\"Contao Open Source CMS\">\n      <meta name=\"viewport\" content=\"width=device-width,
+        initial-scale=1.0\" />\n    \n    <link href=\"/favicon.ico\" type=\"image/vnd.microsoft.icon\"
+        rel=\"icon\" />\n    <link href=\"/favicon.ico\" type=\"image/vnd.microsoft.icon\"
+        rel=\"shortcut icon\" />\n\n  <script type=\"text/javascript\" src=\"assets/eg/cookie-bar/cookiebar-latest.min.js?theme=grey&always=1\"></script>\n
+        \                   <link id=\"maincss\" rel=\"stylesheet\" href=\"assets/eg/css/global.css\"
+        /><meta property=\"og:site_name\" content=\"Engagement Global [DE]\"/><meta
+        property=\"og:title\" content=\"Erweiterte Suche\"/><meta property=\"og:description\"
+        content=\"\"/><script src=\"https://cookies.engagement-global.de/ccm19/public/ccm19.js?apiKey=7ec8993ccce746a8da6220800b0595a3abe8d6c11385d131&amp;domain=3f479e2\"
+        referrerpolicy=\"origin\"></script><!--<link id=\"maincss\" rel=\"stylesheet\"
+        href=\"assets/eg/css/global.css\" />-->\n\n          <!--[if lt IE 9]><script
+        src=\"assets/html5shiv//html5shiv-printshiv.min.js\"></script><![endif]-->\n
+        \     \n</head>\n<body id=\"top\" class=\"unknown other  development eg content\">\n\n
+        \ <div id=\"skiplinks\">\n    <!--skiplinks-->\n    <a class=\"skip\" title=\"skip
+        link\" href=\"veranstaltungssuche.html#target_nav\">Zur Hauptnavigation springen</a><span
+        class=\"hideme\">.</span>\n    <a class=\"skip\" title=\"skip link\" href=\"veranstaltungssuche.html#target_content\">Zum
+        Seiteninhalt springen</a><span class=\"hideme\">.</span>\n  </div>\n\n      \n
+        \   <div class=\"wrapper\">\n\n            <header class=\"topheader\">\n
+        \       <div class=\"topheader__inside\">\n          \n<div class=\"funcnavigation\">\n\t<ul>\n\t\t<li
+        class=\"ico-gs hide-medium-down\" ><a href=\"gebaerdensprache.html\">Geb\xE4rdensprache</a></li>\n\t\t<li
+        class=\"ico-ls hide-medium-down\" ><a href=\"leichte-sprache.html\">Leichte
+        Sprache</a></li>\n\t\t<li class=\"\"><a href=\"kontakt.html\">Kontakt</a></li>\n\t\t<li
+        class=\"ico-contrast\"><a id=\"contrast_toggle\" href=\"javascript:;\">Kontrast</a></li>\n\t\t<li
+        class=\"\" ><a href=\"homepage.html\">English</a></li>\n\t\t<li class=\"hide-medium-down\"
+        ><a href=\"https://community.engagement-global.de\" target=\"_blank\">Community</a></li>\n\t</ul>\n</div>\n<div
+        class=\"logo\">\n\t<a href=\"http://www.engagement-global.de\" title=\"zur
+        Startseite Engagement Global\"><img src=\"files/framework/img/logo_eg.png\"
+        alt=\"Logo Engagement Global\" /></a>\n</div>\n<div class=\"infophone hide-inter-down\">\n\t<a
+        id=\"infotel-1\" href=tel:+498001887188 target=\"_blank\">Infotelefon: 0800
+        188 7 188</a>\n</div>\n<!-- indexer::stop -->\n<div class=\"mod_breadcrumb
+        only-print block\">\n\n        \n  \n  <ul itemprop=\"breadcrumb\" itemscope
+        itemtype=\"http://schema.org/BreadcrumbList\">\n                  <li class=\"first\"
+        itemscope itemtype=\"http://schema.org/ListItem\" itemprop=\"itemListElement\"><a
+        href=\"./\" title=\"Engagement Global\" itemprop=\"item\"><span itemprop=\"name\">Engagement
+        Global [DE]</span></a><meta itemprop=\"position\" content=\"1\"></li>\n                        <li
+        itemscope itemtype=\"http://schema.org/ListItem\" itemprop=\"itemListElement\"><a
+        href=\"unser-service.html\" title=\"Unser Service\" itemprop=\"item\"><span
+        itemprop=\"name\">Unser Service</span></a><meta itemprop=\"position\" content=\"2\"></li>\n
+        \                       <li itemscope itemtype=\"http://schema.org/ListItem\"
+        itemprop=\"itemListElement\"><a href=\"veranstaltungen.html\" title=\"Veranstaltungen\"
+        itemprop=\"item\"><span itemprop=\"name\">Veranstaltungen</span></a><meta
+        itemprop=\"position\" content=\"3\"></li>\n                        <li class=\"active
+        last\">Erweiterte Suche</li>\n            </ul>\n\n\n</div>\n<!-- indexer::continue
+        -->\n        </div>\n      </header>\n      \n                        <header
+        class=\"header\">\n            <!--<div class=\"header__inside\">-->\n              <!--
+        indexer::stop -->\n  <h6 class=\"hideme\">Hauptnavigation</h6>\n\n<nav class=\"mod_navigation
+        mainnavigation with-search block\" id=\"target_nav\">\n\n<div class=\"nav__inside\">\n
+        \ \n<a href=\"veranstaltungssuche.html#skipNavigation15\" class=\"skipinvisible\">Navigation
+        \xFCberspringen</a>\n<ul class=\"level_1\">\n  \n  \n                <li style=\"\"
+        class=\"first   with-focus \"><a href=\"./\" title=\"Service f\xFCr Entwicklungsinitiativen\"
+        class=\"first\" ><img src=\"files/framework/img/logo_eg_small.png\" alt=\"Logo
+        Engagement Global\" /></a></li>\n        \n      \n  \n                <li
+        style=\"\" class=\"submenu   with-focus special\"><a href=\"ihr-engagement.html\"
+        title=\"Ihr Engagement\" class=\"submenu\"  aria-haspopup=\"true\">Ihr Engagement</a><div
+        class=\"level2_container\"><div class=\"level2_container__inside\"><div class=\"selflink\"><a
+        href=\"ihr-engagement.html\" title=\"Ihr Engagement\" class=\"submenu\"    aria-haspopup=\"true\">Ihr
+        Engagement</a></div><ul class=\"level_2\">\n  \n  \n        <!-- <div class=\"row
+        foundation col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n
+        \             <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Schueler.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"schueler-schulklassen.html\"
+        title=\"Sch\xFCler &amp; Schulklassen\" class=\"first with-image\" >Sch\xFCler
+        & Schulklassen</a><p>Langweiliges Lernen war gestern. Auf dem Stundenplan
+        steht der Perspektivenwechsel.</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Schulabsolventen.jpg')\"
+        class=\" with-image liright   \"><a href=\"schulabsolventen.html\" title=\"Schulabsolventen\"
+        class=\" with-image\" >Schulabsolventen</a><p>Schulabschluss erreicht - und
+        motiviert und weltoffen? Dann sind Sie hier genau richtig.</p></li>\n          <!--
+        </div></div> -->\n    \n      \n  \n        <!-- <div class=\"row foundation
+        col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Studenten.jpg')\"
+        class=\" with-image lileft   \"><a href=\"studierende-und-berufstaetige.html\"
+        title=\"Studierende &amp; Berufst\xE4tige\" class=\" with-image\" >Studierende
+        & Berufst\xE4tige</a><p>Es gibt viele M\xF6glichkeiten, international Erfahrungen
+        zu sammeln.</p></li>\n          \n      \n  \n            <!-- </div><div
+        class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Lehrer.jpg')\"
+        class=\" with-image liright   \"><a href=\"lehrer-und-bildungsbeauftragte.html\"
+        title=\"Lehrer &amp; Bildungsbeauftragte\" class=\" with-image\" >Lehrkr\xE4fte
+        & Bildungsbeauftragte</a><p>Wie vielseitig und wie nachhaltig das Globale
+        Lernen ist, zeigen zahlreiche Initiativen.</p></li>\n          <!-- </div></div>
+        -->\n    \n      \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Berufserfahrene.jpg')\"
+        class=\" with-image lileft   \"><a href=\"berufserfahrene-und-senioren.html\"
+        title=\"Berufserfahrene &amp; Senioren\" class=\" with-image\" >Berufserfahrene
+        & Senioren</a><p>Fachliches Wissen weitergeben, neue Kenntnisse hinzugewinnen
+        - Ihre Expertise ist gefragt!</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Rueckkehrende.jpg')\"
+        class=\" with-image liright   \"><a href=\"rueckkehrende.html\" title=\"R\xFCckkehrende\"
+        class=\" with-image\" >R\xFCckkehrende</a><p>Fachkr\xE4fte und Freiwillige
+        sind in der Bildungsarbeit in Deutschland aktiv.</p></li>\n          <!--
+        </div></div> -->\n    \n      \n  \n        <!-- <div class=\"row foundation
+        col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Laender.jpg')\"
+        class=\" with-image lileft   \"><a href=\"laender-und-kommunen.html\" title=\"L\xE4nder
+        &amp; Kommunen\" class=\" with-image\" >L\xE4nder & Kommunen</a><p>Der Austausch
+        zwischen Kommunen weltweit kann vielf\xE4ltige Formen annehmen.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Vereine.jpg')\"
+        class=\" with-image liright   \"><a href=\"vereine-und-organisationen.html\"
+        title=\"Vereine &amp; Organisationen\" class=\" with-image\" >Vereine & Organisationen</a><p>Unterst\xFCtzung
+        von Projekten mit entwicklungspolitischer Zielsetzung.</p></li>\n          <!--
+        </div></div> -->\n    \n      \n  \n        <!-- <div class=\"row foundation
+        col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Unternehmen.jpg')\"
+        class=\" with-image lileft   \"><a href=\"unternehmen-und-verbaende.html\"
+        title=\"Unternehmen &amp; Verb\xE4nde\" class=\" with-image\" >Unternehmen
+        & Verb\xE4nde</a><p>Interessiert an nachhaltigem Wirtschaften? Wir bringen
+        Sie mit Nachwuchskr\xE4ften zusammen.</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Stiftungen.jpg')\"
+        class=\"last with-image liright   \"><a href=\"stiftungen.html\" title=\"Stiftungen\"
+        class=\"last with-image\" >Stiftungen</a><p>Sie suchen ein Netzwerk und Kooperationspartner
+        f\xFCr die Durchf\xFChrung Ihrer Ideen?</p></li>\n          <!-- </div></div>
+        -->\n    \n        </ul>\n</div></div></li>\n        \n      \n  \n                <li
+        style=\"\" class=\"submenu trail   with-focus special\"><a href=\"unser-service.html\"
+        title=\"Unser Service\" class=\"submenu trail\"  aria-haspopup=\"true\">Unser
+        Service</a><div class=\"level2_container\"><div class=\"level2_container__inside\"><div
+        class=\"selflink\"><a href=\"unser-service.html\" title=\"Unser Service\"
+        class=\"submenu trail\"    aria-haspopup=\"true\">Unser Service</a></div><ul
+        class=\"level_2\">\n  \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/A-Z.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"angebote-a-bis-z.html\" title=\"Angebote
+        A bis Z\" class=\"first with-image\" >Angebote A-Z</a><p>Kompakte Infos zu
+        allen Angeboten unter dem Dach von Engagement Global.</p></li>\n          \n
+        \     \n  \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Beratung.jpg')\"
+        class=\" with-image liright   \"><a href=\"beratung.html\" title=\"Beratung\"
+        class=\" with-image\" >Beratung</a><p>Wir beraten Menschen, die sich f\xFCr
+        eine global gerechtere Welt engagieren wollen.</p></li>\n          <!-- </div></div>
+        -->\n    \n      \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Foerderung.jpg')\"
+        class=\" with-image lileft   \"><a href=\"finanzielle-foerderung.html\" title=\"Finanzielle
+        F\xF6rderung\" class=\" with-image\" >Finanzielle F\xF6rderung</a><p>Wir vermitteln
+        finanzielle F\xF6rderung f\xFCr Organisationen und Initiativen.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Weiterbildung.jpg')\"
+        class=\" with-image liright   \"><a href=\"weiterbildung.html\" title=\"Weiterbildung\"
+        class=\" with-image\" >Weiterbildung</a><p>Sie m\xF6chten Erfahrungen weitergeben
+        und in der Bildungsarbeit t\xE4tig werden?</p></li>\n          <!-- </div></div>
+        -->\n    \n      \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Netzwerke.jpg')\"
+        class=\" with-image lileft   \"><a href=\"netzwerke.html\" title=\"Netzwerke\"
+        class=\" with-image\" >Netzwerke</a><p>In Verbindung bleiben und gemeinsam
+        Ideen weiter entwickeln - daf\xFCr setzen sich unsere Netzwerke ein.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Veranstaltungen.jpg')\"
+        class=\"trail last with-image liright   \"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" class=\"trail last with-image\" >Veranstaltungen</a><p>Aktueller
+        Kalender mit allen wichtigen Seminaren und Veranstaltungen.</p></li>\n          <!--
+        </div></div> -->\n    \n        </ul>\n</div></div></li>\n        \n      \n
+        \ \n                <li style=\"\" class=\"submenu   with-focus \"><a href=\"ueber-uns.html\"
+        title=\"\xDCber uns\" class=\"submenu\"  aria-haspopup=\"true\">\xDCber uns</a><div
+        class=\"level2_container\"><div class=\"level2_container__inside\"><div class=\"selflink\"><a
+        href=\"ueber-uns.html\" title=\"\xDCber uns\" class=\"submenu\"    aria-haspopup=\"true\">\xDCber
+        uns</a></div><ul class=\"level_2\">\n  \n  \n        <!-- <div class=\"row
+        foundation col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n
+        \             <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Wer_wir_sind.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"wer-wir-sind.html\" title=\"Wer
+        wir sind\" class=\"first with-image\" >Wer wir sind</a><p>Ansprechpartnerin
+        f\xFCr entwicklungspolitisches Engagement, deutschlandweit und international.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Gremien.jpg')\"
+        class=\" with-image liright   \"><a href=\"gremien.html\" title=\"Gremien\"
+        class=\" with-image\" >Gremien</a><p>Gremien und Beir\xE4te unterst\xFCtzen
+        die gemeinn\xFCtzige Gesellschaft.</p></li>\n          <!-- </div></div> -->\n
+        \   \n      \n  \n        <!-- <div class=\"row foundation col-50x50\"> -->\n
+        \     <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Ausschreibungen.jpg')\"
+        class=\" with-image lileft   \"><a href=\"ausschreibungen.html\" title=\"Ausschreibungen\"
+        class=\" with-image\" >Ausschreibungen</a><p>Aktuelle Ausschreibungen, Interessensbekundungen
+        und Teilnahmewettbewerbe.</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Karriere.jpg')\"
+        class=\" with-image liright   \"><a href=\"karriere.html\" title=\"Karriere\"
+        class=\" with-image\" >Karriere</a><p>Praktika, Ausbildungspl\xE4tze und Stellenangebote
+        in unserer Organisation.</p></li>\n          <!-- </div></div> -->\n    \n
+        \     \n  \n        <!-- <div class=\"row foundation col-50x50\"> -->\n      <!--
+        <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Standorte.jpg')\"
+        class=\"last with-image lileft   \"><a href=\"standorte.html\" title=\"Standorte\"
+        class=\"last with-image\" >Standorte</a><p>Neben dem Hauptsitz in Bonn finden
+        Sie uns an sechs weiteren Standorten in Deutschland.</p></li>\n          \n
+        \         <!-- </div></div> -->\n  </ul>\n</div><div class=\"mainnav_shortlinks\"><div
+        class=\"mod_article block\" id=\"article-554\">\n  \n  \n<ul>\n\t<li class=\"layer-icon-graph\"><a
+        href=\"organigramm.html\">Organigramm</a></li>\n\t<li class=\"layer-icon-book\"><a
+        href=\"berichte.html#anker5\">Imagebrosch\xFCre</a></li>\n\t<li class=\"layer-icon-jobs\"><a
+        href=\"stellenangebote.html\">Stellenangebote</a></li>\n</ul>\n  </div>\n</div></div></li>\n
+        \       \n      \n  \n                <li style=\"\" class=\"submenu   with-focus
+        \"><a href=\"presse.html\" title=\"Presse\" class=\"submenu\"  aria-haspopup=\"true\">Presse</a><div
+        class=\"level2_container\"><div class=\"level2_container__inside\"><div class=\"selflink\"><a
+        href=\"presse.html\" title=\"Presse\" class=\"submenu\"    aria-haspopup=\"true\">Presse</a></div><ul
+        class=\"level_2\">\n  \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Newsroom.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"social-media-newsroom.html\"
+        title=\"Social Media Newsroom\" class=\"first with-image\" >Social Media Newsroom</a><p>Neues
+        aus den Online-Medien: Facebook, Twitter, Engagiert-Blog, Flickr, Youtube.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Pressemitteilungen.jpg')\"
+        class=\" with-image liright   \"><a href=\"pressemitteilungen.html\" title=\"Pressemitteilungen\"
+        class=\" with-image\" >Pressemitteilungen</a><p>Offizielle Pressemitteilungen
+        aus unserem Hause und Pressearchiv ab 2012.</p></li>\n          <!-- </div></div>
+        -->\n    \n      \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Presseabo.jpg')\"
+        class=\" with-image lileft   \"><a href=\"presse-abo.html\" title=\"Presse-Abo\"
+        class=\" with-image\" >Presse-Abo</a><p>E-Mail-Abo unserer Pressemitteilungen
+        und Einladungen zu ausgew\xE4hlten Veranstaltungen.</p></li>\n          \n
+        \     \n  \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Aktuelles.jpg')\"
+        class=\" with-image liright   \"><a href=\"aktuelles.html\" title=\"Aktuelles\"
+        class=\" with-image\" >Aktuelles</a><p>Aktuelle Meldungen, Veranstaltungsberichte
+        und Hinweise.</p></li>\n          <!-- </div></div> -->\n    \n      \n  \n
+        \       <!-- <div class=\"row foundation col-50x50\"> -->\n      <!-- <div
+        class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Social_Media.jpg')\"
+        class=\" with-image lileft   \"><a href=\"social-media.html\" title=\"Social
+        Media\" class=\" with-image\" >Social Media</a><p>Dialog und Austausch  -
+        Wir sind aktiv auf facebook, twitter, flickr und YouTube.</p></li>\n          \n
+        \     \n  \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/RSS.jpg')\"
+        class=\"last with-image liright   \"><a href=\"rss-feeds.html\" title=\"RSS-Feeds\"
+        class=\"last with-image\" >RSS-Feeds</a><p>Ausgew\xE4hlte Inhalte dieser Website
+        stellen wir als RSS-Feed zur Verf\xFCgung.</p></li>\n          <!-- </div></div>
+        -->\n    \n        </ul>\n</div></div></li>\n        \n      \n  \n                <li
+        style=\"\" class=\"submenu   with-focus \"><a href=\"mediathek-startseite.html\"
+        title=\"Mediathek\" class=\"submenu\"  aria-haspopup=\"true\">Mediathek</a><div
+        class=\"level2_container\"><div class=\"level2_container__inside\"><div class=\"selflink\"><a
+        href=\"mediathek-startseite.html\" title=\"Mediathek\" class=\"submenu\"    aria-haspopup=\"true\">Mediathek</a></div><ul
+        class=\"level_2\">\n  \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Video.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"mediathek-videos.html\" title=\"Videos\"
+        class=\"first with-image\" >Videos</a><p>Projektberichte, Interviews, Passantenbefragungen
+        - hier sind die neuesten Videos!</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Bilder.jpg')\"
+        class=\" with-image liright   \"><a href=\"mediathek-bilder.html\" title=\"Bilder\"
+        class=\" with-image\" >Bilder</a><p>Bildmaterial von Veranstaltungen finden
+        Sie auch bei flickr.</p></li>\n          <!-- </div></div> -->\n    \n      \n
+        \ \n        <!-- <div class=\"row foundation col-50x50\"> -->\n      <!--
+        <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Publikationen.jpg')\"
+        class=\" with-image lileft   \"><a href=\"mediathek-publikationen.html\" title=\"Publikationen\"
+        class=\" with-image\" >Publikationen</a><p>Brosch\xFCren, Flyer, Gesch\xE4ftsberichte
+        - alle Ver\xF6ffentlichungen sind zum Download hinterlegt.</p></li>\n          \n
+        \     \n  \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Dokumente.jpg')\"
+        class=\" with-image liright   \"><a href=\"mediathek-dokumente.html\" title=\"Dokumente\"
+        class=\" with-image\" >Dokumente</a><p>Antr\xE4ge, Formulare, Merkbl\xE4tter,
+        Hilfestellungen - alle Dokumente sind zum Download hinterlegt.</p></li>\n
+        \         <!-- </div></div> -->\n    \n      \n  \n        <!-- <div class=\"row
+        foundation col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n
+        \             <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Audios.jpg')\"
+        class=\"last with-image lileft   \"><a href=\"audios.html\" title=\"Audios\"
+        class=\"last with-image\" >Audios</a><p>Alle Audio-Formate von Engagement
+        Global k\xF6nnen Sie hier anh\xF6ren.</p></li>\n          \n          <!--
+        </div></div> -->\n  </ul>\n</div></div></li>\n        \n      \n  \n                <li
+        style=\"\" class=\"submenu   with-focus \"><a href=\"infozentrum.html\" title=\"Infozentrum\"
+        class=\"submenu\"  aria-haspopup=\"true\">Infozentrum</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"infozentrum.html\"
+        title=\"Infozentrum\" class=\"submenu\"    aria-haspopup=\"true\">Infozentrum</a></div><ul
+        class=\"level_2\">\n  \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Infozentrum/EG_COVID_Navilayer.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"corona-hilfen.html\" title=\"Corona-Hilfen\"
+        class=\"first with-image\" >Corona-Hilfen</a><p>Unterst\xFCtzung, Beratung
+        und Vernetzung w\xE4hrend der COVID-19-Pandemie</p></li>\n          \n      \n
+        \ \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Infozentrum/Fragen.jpg')\"
+        class=\" with-image liright   \"><a href=\"haeufig-gestellte-fragen.html\"
+        title=\"H\xE4ufig gestellte Fragen\" class=\" with-image\" >H\xE4ufig gestellte
+        Fragen</a><p>Sie m\xF6chten sich engagieren? Hier sind die Antworten auf die
+        ersten Fragen.</p></li>\n          <!-- </div></div> -->\n    \n      \n  \n
+        \       <!-- <div class=\"row foundation col-50x50\"> -->\n      <!-- <div
+        class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Infozentrum/Kontakt.jpg')\"
+        class=\" with-image lileft   \"><a href=\"kontakt.html\" title=\"Kontakt\"
+        class=\" with-image\" >Kontakt</a><p>Kontaktieren Sie uns per Kontaktformular
+        oder E-Mail oder rufen Sie uns an.</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Infozentrum/Anfahrt.jpg')\"
+        class=\"last with-image liright   \"><a href=\"anfahrt.html\" title=\"Anfahrt\"
+        class=\"last with-image\" >Anfahrt</a><p>Engagement Global hat ihren Hauptsitz
+        in Bonn. Hier finden Sie eine Anfahrtsbeschreibung.</p></li>\n          <!--
+        </div></div> -->\n    \n        </ul>\n</div></div></li>\n        \n      \n
+        \ \n                <li style=\"\" class=\"last nav-search   with-focus \"><a
+        href=\"suche.html\" title=\"Suche\" class=\"last nav-search\" rel=\"nofollow\"
+        ><span class=\"icon-magnifier\"></span></a></li>\n        \n        </ul>\n<a
+        id=\"skipNavigation15\" class=\"invisible\">&nbsp;</a>\n\n</div>\n</nav>\n\n\n<div
+        class=\"mainnav_placeholder\"></div>\n\n<!-- indexer::continue -->\n\n<!--
+        indexer::stop -->\n<div class=\"mod_search ce_form block\">\n\n        \n
+        \ \n<div class=\"mod_search_inside\">\n\n    <div class=\"mod_searchform_container\">\n\n
+        \       <form action=\"suche.html\" method=\"get\">\n            <div class=\"formbody\">\n
+        \                                   <input type=\"hidden\" name=\"id\" value=\"331\">\n
+        \                               <label for=\"ctrl_keywords_331\" class=\"invisible\">Suchbegriffe</label>\n
+        \               <input placeholder=\"Suchbegriff\" type=\"search\" name=\"keywords\"
+        id=\"ctrl_keywords_331\" class=\"text\" value=\"\">\n                <!--<input
+        type=\"submit\" id=\"ctrl_submit_331\" class=\"submit\" value=\"Suchen\">-->\n
+        \               <button id=\"ctrl_submit_331\"><span class=\"icon-magnifier\"></span></button>\n
+        \           </div>\n        </form>\n\n    </div>\n\n</div>\n\n<div id=\"acconthead\"
+        class=\"acconthead\"></div>\n\n\n</div>\n<!-- indexer::continue -->\n<!--
+        indexer::stop -->\n\n<nav class=\"mod_navigation mobilenavigation block\"
+        id=\"target_mobilenav\">\n\n  <div class=\"mobilenav__inside\">\n    <div
+        class=\"mobilenav__togglecontainer\">\n      <a class=\"toggle-mobile\" href=\"javascript:;\">\n
+        \       <span class=\"burger-box burger-menu\">\n\t\t  \t  <span class=\"inside\">\n
+        \           <span class=\"elem-1\"></span>\n            <span class=\"elem-2\"></span>\n
+        \           <span class=\"elem-3\"></span>\n            <span class=\"elem-4\"></span>\n\t\t
+        \ \t  </span>\n\t\t  \t</span>\n      </a>\n    </div>\n    <div class=\"mobilenav__title\">\n
+        \     Engagement Global    </div>\n    <div class=\"mobilenav__searchcontainer\">\n
+        \             <a href=\"suche.html\"><div class=\"icon-magnifier\"></div><span
+        class=\"hideme\">Suche</span></a>\n          </div>\n  </div>\n\n  <div class=\"mobilenav_layer\">\n
+        \ \n  <a href=\"veranstaltungssuche.html#skipNavigation196\" class=\"skipinvisible\">Navigation
+        \xFCberspringen</a>\n\n  \n<ul class=\"level_1\" >\n            <li class=\"first\"><a
+        href=\"./\" title=\"Service f\xFCr Entwicklungsinitiativen\" class=\"first\"
+        >Service f\xFCr Entwicklungsinitiativen</a></li>\n                <li><a href=\"ihr-engagement.html\"
+        title=\"Ihr Engagement\" >Ihr Engagement</a></li>\n                <li class=\"submenu
+        trail\"><a href=\"unser-service.html\" title=\"Unser Service\" class=\"submenu
+        trail\"  aria-haspopup=\"true\">Unser Service</a>\n<ul class=\"level_2\" >\n
+        \           <li class=\"first\"><a href=\"angebote-a-bis-z.html\" title=\"Angebote
+        A bis Z\" class=\"first\" >Angebote A-Z</a></li>\n                <li><a href=\"beratung.html\"
+        title=\"Beratung\" >Beratung</a></li>\n                <li><a href=\"finanzielle-foerderung.html\"
+        title=\"Finanzielle F\xF6rderung\" >Finanzielle F\xF6rderung</a></li>\n                <li><a
+        href=\"weiterbildung.html\" title=\"Weiterbildung\" >Weiterbildung</a></li>\n
+        \               <li><a href=\"netzwerke.html\" title=\"Netzwerke\" >Netzwerke</a></li>\n
+        \               <li class=\"submenu trail last\"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" class=\"submenu trail last\"  aria-haspopup=\"true\">Veranstaltungen</a>\n<ul
+        class=\"level_3\" >\n            <li class=\"active first\"><span class=\"active
+        first\" >Erweiterte Suche</span></li>\n                <li class=\"sibling\"><a
+        href=\"veranstaltungen-archiv.html\" title=\"Veranstaltungen Archiv\" class=\"sibling\"
+        >Veranstaltungen Archiv</a></li>\n                <li class=\"sibling\"><a
+        href=\"programmuebergreifende-seminare.html\" title=\"Programm\xFCbergreifende
+        Seminare\" class=\"sibling\" >Programm\xFCbergreifende Seminare</a></li>\n
+        \               <li class=\"sibling\"><a href=\"jahrespartnerschaft-bonn-2017.html\"
+        title=\"Jahrespartnerschaft Bonn 2017\" class=\"sibling\" >Jahrespartnerschaft
+        Bonn 2017</a></li>\n                <li class=\"sibling\"><a href=\"vorlesungsreihe-agenda-2030.html\"
+        title=\"Vorlesungsreihe Agenda 2030\" class=\"sibling\" >Vorlesungsreihe Agenda
+        2030</a></li>\n                <li class=\"sibling last\"><a href=\"socialbar-bonn.html\"
+        title=\"Socialbar Bonn\" class=\"sibling last\" >Socialbar Bonn</a></li>\n
+        \     </ul>\n</li>\n      </ul>\n</li>\n                <li><a href=\"ueber-uns.html\"
+        title=\"\xDCber uns\" >\xDCber uns</a></li>\n                <li><a href=\"presse.html\"
+        title=\"Presse\" >Presse</a></li>\n                <li><a href=\"mediathek-startseite.html\"
+        title=\"Mediathek\" >Mediathek</a></li>\n                <li><a href=\"infozentrum.html\"
+        title=\"Infozentrum\" >Infozentrum</a></li>\n                <li class=\"last\"><a
+        href=\"suche.html\" title=\"Suche\" class=\"last\" rel=\"nofollow\" >Suche</a></li>\n
+        \     </ul>\n\n  <a id=\"skipNavigation196\" class=\"invisible\">&nbsp;</a>\n\n
+        \ </div>\n\n</nav>\n<div class=\"mobilenav_placeholder\"></div>\n\n\n\n\n\n<!--
+        indexer::continue -->\n<!-- indexer::stop -->\n<div class=\"mod_dz_headerimage\">\n
+        \ <div class=\"dz_headerimage__large\" style=\"background-image:url('files/1_Bilder/Bilder_EG/Headergrafiken/Veranstaltung.jpg')\"></div>\n
+        \ <div class=\"dz_headerimage__medium\" style=\"background-image:url('files/1_Bilder/Bilder_EG/Headergrafiken/Headergrafiken_Tablet/Veranstaltung.jpg')\"></div>\n
+        \ <div class=\"dz_headerimage__small\" style=\"background-image:url('files/1_Bilder/Bilder_EG/Headergrafiken/Headerbilder_Mobile/Veranstaltung.jpg')\"></div>\n</div>\n<!--
+        indexer::continue -->\n<!-- indexer::stop -->\n<nav class=\"mod_dzbreadcrumb
+        breadcrumbnavigation block\" id=\"target_breadcrumb\">\n\n<a href=\"#skipNavigation19\"
+        class=\"invisible\"></a>\n<a id=\"srct\"></a>\n<div class=\"breadcrumb__inside\">\n
+        \ <div class=\"breadcrumb__mask\"></div>\n  <ul class=\"level_breadcrumb\"
+        role=\"menubar\">\n                                   <li style=\"z-index:
+        99\" class=\"with-focus    has-subitems\"><a href=\"unser-service.html\" title=\"Unser
+        Service\" role=\"menuitem\">Unser Service</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"unser-service.html\"
+        title=\"Unser Service\" class=\"\"    role=\"menuitem\" aria-haspopup=\"true\">Unser
+        Service</a></div>\n<ul class=\"level_1\" >\n            <li class=\"first\"><a
+        href=\"angebote-a-bis-z.html\" title=\"Angebote A bis Z\" class=\"first\"
+        >Angebote A-Z</a></li>\n                <li><a href=\"beratung.html\" title=\"Beratung\"
+        >Beratung</a></li>\n                <li><a href=\"finanzielle-foerderung.html\"
+        title=\"Finanzielle F\xF6rderung\" >Finanzielle F\xF6rderung</a></li>\n                <li><a
+        href=\"weiterbildung.html\" title=\"Weiterbildung\" >Weiterbildung</a></li>\n
+        \               <li><a href=\"netzwerke.html\" title=\"Netzwerke\" >Netzwerke</a></li>\n
+        \               <li class=\"trail last\"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" class=\"trail last\" >Veranstaltungen</a></li>\n
+        \     </ul>\n</div></div></li>\n      \n                                   <li
+        style=\"z-index: 98\" class=\"with-focus    has-subitems\"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" role=\"menuitem\">Veranstaltungen</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" class=\"\"    role=\"menuitem\" aria-haspopup=\"true\">Veranstaltungen</a></div>\n<ul
+        class=\"level_1\" >\n            <li class=\"active first\"><span class=\"active
+        first\" >Erweiterte Suche</span></li>\n                <li class=\"sibling\"><a
+        href=\"veranstaltungen-archiv.html\" title=\"Veranstaltungen Archiv\" class=\"sibling\"
+        >Veranstaltungen Archiv</a></li>\n                <li class=\"sibling\"><a
+        href=\"programmuebergreifende-seminare.html\" title=\"Programm\xFCbergreifende
+        Seminare\" class=\"sibling\" >Programm\xFCbergreifende Seminare</a></li>\n
+        \               <li class=\"sibling\"><a href=\"jahrespartnerschaft-bonn-2017.html\"
+        title=\"Jahrespartnerschaft Bonn 2017\" class=\"sibling\" >Jahrespartnerschaft
+        Bonn 2017</a></li>\n                <li class=\"sibling\"><a href=\"vorlesungsreihe-agenda-2030.html\"
+        title=\"Vorlesungsreihe Agenda 2030\" class=\"sibling\" >Vorlesungsreihe Agenda
+        2030</a></li>\n                <li class=\"sibling last\"><a href=\"socialbar-bonn.html\"
+        title=\"Socialbar Bonn\" class=\"sibling last\" >Socialbar Bonn</a></li>\n
+        \     </ul>\n</div></div></li>\n      \n                                   <li
+        style=\"z-index: 97\" class=\"with-focus bc-last active  \"><a href=\"javascript:;\"
+        title=\"Erweiterte Suche\" role=\"menuitem\">Erweiterte Suche</a></li>\n      \n
+        \     </ul>\n</div>\n<a id=\"skipNavigation19\" class=\"invisible\">&nbsp;</a>\n\n\n</nav>\n<!--
+        indexer::continue -->            <!--</div>-->\n          </header>\n              \n
+        \           <div class=\"intro-container\">\n        <div class=\"intro-container__inside
+        row\">\n          \n<div class=\"mod_article first last block\" id=\"article-3008\">\n
+        \ \n  \n<h1 class=\"ce_headline first standard\">\n  Erweiterte Veranstaltungssuche</h1>\n\n<div
+        class=\"ce_text last intro wo-teaserlink block\">\n\n        \n  \n      <div
+        class=\"text_container\"><p>Suchen Sie Veranstaltungen eines speziellen Typs
+        oder eines ausgew\xE4hlten Absenders? Mit der erweiterten Veranstaltungssuche
+        k\xF6nnen Sie au\xDFerdem mittels der Umkreissuche herausfinden, ob Veranstaltungen
+        in Ihrer N\xE4he statt finden. Geben Sie hierf\xFCr einfach eine vollst\xE4ndige
+        Postleitzahl ein und definieren Sie den Umkreis, in dem gesucht werden soll.</p></div>
+        \ \n  \n  \n\r\n\r\n\r\n  \r\n\r\n\r\n\n</div>\n\n  </div>\n        </div>\n
+        \     </div>\n      \n              <div class=\"container\">\n          <div
+        class=\"container__inside row\">\n\n                      <div class=\"main
+        columns large-8\">\n              <div id=\"target_content\" class=\"main__inside\">\n
+        \               \n<div class=\"mod_article first last block\" id=\"article-2660\">\n
+        \ \n  <!-- indexer::stop -->\n<div class=\"mod_dzeventsearchform block\">\n\n
+        \ \n  <form id=\"dz-event-search-form\" name=\"dz-event-search-form\" method=\"get\"
+        action=\"veranstaltungssuche.html\">\n\n    <div class=\"filter-element fe-checkbox-multiple\">\n
+        \   <a class=\"change-filter\" href=\"javascript:;\"><span class=\"active\">\xE4ndern</span><span>schlie\xDFen</span></a>\n
+        \   <label>Veranstaltungsformat</label>\n    <div class=\"cbm-selected-values\"
+        id=\"ext_et-values\">Alle</div>\n    <div class=\"cbm-container\">\n      <div
+        class=\"cbm-all-or-nothing\"><a href=\"javascript:selectAll('ext_et');;\">alle
+        ausw\xE4hlen</a> | <a href=\"javascript:unselectAll('ext_et');;\">alle abw\xE4hlen</a></div>\n
+        \     <div class=\"ext_et-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_et[]\" value=\"1\"  /><label>Online-Veranstaltung</label></div>\n
+        \     <div class=\"ext_et-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_et[]\" value=\"2\"  /><label>Pr\xE4senzveranstaltung</label></div>\n
+        \     <div class=\"ext_et-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_et[]\" value=\"0\"  /><label>Hybridveranstaltung</label></div>\n
+        \   </div>\n    </div>\n    <div class=\"filter-element fe-checkbox-multiple\">\n
+        \   <a class=\"change-filter\" href=\"javascript:;\"><span class=\"active\">\xE4ndern</span><span>schlie\xDFen</span></a>\n
+        \   <label>Absender</label>\n    <div class=\"cbm-selected-values\" id=\"ext_og-values\">Alle</div>\n
+        \   <div class=\"cbm-container\">\n      <div class=\"cbm-all-or-nothing\"><a
+        href=\"javascript:selectAll('ext_og');;\">alle ausw\xE4hlen</a> | <a href=\"javascript:unselectAll('ext_og');;\">alle
+        abw\xE4hlen</a></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"1\"  /><label>Engagement
+        Global</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"2\"  /><label>AGP
+        - Aktionsgruppenprogramm</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"3\"  /><label>ASA-Programm</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"4\"  /><label>ASApreneurs</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"5\"  /><label>Bengo</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"6\"  /><label>Bildung f\xFCr
+        nachhaltige Entwicklung</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"7\"  /><label>BtE
+        \u2013 Bildung trifft Entwicklung</label></div>\n      <div class=\"ext_og-cbs
+        cbm-item-container\"><input type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\"
+        value=\"8\"  /><label>CHAT der WELTEN</label></div>\n      <div class=\"ext_og-cbs
+        cbm-item-container\"><input type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\"
+        value=\"27\"  /><label>DAJ - Deutsch-Afrikanische Jugendinitiative</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"28\"  /><label>EBD - Entwicklungsbezogene
+        Bildung in Deutschland</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"9\"  /><label>ENSA
+        - Entwicklungspolitisches Schulaustauschprogramm</label></div>\n      <div
+        class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\" class=\"cbm-item\"
+        name=\"ext_og[]\" value=\"10\"  /><label>EpIB - Entwicklungspolitische Informations-
+        und Bildungsarbeit</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"11\"  /><label>EU-Beratung</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"12\"  /><label>FEB - F\xF6rderprogramm
+        Entwicklungspolitische Bildung</label></div>\n      <div class=\"ext_og-cbs
+        cbm-item-container\"><input type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\"
+        value=\"13\"  /><label>GES - Globale Entwicklung in der Schule</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"14\"  /><label>Konkreter Friedensdienst
+        NRW</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"15\"  /><label>Koordinatorenprogramm</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"16\"  /><label>Mitmachzentrale</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"17\"  /><label>Partnerschaften
+        NRW</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"19\"  /><label>Schulwettbewerb
+        - Alle f\xFCr Eine Welt - Eine Welt f\xFCr Alle</label></div>\n      <div
+        class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\" class=\"cbm-item\"
+        name=\"ext_og[]\" value=\"20\"  /><label>SES - Senior Experten Service</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"21\"  /><label>SKEW - Servicestelle
+        Kommunen in der Einen Welt</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"22\"  /><label>weltw\xE4rts</label></div>\n
+        \     <div class=\"ext_og-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_og[]\" value=\"24\"  /><label>Wettbewerb Hauptstadt
+        des fairen Handels</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"25\"  /><label>ZFD
+        - Ziviler Friedensdienst</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"26\"  /><label>Externer
+        Veranstalter</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"29\"  /><label>Programm\xFCbergreifende
+        Seminare</label></div>\n      <div class=\"ext_og-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_og[]\" value=\"30\"  /><label>Servicestelle
+        Stiftungen und Philanthropie</label></div>\n    </div>\n    </div>\n    <div
+        class=\"filter-element fe-date-monthyear\">\n    <label>Monat</label>\n    <select
+        name=\"startDate\">\n      <option value=\"0\">keine Einschr\xE4nkung</option>\n
+        \     <option value=\"2021-11\" >November 2021</option>\n      <option value=\"2021-12\"
+        >Dezember 2021</option>\n      <option value=\"2022-01\" >Januar 2022</option>\n
+        \     <option value=\"2022-02\" >Februar 2022</option>\n      <option value=\"2022-03\"
+        >M\xE4rz 2022</option>\n      <option value=\"2022-04\" >April 2022</option>\n
+        \     <option value=\"2022-05\" >Mai 2022</option>\n      <option value=\"2022-06\"
+        >Juni 2022</option>\n      <option value=\"2022-07\" >Juli 2022</option>\n
+        \     <option value=\"2022-08\" >August 2022</option>\n      <option value=\"2022-09\"
+        >September 2022</option>\n      <option value=\"2022-10\" >Oktober 2022</option>\n
+        \   </select>\n    </div>\n    <div class=\"filter-element fe-text-zip-range\">\n
+        \   <label>Postleitzahl</label>\n    <input type=\"text\" name=\"ext_plg\"
+        value=\"\" />\n    <div class=\"rbm-container\"><span>Umkreis:</span>\n      <div
+        class=\"rbm-item-container\"><input type=\"radio\" class=\"rbm-item\" name=\"ext_plg_range\"
+        value=\"10\"  /><label>10 km</label></div>\n      <div class=\"rbm-item-container\"><input
+        type=\"radio\" class=\"rbm-item\" name=\"ext_plg_range\" value=\"25\"  /><label>25
+        km</label></div>\n      <div class=\"rbm-item-container\"><input type=\"radio\"
+        class=\"rbm-item\" name=\"ext_plg_range\" value=\"50\"  /><label>50 km</label></div>\n
+        \     <div class=\"rbm-item-container\"><input type=\"radio\" class=\"rbm-item\"
+        name=\"ext_plg_range\" value=\"150\" checked=\"checked\" /><label>150 km</label></div>\n
+        \   </div>\n    </div>\n    <div class=\"filter-element fe-checkbox-multiple\">\n
+        \   <a class=\"change-filter\" href=\"javascript:;\"><span class=\"active\">\xE4ndern</span><span>schlie\xDFen</span></a>\n
+        \   <label>Bundesland</label>\n    <div class=\"cbm-selected-values\" id=\"ext_bl-values\">Alle</div>\n
+        \   <div class=\"cbm-container\">\n      <div class=\"cbm-all-or-nothing\"><a
+        href=\"javascript:selectAll('ext_bl');;\">alle ausw\xE4hlen</a> | <a href=\"javascript:unselectAll('ext_bl');;\">alle
+        abw\xE4hlen</a></div>\n      <div class=\"ext_bl-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_bl[]\" value=\"1\"  /><label>Baden-W\xFCrttemberg</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"2\"  /><label>Bayern</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"3\"  /><label>Berlin</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"4\"  /><label>Brandenburg</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"5\"  /><label>Bremen</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"6\"  /><label>Hamburg</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"7\"  /><label>Hessen</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"8\"  /><label>Mecklenburg-Vorpommern</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"9\"  /><label>Niedersachsen</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"10\"  /><label>Nordrhein-Westfalen</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"11\"  /><label>Rheinland-Pfalz</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"12\"  /><label>Saarland</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"13\"  /><label>Sachsen</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"14\"  /><label>Sachsen-Anhalt</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"15\"  /><label>Schleswig-Holstein</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"16\"  /><label>Th\xFCringen</label></div>\n
+        \     <div class=\"ext_bl-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_bl[]\" value=\"17\"  /><label>au\xDFerhalb Deutschlands</label></div>\n
+        \   </div>\n    </div>\n    <div class=\"filter-element fe-checkbox-multiple\">\n
+        \   <a class=\"change-filter\" href=\"javascript:;\"><span class=\"active\">\xE4ndern</span><span>schlie\xDFen</span></a>\n
+        \   <label>Zielgruppen</label>\n    <div class=\"cbm-selected-values\" id=\"ext_zg-values\">Alle</div>\n
+        \   <div class=\"cbm-container\">\n      <div class=\"cbm-all-or-nothing\"><a
+        href=\"javascript:selectAll('ext_zg');;\">alle ausw\xE4hlen</a> | <a href=\"javascript:unselectAll('ext_zg');;\">alle
+        abw\xE4hlen</a></div>\n      <div class=\"ext_zg-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_zg[]\" value=\"1\"  /><label>Sch\xFCler
+        & Schulklassen</label></div>\n      <div class=\"ext_zg-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_zg[]\" value=\"2\"  /><label>Schulabsolventen</label></div>\n
+        \     <div class=\"ext_zg-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_zg[]\" value=\"3\"  /><label>Studenten & Berufst\xE4tige</label></div>\n
+        \     <div class=\"ext_zg-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_zg[]\" value=\"4\"  /><label>Lehrer & Bildungsbeauftragte</label></div>\n
+        \     <div class=\"ext_zg-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_zg[]\" value=\"5\"  /><label>Berufserfahrene
+        & Senioren</label></div>\n      <div class=\"ext_zg-cbs cbm-item-container\"><input
+        type=\"checkbox\" class=\"cbm-item\" name=\"ext_zg[]\" value=\"6\"  /><label>R\xFCckkehrende</label></div>\n
+        \     <div class=\"ext_zg-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_zg[]\" value=\"7\"  /><label>L\xE4nder & Kommunen</label></div>\n
+        \     <div class=\"ext_zg-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_zg[]\" value=\"8\"  /><label>Vereine & Organisationen</label></div>\n
+        \     <div class=\"ext_zg-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_zg[]\" value=\"9\"  /><label>Unternehmen & Verb\xE4nde</label></div>\n
+        \     <div class=\"ext_zg-cbs cbm-item-container\"><input type=\"checkbox\"
+        class=\"cbm-item\" name=\"ext_zg[]\" value=\"10\"  /><label>Stiftungen</label></div>\n
+        \   </div>\n    </div>\n\n    <div class=\"submit-container\">\n    <input
+        type=\"submit\" name=\"st\" value=\"Suchen\" />\n    </div>\n\n  </form>\n\n</div>\n\n<script
+        type=\"text/javascript\">\n\n  /*\n$(document).ready(function(){\n\n  $('.change-filter').on('click',
+        function(event) {\n    $(this).parent().find('.cbm-container').slideToggle();\n
+        \   $(this).find('span').toggleClass('active');\n  });\n\n  $('.cbm-item').on('change',
+        function(event) {\n    var selectedValues = new Array();\n    $(this).parents('.cbm-container').find('.cbm-item:checked').each(function()
+        {\n      selectedValues.push($(this).parent().find('label').html());\n    });\n
+        \   if (!selectedValues.length) {\n      $(this).parents('.filter-element').find('.cbm-selected-values').html('Alle');\n
+        \   } else {\n      $(this).parents('.filter-element').find('.cbm-selected-values').html(selectedValues.join(',
+        '));\n    }\n\n  });\n\n});\n   */\n\nfunction selectAll(filterType) {\n  $('.'+filterType+'-cbs
+        input[type=\"checkbox\"]').prop('checked',true);\n  $('.'+filterType+'-cbs
+        input[type=\"checkbox\"]:eq(0)').trigger('change');\n}\n\nfunction unselectAll(filterType)
+        {\n  $('.'+filterType+'-cbs input[type=\"checkbox\"]').prop('checked',false);\n
+        \ $('.'+filterType+'-cbs input[type=\"checkbox\"]:eq(0)').trigger('change');\n}\n\n</script>\n\n<!--
+        indexer::continue -->\n<!-- indexer::stop -->\n<div id=\"pgtop\" class=\"mod_dzeventsearch
+        block\">\n\n  \n  \n<!-- indexer::stop -->\n<div class=\"pagination block\">\n\n
+        \ <p>Seite 1 von 9</p>\n\n  <ul>\n    \n                  <li class=\"number\"><span
+        class=\"current\">1</span></li>\n                        <li class=\"number\"><a
+        href=\"veranstaltungssuche.html?page_e140=2#pgtop\" class=\"link\" title=\"Gehe
+        zu Seite 2\">2</a></li>\n                        <li class=\"number\"><a href=\"veranstaltungssuche.html?page_e140=3#pgtop\"
+        class=\"link\" title=\"Gehe zu Seite 3\">3</a></li>\n                        <li
+        class=\"number\"><a href=\"veranstaltungssuche.html?page_e140=4#pgtop\" class=\"link\"
+        title=\"Gehe zu Seite 4\">4</a></li>\n                        <li class=\"number\"><a
+        href=\"veranstaltungssuche.html?page_e140=5#pgtop\" class=\"link\" title=\"Gehe
+        zu Seite 5\">5</a></li>\n                        <li class=\"number\"><a href=\"veranstaltungssuche.html?page_e140=6#pgtop\"
+        class=\"link\" title=\"Gehe zu Seite 6\">6</a></li>\n                        <li
+        class=\"number\"><a href=\"veranstaltungssuche.html?page_e140=7#pgtop\" class=\"link\"
+        title=\"Gehe zu Seite 7\">7</a></li>\n          \n        <li class=\"previous\"><span
+        class=\"previous inactive\" title=\"Gehe zu Seite 0\"><i class=\"icon-arrow_left_circle\"></i></span></li>\n
+        \   \n        <li class=\"next\"><a href=\"veranstaltungssuche.html?page_e140=2#pgtop\"
+        class=\"next 1\" title=\"Gehe zu Seite 2\"><i class=\"icon-arrow_right_circle\"></i></a></li>\n
+        \   \n      </ul>\n\n</div>\n<!-- indexer::continue -->\n\n  \n<div class=\"event
+        layout_list_calendar  upcoming even first last cal_71\">\n\n    <div class=\"layout_list_calendar__inside\">\n\n
+        \       <div class=\"date_container\">\n            <div class=\"event-date\">\n
+        \               <div class=\"event-date-inside\">\n                    <div
+        class=\"event-date-day\">02</div>\n                    <div class=\"event-date-month\">Nov</div>\n
+        \               </div>\n            </div>\n        </div>\n\n        <div
+        class=\"text_container\">\n\n            <h3>Online-Seminar Einstieg in den
+        Kompass Nachhaltigkeit</h3>\n\n            <p class=\"meta\">Dienstag, 2.
+        November 2021 | Offene Veranstaltung | Online | Absender: SKEW - Servicestelle
+        Kommunen in der Einen Welt</p>\n\n            <div class=\"ce_text block\">\n
+        \                           </div>\n\n            <p><a href=\"https://skew.engagement-global.de/veranstaltung-detail/online-seminar-einstieg-in-den-kompass-nachhaltigkeit-3799.html\"
+        title=\"Online-Seminar Einstieg in den Kompass Nachhaltigkeit (Dienstag, 02.11.2021)\">Mehr
+        Information<span class=\"hideme\">: Online-Seminar Einstieg in den Kompass
+        Nachhaltigkeit</span></a></p>\n\n        </div>\n\n    </div>\n\n</div>\n\n<div
+        class=\"event layout_list_calendar  upcoming even first cal_71\">\n\n    <div
+        class=\"layout_list_calendar__inside\">\n\n        <div class=\"date_container\">\n
+        \           <div class=\"event-date\">\n                <div class=\"event-date-inside\">\n
+        \                   <div class=\"event-date-day\">03</div>\n                    <div
+        class=\"event-date-month\">Nov</div>\n                </div>\n            </div>\n
+        \       </div>\n\n        <div class=\"text_container\">\n\n            <h3>5.
+        Runder Tisch zu Kommunalen Partnerschaften mit China</h3>\n\n            <p
+        class=\"meta\">Dienstag, 2. November und Mittwoch, 3. November 2021 | Offene
+        Veranstaltung | ERA Conference Centre, Trier | Absender: SKEW - Servicestelle
+        Kommunen in der Einen Welt</p>\n\n            <div class=\"ce_text block\">\n
+        \                           </div>\n\n            <p><a href=\"https://skew.engagement-global.de/veranstaltung-detail/fuenfter-runder-tisch-zu-kommunalen-partnerschaften-mit-china.html\"
+        title=\"5. Runder Tisch zu Kommunalen Partnerschaften mit China (Mittwoch,
+        03.11.2021)\">Mehr Information<span class=\"hideme\">: 5. Runder Tisch zu
+        Kommunalen Partnerschaften mit China</span></a></p>\n\n        </div>\n\n
+        \   </div>\n\n</div>\n\n<div class=\"event layout_list_calendar  upcoming
+        odd cal_71\">\n\n    <div class=\"layout_list_calendar__inside\">\n\n        <div
+        class=\"date_container\">\n            <div class=\"event-date\">\n                <div
+        class=\"event-date-inside\">\n                    <div class=\"event-date-day\">03</div>\n
+        \                   <div class=\"event-date-month\">Nov</div>\n                </div>\n
+        \           </div>\n        </div>\n\n        <div class=\"text_container\">\n\n
+        \           <h3>Einstiegsseminar zur Kommunalen Entwicklungspolitik f\xFCr
+        hessische Landkreise</h3>\n\n            <p class=\"meta\">Mittwoch, 3. November
+        2021 | Offene Veranstaltung | Online | Absender: SKEW - Servicestelle Kommunen
+        in der Einen Welt</p>\n\n            <div class=\"ce_text block\">\n                            </div>\n\n
+        \           <p><a href=\"https://skew.engagement-global.de/veranstaltung-detail/einstiegsseminar-zur-kommunalen-entwicklungspolitik-f%C3%BCr-hessische-landkreise.html\"
+        title=\"Einstiegsseminar zur Kommunalen Entwicklungspolitik f\xFCr hessische
+        Landkreise (Mittwoch, 03.11.2021)\">Mehr Information<span class=\"hideme\">:
+        Einstiegsseminar zur Kommunalen Entwicklungspolitik f\xFCr hessische Landkreise</span></a></p>\n\n
+        \       </div>\n\n    </div>\n\n</div>\n\n<div class=\"event layout_list_calendar
+        \ upcoming even cal_66\">\n\n    <div class=\"layout_list_calendar__inside\">\n\n
+        \       <div class=\"date_container\">\n            <div class=\"event-date\">\n
+        \               <div class=\"event-date-inside\">\n                    <div
+        class=\"event-date-day\">03</div>\n                    <div class=\"event-date-month\">Nov</div>\n
+        \               </div>\n            </div>\n        </div>\n\n        <div
+        class=\"text_container\">\n\n            <h3>Bazaar Fair und Social Berlin
+        2021 Ralley</h3>\n\n            <p class=\"meta\">3. November 2021 | Offene
+        Veranstaltung | Messe Berlin, Messedamm 22, 14055 Berlin | Absender: EBD -
+        Entwicklungsbezogene Bildung in Deutschland</p>\n\n            <div class=\"ce_text
+        block\">\n                            </div>\n\n            <p><a href=\"veranstaltung-detail/bazaar-fair-social-berlin-2021-ralley.html\"
+        title=\"Bazaar Fair und Social Berlin 2021 Ralley (03.11.2021\u201307.11.2021)\">Mehr
+        Information<span class=\"hideme\">: Bazaar Fair und Social Berlin 2021 Ralley</span></a></p>\n\n
+        \       </div>\n\n    </div>\n\n</div>\n\n<div class=\"event layout_list_calendar
+        \ upcoming odd last cal_66\">\n\n    <div class=\"layout_list_calendar__inside\">\n\n
+        \       <div class=\"date_container\">\n            <div class=\"event-date\">\n
+        \               <div class=\"event-date-inside\">\n                    <div
+        class=\"event-date-day\">03</div>\n                    <div class=\"event-date-month\">Nov</div>\n
+        \               </div>\n            </div>\n        </div>\n\n        <div
+        class=\"text_container\">\n\n            <h3>Stadt.Land.Welt.Web -  Grundbildung
+        als Fundament einer Bildung f\xFCr Nachhaltige Entwicklung</h3>\n\n            <p
+        class=\"meta\">Mittwoch, 3. November 2021 | Offene Veranstaltung | Online
+        | Absender: EBD - Entwicklungsbezogene Bildung in Deutschland</p>\n\n            <div
+        class=\"ce_text block\">\n                            </div>\n\n            <p><a
+        href=\"veranstaltung-detail/stadt-land-welt-web-grundbildung-als-fundament-einer-bildung-f%C3%BCr-nachhaltige-entwicklung.html\"
+        title=\"Stadt.Land.Welt.Web -  Grundbildung als Fundament einer Bildung f\xFCr
+        Nachhaltige Entwicklung (Mittwoch, 03.11.2021)\">Mehr Information<span class=\"hideme\">:
+        Stadt.Land.Welt.Web -  Grundbildung als Fundament einer Bildung f\xFCr Nachhaltige
+        Entwicklung</span></a></p>\n\n        </div>\n\n    </div>\n\n</div>\n\n<div
+        class=\"event layout_list_calendar  upcoming even first cal_71\">\n\n    <div
+        class=\"layout_list_calendar__inside\">\n\n        <div class=\"date_container\">\n
+        \           <div class=\"event-date\">\n                <div class=\"event-date-inside\">\n
+        \                   <div class=\"event-date-day\">04</div>\n                    <div
+        class=\"event-date-month\">Nov</div>\n                </div>\n            </div>\n
+        \       </div>\n\n        <div class=\"text_container\">\n\n            <h3>6.
+        Vernetzungstreffen Club der Agenda 2030 Kommunen</h3>\n\n            <p class=\"meta\">Donnerstag,
+        4. November und Freitag, 5. November 2021 | Offene Veranstaltung | Berlin
+        | Absender: SKEW - Servicestelle Kommunen in der Einen Welt</p>\n\n            <div
+        class=\"ce_text block\">\n                            </div>\n\n            <p><a
+        href=\"https://skew.engagement-global.de/veranstaltung-detail/6-vernetzungstreffen-club-der-agenda-2030-kommunen.html\"
+        title=\"6. Vernetzungstreffen Club der Agenda 2030 Kommunen (04.11.2021\u201305.11.2021)\">Mehr
+        Information<span class=\"hideme\">: 6. Vernetzungstreffen Club der Agenda
+        2030 Kommunen</span></a></p>\n\n        </div>\n\n    </div>\n\n</div>\n\n<div
+        class=\"event layout_list_calendar  upcoming odd last cal_67\">\n\n    <div
+        class=\"layout_list_calendar__inside\">\n\n        <div class=\"date_container\">\n
+        \           <div class=\"event-date\">\n                <div class=\"event-date-inside\">\n
+        \                   <div class=\"event-date-day\">04</div>\n                    <div
+        class=\"event-date-month\">Nov</div>\n                </div>\n            </div>\n
+        \       </div>\n\n        <div class=\"text_container\">\n\n            <h3>Unsere
+        KiTa in der EINEN Welt - Online-Informationsveranstaltung f\xFCr Hessen</h3>\n\n
+        \           <p class=\"meta\">Donnerstag, 4. November 2021 | Offene Veranstaltung
+        | Online | Absender: Engagement Global</p>\n\n            <div class=\"ce_text
+        block\">\n                            </div>\n\n            <p><a href=\"veranstaltung-detail/unsere-kita-in-der-einen-welt-online-informationsveranstaltung-f%C3%BCr-hessen.html\"
+        title=\"Unsere KiTa in der EINEN Welt - Online-Informationsveranstaltung f\xFCr
+        Hessen (Donnerstag, 04.11.2021)\">Mehr Information<span class=\"hideme\">:
+        Unsere KiTa in der EINEN Welt - Online-Informationsveranstaltung f\xFCr Hessen</span></a></p>\n\n
+        \       </div>\n\n    </div>\n\n</div>\n\n<div class=\"event layout_list_calendar
+        \ upcoming even first last cal_82\">\n\n    <div class=\"layout_list_calendar__inside\">\n\n
+        \       <div class=\"date_container\">\n            <div class=\"event-date\">\n
+        \               <div class=\"event-date-inside\">\n                    <div
+        class=\"event-date-day\">05</div>\n                    <div class=\"event-date-month\">Nov</div>\n
+        \               </div>\n            </div>\n        </div>\n\n        <div
+        class=\"text_container\">\n\n            <h3>Einstiegsseminar Globales Lernen</h3>\n\n
+        \           <p class=\"meta\">Freitag, 5. November bis Sonntag, 7. November
+        2021 | Offene Veranstaltung | Online | Absender: BtE \u2013 Bildung trifft
+        Entwicklung</p>\n\n            <div class=\"ce_text block\">\n                            </div>\n\n
+        \           <p><a href=\"veranstaltung-detail/bte-einstiegsseminar-globales-lernen-24-09-26-09-2021-bayern.html\"
+        title=\"Einstiegsseminar Globales Lernen (05.11.2021\u201307.11.2021)\">Mehr
+        Information<span class=\"hideme\">: Einstiegsseminar Globales Lernen</span></a></p>\n\n
+        \       </div>\n\n    </div>\n\n</div>\n\n<div class=\"event layout_list_calendar
+        \ upcoming even first last cal_78\">\n\n    <div class=\"layout_list_calendar__inside\">\n\n
+        \       <div class=\"date_container\">\n            <div class=\"event-date\">\n
+        \               <div class=\"event-date-inside\">\n                    <div
+        class=\"event-date-day\">08</div>\n                    <div class=\"event-date-month\">Nov</div>\n
+        \               </div>\n            </div>\n        </div>\n\n        <div
+        class=\"text_container\">\n\n            <h3>Ringvorlesung 2021 - Auftaktveranstaltung:
+        Frieden nachhaltig gestalten - eine Utopie?</h3>\n\n            <p class=\"meta\">Montag,
+        8. November 2021 | Offene Veranstaltung | Online | Absender: EBD - Entwicklungsbezogene
+        Bildung in Deutschland</p>\n\n            <div class=\"ce_text block\">\n
+        \                           </div>\n\n            <p><a href=\"veranstaltung-detail/ringvorlesung-2021-auftaktveranstaltung-frieden-nachhaltig-gestalten-eine-utopie.html\"
+        title=\"Ringvorlesung 2021 - Auftaktveranstaltung: Frieden nachhaltig gestalten
+        - eine Utopie? (Montag, 08.11.2021)\">Mehr Information<span class=\"hideme\">:
+        Ringvorlesung 2021 - Auftaktveranstaltung: Frieden nachhaltig gestalten -
+        eine Utopie?</span></a></p>\n\n        </div>\n\n    </div>\n\n</div>\n\n<div
+        class=\"event layout_list_calendar  upcoming even first last cal_71\">\n\n
+        \   <div class=\"layout_list_calendar__inside\">\n\n        <div class=\"date_container\">\n
+        \           <div class=\"event-date\">\n                <div class=\"event-date-inside\">\n
+        \                   <div class=\"event-date-day\">09</div>\n                    <div
+        class=\"event-date-month\">Nov</div>\n                </div>\n            </div>\n
+        \       </div>\n\n        <div class=\"text_container\">\n\n            <h3>Sustainable
+        Partnerships for Sustainable Development</h3>\n\n            <p class=\"meta\">Dienstag,
+        9. November bis Mittwoch, 10. November 2021 | Offene Veranstaltung | Online
+        | Absender: SKEW - Servicestelle Kommunen in der Einen Welt</p>\n\n            <div
+        class=\"ce_text block\">\n                            </div>\n\n            <p><a
+        href=\"https://skew.engagement-global.de/veranstaltung-detail/sustainable-partnerships-for-sustainable-development.html\"
+        title=\"Sustainable Partnerships for Sustainable Development (09.11.2021\u201310.11.2021)\">Mehr
+        Information<span class=\"hideme\">: Sustainable Partnerships for Sustainable
+        Development</span></a></p>\n\n        </div>\n\n    </div>\n\n</div>\n\n</div>\n<!--
+        indexer::continue -->\n\n  </div>\n              </div>\n                          </div>\n
+        \         \n                                \n                                    <aside
+        class=\"right columns large-4\">\n                <div class=\"right__inside\">\n
+        \                 \n<h2 class=\"hideme\">Weitere Informationen</h2>                </div>\n
+        \             </aside>\n                      \n          </div>\n        </div>\n
+        \     \n      \n      \n                        <footer class=\"footer\">\n
+        \           <div class=\"footer__inside\">\n              <h2 class=\"ce_headline
+        with-border social-share\">Seite weiterempfehlen</h2>\n<div class=\"shariff\"
+        data-mail-url=\"mailto:\" data-services=\"[&quot;twitter&quot;,&quot;facebook&quot;,&quot;mail&quot;]\"
+        data-lang=\"de\" data-orientation=\"horizontal\" data-theme=\"standard\" data-backend-url=\"/bundles/contaodzsocialshare/backend/\"></div>\n<div
+        class=\"footerlogos\">\n\t<div class=\"logobmz\">\n\t\t<a href=\"http://www.bmz.de/\"
+        target=\"_blank\"><img src=\"files/framework/img/logo_bmz.png\" alt=\"Logo
+        des Bundesministerium f\xFCr wirtschaftliche Zusammenarbeit und Entwicklung\"
+        /></a>\n\t</div>\n</div>            </div>\n          </footer>\n              \n
+        \           <footer class=\"navifooter\">\n        <div class=\"navifooter__inside\">\n
+        \         \n<div class=\"infophone show-inter-down\">\n\t<a id=\"infotel-2\"
+        href=tel:+498001887188 target=\"_blank\">Infotelefon: 0800 188 7 188</a>\n</div>\n<div
+        class=\"footernavigationmobile\">\n\t<ul >\n\t\t<li class=\"ico-gs\" ><a href=\"gebaerdensprache.html\">Geb\xE4rdensprache</a></li>\n\t\t<li
+        class=\"ico-ls\" ><a href=\"leichte-sprache.html\">Leichte Sprache</a></li>\n\t\t<li
+        class=\"\" ><a href=\"https://extra.engagement-global.de/\" target=\"_blank\">Community</a></li>\n\t</ul>\n</div><!--
+        indexer::stop -->\n\n<nav class=\"mod_customnav footernavigation block\">\n\n<div
+        class=\"nav__inside\">\n  \n<div class=\"navfooter__top\">\n  <a href=\"veranstaltungssuche.html#top\">Seitenanfang</a>\n
+        \ <!--<span class=\"print-footer\"> | <a href=\"javascript: window.print();\">Drucken</a></span>-->\n</div>\n<ul
+        class=\"level_1\">\n  <li class=\"navfooter__copyright\">\xA9 2021  Engagement
+        Global</li>\n            <li class=\"first\"><a href=\"impressum.html\" title=\"Impressum\"
+        class=\"first\" >Impressum</a></li>\n                <li><a href=\"datenschutz.html\"
+        title=\"Datenschutzerkl\xE4rung\" >Datenschutz</a></li>\n                <li><a
+        href=\"barrierefreiheit.html\" title=\"Barrierefreiheit\" >Barrierefreiheit</a></li>\n
+        \               <li class=\"last\"><a href=\"kontakt.html\" title=\"Kontakt\"
+        class=\"last\" >Kontakt</a></li>\n      </ul>\n\n</div>\n</nav>\n\n\n\n<!--
+        indexer::continue -->\n        </div>\n      </footer>\n      \n    </div>\n\n
+        \     \n  <script type=\"text/javascript\" src=\"files/eg_theme/js/main.min.js\"></script><script
+        src=\"bundles/contaodzsearchext/autocomplete.js\"></script><script src=\"bundles/contaodzsocialshare/shariff.complete.js\"></script><script
+        type=\"application/ld+json\">{\"@context\":{\"contao\":\"https:\\/\\/schema.contao.org\\/\"},\"@type\":\"contao:Page\",\"contao:title\":\"Erweiterte
+        Suche\",\"contao:pageId\":996,\"contao:noSearch\":false,\"contao:protected\":false,\"contao:groups\":[],\"contao:fePreview\":false}</script>\n<!--
+        Matomo -->\n<script type=\"text/javascript\">\n  var _paq = window._paq ||
+        [];\n  /* tracker methods like \"setCustomDimension\" should be called before
+        \"trackPageView\" */\n  _paq.push([\"setDocumentTitle\", document.domain +
+        \"/\" + document.title]);\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n
+        \ (function() {\n    var u=\"//track.engagement-global.de/\";\n    _paq.push(['setTrackerUrl',
+        u+'matomo.php']);\n    _paq.push(['setSiteId', '1']);\n    var d=document,
+        g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.type='text/javascript';
+        g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);\n
+        \ })();\n</script>\n<noscript><p><img src=\"//track.engagement-global.de/matomo.php?idsite=1&amp;rec=1\"
+        style=\"border:0;\" alt=\"\" /></p></noscript>\n<!-- End Matomo Code -->\n\n<!--
+        Google Tag Manager -->\n<noscript><iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-N88JQL\"\n
+        \                 height=\"0\" width=\"0\"\n                  style=\"display:none;visibility:hidden\"></iframe></noscript>\n\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n
+        \   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n
+        \   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n
+        \   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-N88JQL');</script>\n<!--
+        End Google Tag Manager -->\n\n\n</body>\n</html>\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private
+      Connection:
+      - Upgrade, Keep-Alive
+      Contao-Cache:
+      - miss
+      Content-Length:
+      - '65791'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 01 Nov 2021 09:41:35 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Permissions-Policy:
+      - interest-cohort=()
+      Referrer-Policy:
+      - no-referrer-when-downgrade, strict-origin-when-cross-origin
+      Server:
+      - Apache
+      Set-Cookie:
+      - csrf_https-contao_csrf_token=fFq45M7S4LHJTAA8jbEn-SjU_Wrtzg7CxQRm5wjAx7c;
+        path=/; secure; httponly; samesite=lax
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Upgrade:
+      - h2
+      X-Content-Type-Options:
+      - nosniff
+      X-XSS-Protection:
+      - 1; mode=block
+      x-powered-by:
+      - PHP/7.4.25
+    status:
+      code: 200
+      message: OK
+version: 1
