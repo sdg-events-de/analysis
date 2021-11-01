@@ -87,11 +87,17 @@ class DgvnEvent(EventBase):
         if date.count(".") == 2 and date.endswith("."):
             date += f"{self.end_date.year}"
 
-        return self.strptime(date, "%d.%m.%Y")
+        return self.parse_date(
+            date, languages=["de"], settings={"STRICT_PARSING": True}
+        )
 
     @property
     def end_date(self):
-        return self.strptime(self.date.split(" – ")[-1], "%d.%m.%Y")
+        return self.parse_date(
+            self.date.split(" – ")[-1],
+            languages=["de"],
+            settings={"STRICT_PARSING": True},
+        )
 
     @property
     def time(self):
@@ -104,14 +110,18 @@ class DgvnEvent(EventBase):
         if not self.time:
             return self.time_midnight()
 
-        return self.strptime(self.time.split(" - ")[0], "%H:%Mh").time()
+        return self.parse_time(
+            self.time.split(" - ")[0], date_formats=["%H:%Mh"]
+        ).time()
 
     @property
     def end_time(self):
         if not self.time:
             return self.time_midnight()
 
-        return self.strptime(self.time.split(" - ")[-1], "%H:%Mh").time()
+        return self.parse_time(
+            self.time.split(" - ")[-1], date_formats=["%H:%Mh"]
+        ).time()
 
     @property
     def has_ended(self):

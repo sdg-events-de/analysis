@@ -1,4 +1,5 @@
 from datetime import datetime
+import dateparser
 import scrapy
 from scrape.items import EventItem
 from scrape.pipelines import SuggestionPipeline
@@ -15,8 +16,11 @@ class EventBase(Parser):
     def __iter__(self):
         return iter({key: getattr(self, key) for key in self.ATTRIBUTES}.items())
 
-    def strptime(self, *args, **kwargs):
-        return datetime.strptime(*args, **kwargs)
+    def parse_date(self, *args, **kwargs):
+        return dateparser.parse(*args, **kwargs)
+
+    def parse_time(self, *args, **kwargs):
+        return dateparser.parse(*args, **kwargs)
 
     def combine_date_and_time(self, *args, **kwargs):
         return datetime.combine(*args, **kwargs)
