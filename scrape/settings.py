@@ -21,6 +21,11 @@ ROBOTSTXT_OBEY = True
 
 LOG_LEVEL = "WARN"
 
+# Disable the referrer header to avoid warning on following links:
+# WARNING: RuntimeWarning: Could not load referrer policy
+#          'no-referrer-when-downgrade, strict-origin-when-cross-origin'
+REFERER_ENABLED = False
+
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 # CONCURRENT_REQUESTS = 32
 
