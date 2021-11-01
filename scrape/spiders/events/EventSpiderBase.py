@@ -1,9 +1,17 @@
+import warnings
 from datetime import datetime
 import dateparser
 import scrapy
 from scrape.items import EventItem
 from scrape.pipelines import SuggestionPipeline
 from scrape.Parser import Parser
+
+# Ignore dateparser warnings on PytzUsage
+# See: https://github.com/scrapinghub/dateparser/issues/1013
+warnings.filterwarnings(
+    "ignore",
+    message="The localize method is no longer necessary, as this time zone supports the fold attribute",
+)
 
 
 class EventBase(Parser):
