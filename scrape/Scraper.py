@@ -1,6 +1,6 @@
 from contextlib import contextmanager
 from multiprocessing import Process
-from scrapy.crawler import CrawlerProcess
+from scrapy.crawler import CrawlerProcess as ScrapyCrawlerProcess
 from scrapy.utils.project import get_project_settings
 from scrape.spiders.listings import spiders as listing_spiders
 from scrape.spiders.events import spiders as event_spiders
@@ -20,6 +20,40 @@ class LogFilter(logging.Filter):
             return 0
 
         return 1
+
+
+# Wrapper class for Scrapy's CrawlerProcess
+# Processes spiders sequentially rather than in parallel. This is slower but
+# less error-prone.
+class CrawlerProcess:
+    process = None
+    queue = []
+    running = False
+
+    def __init__(self, *args, **kwargs):
+        self.process = ScrapyCrawlerProcess(*args, **kwargs)
+
+    def crawl(self, *args, **kwargs):
+        self.queue.append({"args": args, "kwargs": kwargs})
+
+        if not (self.running):
+            self.crawl_next()
+
+    def crawl_next(self):
+        if (len(self.queue)) == 0:
+            self.running = False
+            return
+
+        self.running = True
+        spider = self.queue.pop()
+        deferred = self.process.crawl(*spider["args"], **spider["kwargs"])
+        deferred.addCallback(lambda _: self.crawl_next())
+
+    def join(self):
+        self.process.join()
+
+    def start(self):
+        self.process.start()
 
 
 class Scraper:
@@ -89,4 +123,4 @@ class Scraper:
 
     def scrape_events(self):
         with self.with_log() as log:
-            self.run_worker(target=Scraper.scrape_listings_worker, args=(log,))
+            self.run_worker(target=Scraper.scrape_events_worker, args=(log,))
