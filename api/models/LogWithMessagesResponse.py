@@ -4,6 +4,7 @@ from .LogResponse import LogResponse
 
 
 class LogMessageResponse(BaseModel):
+    id: int
     content: str
     logger: str
     levelno: int
