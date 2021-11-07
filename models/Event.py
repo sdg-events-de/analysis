@@ -103,7 +103,13 @@ class Event(EventBase, WithSuggestion):
         if new_suggestion.is_identical(self.suggestion):
             return False
 
-        self.update(action="suggest", suggestion=new_suggestion)
+        # If any suggested attributes match current attributes, directly mark
+        # those as reviewed
+        new_suggestion.event = self
+        mark_as_reviewed = dict(set(kwargs.items()) & set(self.to_dict().items()))
+        revision = new_suggestion.review(**mark_as_reviewed)
+
+        self.update(action="suggest", suggestion=new_suggestion, revision=revision)
         return True
 
     def review(self, **kwargs):

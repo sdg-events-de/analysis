@@ -16,11 +16,10 @@ class EventSuggestion(EventBase):
     # Return True if attribute has received a suggestion and suggested value
     # differs from last review.
     def attribute_needs_review(self, attribute):
-        persisted_value = getattr(self.event, attribute)
         suggested_value = getattr(self, attribute)
         reviewed_value = getattr(self.revision or {}, attribute, None)
 
-        return persisted_value != suggested_value and suggested_value != reviewed_value
+        return suggested_value != reviewed_value
 
     # Return a revision instance that represents a full or partial review of
     # this suggestion, depending on the provided kwargs. If kwargs cover all

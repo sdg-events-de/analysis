@@ -1,3 +1,4 @@
+from datetime import datetime
 from fastapi.testclient import TestClient
 from helpers import matches_dict
 from api import api
@@ -60,6 +61,52 @@ class TestEventsReview:
             "status": "draft",
             "needs_review": True,
         } == matches_dict(response.json()[0])
+
+
+class TestEventsReviewPut:
+    def test_it_can_submit_review(self):
+        event = Event.create(url="testA", status="draft")
+        event.suggest(title="new title")
+
+        response = client.post(
+            f"/events/review/{event.id}",
+            json={"title": "reviewed title"},
+        )
+        assert response.status_code == 200
+        assert {"success": True} == response.json()
+
+        assert event.needs_review == False
+        assert event.title == "reviewed title"
+
+    def test_it_can_review_start_date(self):
+        event = Event.create(url="testA", status="draft")
+
+        client.post(
+            f"/events/review/{event.id}",
+            json={"starts_at": "2021-11-11T11:11:11"},
+        )
+        assert event.starts_at == datetime.fromisoformat("2021-11-11T11:11:11")
+
+    def test_it_responds_with_404_if_event_does_not_exist(self):
+        response = client.post(
+            f"/events/review/3",
+            json={"title": "some value"},
+        )
+        assert response.status_code == 404
+        assert {"detail": "Event not found"} == response.json()
+
+    def test_it_responds_with_422_if_invalid_field_is_reviewed(self):
+        event = Event.create(url="testA", status="draft")
+        event.suggest(title="new title")
+
+        response = client.post(
+            f"/events/review/{event.id}",
+            json={"some_field": "some value"},
+        )
+        assert response.status_code == 422
+        assert {"msg": "extra fields not permitted"} == matches_dict(
+            response.json()["detail"][0]
+        )
 
 
 class TestEventRead:

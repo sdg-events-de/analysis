@@ -1,4 +1,6 @@
 from .DetailedEventResponse import DetailedEventResponse
 from .EventResponse import EventResponse
+from .EventReviewResponse import EventReviewResponse
+from .EventReviewRequest import EventReviewRequest
 from .LogResponse import LogResponse
 from .LogWithMessagesResponse import LogWithMessagesResponse

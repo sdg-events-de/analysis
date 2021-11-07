@@ -37,4 +37,4 @@ def test_it_creates_suggestion_from_additional_params():
     # Creates suggestion
     assert event.suggestion.url == "example.com"
     assert event.suggestion.summary == "Lorem ipsum"
-    assert event.attributes_to_review == ["summary"]
+    assert sorted(event.attributes_to_review) == sorted(["url", "summary"])

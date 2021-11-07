@@ -4,6 +4,8 @@ from sqlalchemy.orm import contains_eager
 from models import Event, EventSuggestion, Log
 from api.models import (
     EventResponse,
+    EventReviewResponse,
+    EventReviewRequest,
     DetailedEventResponse,
     LogResponse,
     LogWithMessagesResponse,
@@ -36,17 +38,6 @@ def events():
 
 @api.get("/events/review", response_model=list[EventResponse])
 def events_to_review():
-    print(
-        Event.query.join(Event.suggestion)
-        .options(contains_eager(Event.suggestion))
-        .filter(Event.needs_review)
-        .filter(
-            (Event.status == "published")
-            | ((Event.status == "draft") & (EventSuggestion.status == "published"))
-        )
-        .order_by("id")
-    )
-
     return (
         Event.query.join(Event.suggestion)
         .options(contains_eager(Event.suggestion))
@@ -58,6 +49,38 @@ def events_to_review():
         .order_by("id")
         .all()
     )
+
+
+@api.get("/events/review/{id}", response_model=EventReviewResponse)
+def read_event_to_review(id):
+    event = (
+        Event.with_joined("suggestion", "revision")
+        .options(contains_eager("suggestion.event"))
+        .filter(Event.id == id)
+        .first()
+    )
+
+    if event:
+        return event
+
+    raise HTTPException(status_code=404, detail="Event not found")
+
+
+@api.post("/events/review/{id}")
+def submit_event_review(id: int, review: EventReviewRequest):
+    event = (
+        Event.with_joined("suggestion", "revision")
+        .options(contains_eager("suggestion.event"))
+        .filter(Event.id == id)
+        .first()
+    )
+
+    if not event:
+        raise HTTPException(status_code=404, detail="Event not found")
+
+    event.review(**review.dict(exclude_unset=True))
+
+    return {"success": True}
 
 
 @api.get("/events/{id}", response_model=DetailedEventResponse)
