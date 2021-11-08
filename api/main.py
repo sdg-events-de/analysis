@@ -1,3 +1,4 @@
+from datetime import datetime
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import contains_eager
@@ -7,6 +8,7 @@ from api.models import (
     EventReviewResponse,
     EventReviewRequest,
     DetailedEventResponse,
+    PublishedEventResponse,
     LogResponse,
     LogWithMessagesResponse,
 )
@@ -34,6 +36,16 @@ def root():
 @api.get("/events", response_model=list[EventResponse])
 def events():
     return Event.with_joined("suggestion").order_by("id").all()
+
+
+@api.get("/events/published/upcoming", response_model=list[PublishedEventResponse])
+def upcoming_published_events():
+    return (
+        Event.query.filter(Event.status == "published")
+        .filter(Event.starts_at > datetime.now())
+        .order_by("starts_at", "id")
+        .all()
+    )
 
 
 @api.get("/events/review", response_model=list[EventResponse])
