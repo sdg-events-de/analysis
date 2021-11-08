@@ -19,6 +19,7 @@ api.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "https://sdg-events.de",
+        "https://www.sdg-events.de",
         "https://admin.sdg-events.de",
         "http://localhost:3000",
     ],
