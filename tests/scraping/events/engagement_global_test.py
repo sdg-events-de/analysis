@@ -137,3 +137,39 @@ def test_it_sets_no_date_on_certain_events():
         "address": None,
         "is_online": True,
     } == matches_dict(event)
+
+
+@pytest.mark.vcr
+def test_it_scrapes_time_correctly():
+    url = "https://www.engagement-global.de/veranstaltung-detail/ringvorlesung-2021-ambivalenzen-der-digitalisierung-f%C3%BCr-nachhaltigen-frieden.html"
+
+    # forge a scrapy response to test
+    scrapy_response = HtmlResponse(body=requests.get(url).content, url=url)
+
+    results = EngagementGlobalEventSpider().parse(scrapy_response)
+    event = next(results)
+
+    assert {
+        "url": url,
+        "title": "Ringvorlesung 2021 - Ambivalenzen der Digitalisierung für nachhaltigen Frieden",
+        "starts_at": datetime.fromisoformat("2021-12-06T18:00:00"),
+        "ends_at": datetime.fromisoformat("2021-12-06T19:30:00"),
+    } == matches_dict(event)
+
+
+@pytest.mark.vcr(record_mode="once")
+def test_it_scrapes_time_correctly_2():
+    url = "https://www.engagement-global.de/veranstaltung-detail/bne-stiftungsforum-5-ps-for-future.html"
+
+    # forge a scrapy response to test
+    scrapy_response = HtmlResponse(body=requests.get(url).content, url=url)
+
+    results = EngagementGlobalEventSpider().parse(scrapy_response)
+    event = next(results)
+
+    assert {
+        "url": url,
+        "title": "BNE-StiftungsForum: 5 P‘s For Future!",
+        "starts_at": datetime.fromisoformat("2021-12-16T10:00:00"),
+        "ends_at": datetime.fromisoformat("2021-12-16T17:00:00"),
+    } == matches_dict(event)

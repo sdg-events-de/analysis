@@ -111,7 +111,7 @@ class EngagementGlobalEvent(EventBase):
             'div.table-event tr:contains("Uhrzeit:") td',
         )
 
-        return time if re.match(r"^[\d:]+ Uhr bis [\d:]+ Uhr$", time) else None
+        return time if re.match(r"^[\d:]+( Uhr)? bis [\d:]+ Uhr$", time) else None
 
     @property
     def start_time(self):
@@ -119,7 +119,7 @@ class EngagementGlobalEvent(EventBase):
             return self.time_midnight()
 
         return self.parse_time(
-            self.time.split(" bis ")[0], date_formats=["%H Uhr", "%H:%M Uhr"]
+            self.time.split(" bis ")[0], date_formats=["%H", "%H Uhr", "%H:%M Uhr"]
         ).time()
 
     @property

@@ -1,0 +1,595 @@
+interactions:
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      Connection:
+      - keep-alive
+      User-Agent:
+      - python-requests/2.26.0
+    method: GET
+    uri: https://www.engagement-global.de/veranstaltung-detail/bne-stiftungsforum-5-ps-for-future.html
+  response:
+    body:
+      string: "<!DOCTYPE html>\n<html prefix=\"og: http://ogp.me/ns#\" lang=\"de\">\n<head>\n\n
+        \     <meta charset=\"utf-8\">\n    <title>BNE-StiftungsForum: 5 P\u2018s
+        For Future! - Engagement Global</title>\n    <base href=\"https://www.engagement-global.de/\">\n\n
+        \         <meta name=\"robots\" content=\"index,nofollow\">\n      <meta name=\"description\"
+        content=\"Erfahrungsaustausch und herausragende Projektbeispiele  von und
+        mit Stiftungen und anderen Bildungsakteurinnen und -akteuren zur Umsetzung
+        der SDGs durch BNE.\">\n      <meta name=\"keywords\" content=\"\">\n      <meta
+        name=\"generator\" content=\"Contao Open Source CMS\">\n      <meta name=\"viewport\"
+        content=\"width=device-width, initial-scale=1.0\" />\n    \n    <link href=\"/favicon.ico\"
+        type=\"image/vnd.microsoft.icon\" rel=\"icon\" />\n    <link href=\"/favicon.ico\"
+        type=\"image/vnd.microsoft.icon\" rel=\"shortcut icon\" />\n\n  <script type=\"text/javascript\"
+        src=\"assets/eg/cookie-bar/cookiebar-latest.min.js?theme=grey&always=1\"></script>\n
+        \                   <link id=\"maincss\" rel=\"stylesheet\" href=\"assets/eg/css/global.css\"
+        /><meta property=\"og:site_name\" content=\"Engagement Global [DE]\"/><meta
+        property=\"og:title\" content=\"Veranstaltung Detail\"/><meta property=\"og:description\"
+        content=\"Erfahrungsaustausch und herausragende Projektbeispiele  von und
+        mit Stiftungen und anderen Bildungsakteurinnen und -akteuren zur Umsetzung
+        der SDGs durch BNE.\"/><meta property=\"og:image\" content=\"https://www.engagement-global.de/files/1_Bilder/Bilder_EG/Unser_Service/Veranstaltungen/190328_Veranstaltung_VE1.png\"/><meta
+        property=\"twitter:image:alt\" content=\"\"/><meta property=\"twitter:card\"
+        content=\"summary_large_image\"/><script src=\"https://cookies.engagement-global.de/ccm19/public/ccm19.js?apiKey=7ec8993ccce746a8da6220800b0595a3abe8d6c11385d131&amp;domain=3f479e2\"
+        referrerpolicy=\"origin\"></script><!--<link id=\"maincss\" rel=\"stylesheet\"
+        href=\"assets/eg/css/global.css\" />-->\n\n          <!--[if lt IE 9]><script
+        src=\"assets/html5shiv//html5shiv-printshiv.min.js\"></script><![endif]-->\n
+        \     \n</head>\n<body id=\"top\" class=\"unknown other  development eg content\">\n\n
+        \ <div id=\"skiplinks\">\n    <!--skiplinks-->\n    <a class=\"skip\" title=\"skip
+        link\" href=\"veranstaltung-detail.html#target_nav\">Zur Hauptnavigation springen</a><span
+        class=\"hideme\">.</span>\n    <a class=\"skip\" title=\"skip link\" href=\"veranstaltung-detail.html#target_content\">Zum
+        Seiteninhalt springen</a><span class=\"hideme\">.</span>\n  </div>\n\n      \n
+        \   <div class=\"wrapper\">\n\n            <header class=\"topheader\">\n
+        \       <div class=\"topheader__inside\">\n          \n<div class=\"funcnavigation\">\n\t<ul>\n\t\t<li
+        class=\"ico-gs hide-medium-down\" ><a href=\"gebaerdensprache.html\">Geb\xE4rdensprache</a></li>\n\t\t<li
+        class=\"ico-ls hide-medium-down\" ><a href=\"leichte-sprache.html\">Leichte
+        Sprache</a></li>\n\t\t<li class=\"\"><a href=\"kontakt.html\">Kontakt</a></li>\n\t\t<li
+        class=\"ico-contrast\"><a id=\"contrast_toggle\" href=\"javascript:;\">Kontrast</a></li>\n\t\t<li
+        class=\"\" ><a href=\"homepage.html\">English</a></li>\n\t\t<li class=\"hide-medium-down\"
+        ><a href=\"https://community.engagement-global.de\" target=\"_blank\">Community</a></li>\n\t</ul>\n</div>\n<div
+        class=\"logo\">\n\t<a href=\"http://www.engagement-global.de\" title=\"zur
+        Startseite Engagement Global\"><img src=\"files/framework/img/logo_eg.png\"
+        alt=\"Logo Engagement Global\" /></a>\n</div>\n<div class=\"infophone hide-inter-down\">\n\t<a
+        id=\"infotel-1\" href=tel:+498001887188 target=\"_blank\">Infotelefon: 0800
+        188 7 188</a>\n</div>\n<!-- indexer::stop -->\n<div class=\"mod_breadcrumb
+        only-print block\">\n\n        \n  \n  <ul itemprop=\"breadcrumb\" itemscope
+        itemtype=\"http://schema.org/BreadcrumbList\">\n                  <li class=\"first\"
+        itemscope itemtype=\"http://schema.org/ListItem\" itemprop=\"itemListElement\"><a
+        href=\"./\" title=\"Engagement Global\" itemprop=\"item\"><span itemprop=\"name\">Engagement
+        Global [DE]</span></a><meta itemprop=\"position\" content=\"1\"></li>\n                        <li
+        itemscope itemtype=\"http://schema.org/ListItem\" itemprop=\"itemListElement\"><a
+        href=\"unser-service.html\" title=\"Unser Service\" itemprop=\"item\"><span
+        itemprop=\"name\">Unser Service</span></a><meta itemprop=\"position\" content=\"2\"></li>\n
+        \                       <li itemscope itemtype=\"http://schema.org/ListItem\"
+        itemprop=\"itemListElement\"><a href=\"veranstaltungen.html\" title=\"Veranstaltungen\"
+        itemprop=\"item\"><span itemprop=\"name\">Veranstaltungen</span></a><meta
+        itemprop=\"position\" content=\"3\"></li>\n                        <li class=\"active
+        last\">Veranstaltung Detail</li>\n            </ul>\n\n\n</div>\n<!-- indexer::continue
+        -->\n        </div>\n      </header>\n      \n                        <header
+        class=\"header\">\n            <!--<div class=\"header__inside\">-->\n              <!--
+        indexer::stop -->\n  <h6 class=\"hideme\">Hauptnavigation</h6>\n\n<nav class=\"mod_navigation
+        mainnavigation with-search block\" id=\"target_nav\">\n\n<div class=\"nav__inside\">\n
+        \ \n<a href=\"veranstaltung-detail/bne-stiftungsforum-5-ps-for-future.html#skipNavigation15\"
+        class=\"skipinvisible\">Navigation \xFCberspringen</a>\n<ul class=\"level_1\">\n
+        \ \n  \n                <li style=\"\" class=\"first   with-focus \"><a href=\"./\"
+        title=\"Service f\xFCr Entwicklungsinitiativen\" class=\"first\" ><img src=\"files/framework/img/logo_eg_small.png\"
+        alt=\"Logo Engagement Global\" /></a></li>\n        \n      \n  \n                <li
+        style=\"\" class=\"submenu   with-focus special\"><a href=\"ihr-engagement.html\"
+        title=\"Ihr Engagement\" class=\"submenu\"  aria-haspopup=\"true\">Ihr Engagement</a><div
+        class=\"level2_container\"><div class=\"level2_container__inside\"><div class=\"selflink\"><a
+        href=\"ihr-engagement.html\" title=\"Ihr Engagement\" class=\"submenu\"    aria-haspopup=\"true\">Ihr
+        Engagement</a></div><ul class=\"level_2\">\n  \n  \n        <!-- <div class=\"row
+        foundation col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n
+        \             <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Schueler.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"schueler-schulklassen.html\"
+        title=\"Sch\xFCler &amp; Schulklassen\" class=\"first with-image\" >Sch\xFCler
+        & Schulklassen</a><p>Langweiliges Lernen war gestern. Auf dem Stundenplan
+        steht der Perspektivenwechsel.</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Schulabsolventen.jpg')\"
+        class=\" with-image liright   \"><a href=\"schulabsolventen.html\" title=\"Schulabsolventen\"
+        class=\" with-image\" >Schulabsolventen</a><p>Schulabschluss erreicht - und
+        motiviert und weltoffen? Dann sind Sie hier genau richtig.</p></li>\n          <!--
+        </div></div> -->\n    \n      \n  \n        <!-- <div class=\"row foundation
+        col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Studenten.jpg')\"
+        class=\" with-image lileft   \"><a href=\"studierende-und-berufstaetige.html\"
+        title=\"Studierende &amp; Berufst\xE4tige\" class=\" with-image\" >Studierende
+        & Berufst\xE4tige</a><p>Es gibt viele M\xF6glichkeiten, international Erfahrungen
+        zu sammeln.</p></li>\n          \n      \n  \n            <!-- </div><div
+        class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Lehrer.jpg')\"
+        class=\" with-image liright   \"><a href=\"lehrer-und-bildungsbeauftragte.html\"
+        title=\"Lehrer &amp; Bildungsbeauftragte\" class=\" with-image\" >Lehrkr\xE4fte
+        & Bildungsbeauftragte</a><p>Wie vielseitig und wie nachhaltig das Globale
+        Lernen ist, zeigen zahlreiche Initiativen.</p></li>\n          <!-- </div></div>
+        -->\n    \n      \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Berufserfahrene.jpg')\"
+        class=\" with-image lileft   \"><a href=\"berufserfahrene-und-senioren.html\"
+        title=\"Berufserfahrene &amp; Senioren\" class=\" with-image\" >Berufserfahrene
+        & Senioren</a><p>Fachliches Wissen weitergeben, neue Kenntnisse hinzugewinnen
+        - Ihre Expertise ist gefragt!</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Rueckkehrende.jpg')\"
+        class=\" with-image liright   \"><a href=\"rueckkehrende.html\" title=\"R\xFCckkehrende\"
+        class=\" with-image\" >R\xFCckkehrende</a><p>Fachkr\xE4fte und Freiwillige
+        sind in der Bildungsarbeit in Deutschland aktiv.</p></li>\n          <!--
+        </div></div> -->\n    \n      \n  \n        <!-- <div class=\"row foundation
+        col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Laender.jpg')\"
+        class=\" with-image lileft   \"><a href=\"laender-und-kommunen.html\" title=\"L\xE4nder
+        &amp; Kommunen\" class=\" with-image\" >L\xE4nder & Kommunen</a><p>Der Austausch
+        zwischen Kommunen weltweit kann vielf\xE4ltige Formen annehmen.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Vereine.jpg')\"
+        class=\" with-image liright   \"><a href=\"vereine-und-organisationen.html\"
+        title=\"Vereine &amp; Organisationen\" class=\" with-image\" >Vereine & Organisationen</a><p>Unterst\xFCtzung
+        von Projekten mit entwicklungspolitischer Zielsetzung.</p></li>\n          <!--
+        </div></div> -->\n    \n      \n  \n        <!-- <div class=\"row foundation
+        col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Unternehmen.jpg')\"
+        class=\" with-image lileft   \"><a href=\"unternehmen-und-verbaende.html\"
+        title=\"Unternehmen &amp; Verb\xE4nde\" class=\" with-image\" >Unternehmen
+        & Verb\xE4nde</a><p>Interessiert an nachhaltigem Wirtschaften? Wir bringen
+        Sie mit Nachwuchskr\xE4ften zusammen.</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ihr_Engagement/Stiftungen.jpg')\"
+        class=\"last with-image liright   \"><a href=\"stiftungen.html\" title=\"Stiftungen\"
+        class=\"last with-image\" >Stiftungen</a><p>Sie suchen ein Netzwerk und Kooperationspartner
+        f\xFCr die Durchf\xFChrung Ihrer Ideen?</p></li>\n          <!-- </div></div>
+        -->\n    \n        </ul>\n</div></div></li>\n        \n      \n  \n                <li
+        style=\"\" class=\"submenu trail   with-focus special\"><a href=\"unser-service.html\"
+        title=\"Unser Service\" class=\"submenu trail\"  aria-haspopup=\"true\">Unser
+        Service</a><div class=\"level2_container\"><div class=\"level2_container__inside\"><div
+        class=\"selflink\"><a href=\"unser-service.html\" title=\"Unser Service\"
+        class=\"submenu trail\"    aria-haspopup=\"true\">Unser Service</a></div><ul
+        class=\"level_2\">\n  \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/A-Z.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"angebote-a-bis-z.html\" title=\"Angebote
+        A bis Z\" class=\"first with-image\" >Angebote A-Z</a><p>Kompakte Infos zu
+        allen Angeboten unter dem Dach von Engagement Global.</p></li>\n          \n
+        \     \n  \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Beratung.jpg')\"
+        class=\" with-image liright   \"><a href=\"beratung.html\" title=\"Beratung\"
+        class=\" with-image\" >Beratung</a><p>Wir beraten Menschen, die sich f\xFCr
+        eine global gerechtere Welt engagieren wollen.</p></li>\n          <!-- </div></div>
+        -->\n    \n      \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Foerderung.jpg')\"
+        class=\" with-image lileft   \"><a href=\"finanzielle-foerderung.html\" title=\"Finanzielle
+        F\xF6rderung\" class=\" with-image\" >Finanzielle F\xF6rderung</a><p>Wir vermitteln
+        finanzielle F\xF6rderung f\xFCr Organisationen und Initiativen.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Weiterbildung.jpg')\"
+        class=\" with-image liright   \"><a href=\"weiterbildung.html\" title=\"Weiterbildung\"
+        class=\" with-image\" >Weiterbildung</a><p>Sie m\xF6chten Erfahrungen weitergeben
+        und in der Bildungsarbeit t\xE4tig werden?</p></li>\n          <!-- </div></div>
+        -->\n    \n      \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Netzwerke.jpg')\"
+        class=\" with-image lileft   \"><a href=\"netzwerke.html\" title=\"Netzwerke\"
+        class=\" with-image\" >Netzwerke</a><p>In Verbindung bleiben und gemeinsam
+        Ideen weiter entwickeln - daf\xFCr setzen sich unsere Netzwerke ein.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Unser_Service/Veranstaltungen.jpg')\"
+        class=\"trail last with-image liright   \"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" class=\"trail last with-image\" >Veranstaltungen</a><p>Aktueller
+        Kalender mit allen wichtigen Seminaren und Veranstaltungen.</p></li>\n          <!--
+        </div></div> -->\n    \n        </ul>\n</div></div></li>\n        \n      \n
+        \ \n                <li style=\"\" class=\"submenu   with-focus \"><a href=\"ueber-uns.html\"
+        title=\"\xDCber uns\" class=\"submenu\"  aria-haspopup=\"true\">\xDCber uns</a><div
+        class=\"level2_container\"><div class=\"level2_container__inside\"><div class=\"selflink\"><a
+        href=\"ueber-uns.html\" title=\"\xDCber uns\" class=\"submenu\"    aria-haspopup=\"true\">\xDCber
+        uns</a></div><ul class=\"level_2\">\n  \n  \n        <!-- <div class=\"row
+        foundation col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n
+        \             <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Wer_wir_sind.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"wer-wir-sind.html\" title=\"Wer
+        wir sind\" class=\"first with-image\" >Wer wir sind</a><p>Ansprechpartnerin
+        f\xFCr entwicklungspolitisches Engagement, deutschlandweit und international.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Gremien.jpg')\"
+        class=\" with-image liright   \"><a href=\"gremien.html\" title=\"Gremien\"
+        class=\" with-image\" >Gremien</a><p>Gremien und Beir\xE4te unterst\xFCtzen
+        die gemeinn\xFCtzige Gesellschaft.</p></li>\n          <!-- </div></div> -->\n
+        \   \n      \n  \n        <!-- <div class=\"row foundation col-50x50\"> -->\n
+        \     <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Ausschreibungen.jpg')\"
+        class=\" with-image lileft   \"><a href=\"ausschreibungen.html\" title=\"Ausschreibungen\"
+        class=\" with-image\" >Ausschreibungen</a><p>Aktuelle Ausschreibungen, Interessensbekundungen
+        und Teilnahmewettbewerbe.</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Karriere.jpg')\"
+        class=\" with-image liright   \"><a href=\"karriere.html\" title=\"Karriere\"
+        class=\" with-image\" >Karriere</a><p>Praktika, Ausbildungspl\xE4tze und Stellenangebote
+        in unserer Organisation.</p></li>\n          <!-- </div></div> -->\n    \n
+        \     \n  \n        <!-- <div class=\"row foundation col-50x50\"> -->\n      <!--
+        <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Ueber_uns/Standorte.jpg')\"
+        class=\"last with-image lileft   \"><a href=\"standorte.html\" title=\"Standorte\"
+        class=\"last with-image\" >Standorte</a><p>Neben dem Hauptsitz in Bonn finden
+        Sie uns an sechs weiteren Standorten in Deutschland.</p></li>\n          \n
+        \         <!-- </div></div> -->\n  </ul>\n</div><div class=\"mainnav_shortlinks\"><div
+        class=\"mod_article block\" id=\"article-554\">\n  \n  \n<ul>\n\t<li class=\"layer-icon-graph\"><a
+        href=\"organigramm.html\">Organigramm</a></li>\n\t<li class=\"layer-icon-book\"><a
+        href=\"berichte.html#anker5\">Imagebrosch\xFCre</a></li>\n\t<li class=\"layer-icon-jobs\"><a
+        href=\"stellenangebote.html\">Stellenangebote</a></li>\n</ul>\n  </div>\n</div></div></li>\n
+        \       \n      \n  \n                <li style=\"\" class=\"submenu   with-focus
+        \"><a href=\"presse.html\" title=\"Presse\" class=\"submenu\"  aria-haspopup=\"true\">Presse</a><div
+        class=\"level2_container\"><div class=\"level2_container__inside\"><div class=\"selflink\"><a
+        href=\"presse.html\" title=\"Presse\" class=\"submenu\"    aria-haspopup=\"true\">Presse</a></div><ul
+        class=\"level_2\">\n  \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Newsroom.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"social-media-newsroom.html\"
+        title=\"Social Media Newsroom\" class=\"first with-image\" >Social Media Newsroom</a><p>Neues
+        aus den Online-Medien: Facebook, Twitter, Engagiert-Blog, Flickr, Youtube.</p></li>\n
+        \         \n      \n  \n            <!-- </div><div class=\"columns small-6\">
+        -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Pressemitteilungen.jpg')\"
+        class=\" with-image liright   \"><a href=\"pressemitteilungen.html\" title=\"Pressemitteilungen\"
+        class=\" with-image\" >Pressemitteilungen</a><p>Offizielle Pressemitteilungen
+        aus unserem Hause und Pressearchiv ab 2012.</p></li>\n          <!-- </div></div>
+        -->\n    \n      \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Presseabo.jpg')\"
+        class=\" with-image lileft   \"><a href=\"presse-abo.html\" title=\"Presse-Abo\"
+        class=\" with-image\" >Presse-Abo</a><p>E-Mail-Abo unserer Pressemitteilungen
+        und Einladungen zu ausgew\xE4hlten Veranstaltungen.</p></li>\n          \n
+        \     \n  \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Aktuelles.jpg')\"
+        class=\" with-image liright   \"><a href=\"aktuelles.html\" title=\"Aktuelles\"
+        class=\" with-image\" >Aktuelles</a><p>Aktuelle Meldungen, Veranstaltungsberichte
+        und Hinweise.</p></li>\n          <!-- </div></div> -->\n    \n      \n  \n
+        \       <!-- <div class=\"row foundation col-50x50\"> -->\n      <!-- <div
+        class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/Social_Media.jpg')\"
+        class=\" with-image lileft   \"><a href=\"social-media.html\" title=\"Social
+        Media\" class=\" with-image\" >Social Media</a><p>Dialog und Austausch  -
+        Wir sind aktiv auf facebook, twitter, flickr und YouTube.</p></li>\n          \n
+        \     \n  \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Presse/RSS.jpg')\"
+        class=\"last with-image liright   \"><a href=\"rss-feeds.html\" title=\"RSS-Feeds\"
+        class=\"last with-image\" >RSS-Feeds</a><p>Ausgew\xE4hlte Inhalte dieser Website
+        stellen wir als RSS-Feed zur Verf\xFCgung.</p></li>\n          <!-- </div></div>
+        -->\n    \n        </ul>\n</div></div></li>\n        \n      \n  \n                <li
+        style=\"\" class=\"submenu   with-focus \"><a href=\"mediathek-startseite.html\"
+        title=\"Mediathek\" class=\"submenu\"  aria-haspopup=\"true\">Mediathek</a><div
+        class=\"level2_container\"><div class=\"level2_container__inside\"><div class=\"selflink\"><a
+        href=\"mediathek-startseite.html\" title=\"Mediathek\" class=\"submenu\"    aria-haspopup=\"true\">Mediathek</a></div><ul
+        class=\"level_2\">\n  \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Video.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"mediathek-videos.html\" title=\"Videos\"
+        class=\"first with-image\" >Videos</a><p>Projektberichte, Interviews, Passantenbefragungen
+        - hier sind die neuesten Videos!</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Bilder.jpg')\"
+        class=\" with-image liright   \"><a href=\"mediathek-bilder.html\" title=\"Bilder\"
+        class=\" with-image\" >Bilder</a><p>Bildmaterial von Veranstaltungen finden
+        Sie auch bei flickr.</p></li>\n          <!-- </div></div> -->\n    \n      \n
+        \ \n        <!-- <div class=\"row foundation col-50x50\"> -->\n      <!--
+        <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Publikationen.jpg')\"
+        class=\" with-image lileft   \"><a href=\"mediathek-publikationen.html\" title=\"Publikationen\"
+        class=\" with-image\" >Publikationen</a><p>Brosch\xFCren, Flyer, Gesch\xE4ftsberichte
+        - alle Ver\xF6ffentlichungen sind zum Download hinterlegt.</p></li>\n          \n
+        \     \n  \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Dokumente.jpg')\"
+        class=\" with-image liright   \"><a href=\"mediathek-dokumente.html\" title=\"Dokumente\"
+        class=\" with-image\" >Dokumente</a><p>Antr\xE4ge, Formulare, Merkbl\xE4tter,
+        Hilfestellungen - alle Dokumente sind zum Download hinterlegt.</p></li>\n
+        \         <!-- </div></div> -->\n    \n      \n  \n        <!-- <div class=\"row
+        foundation col-50x50\"> -->\n      <!-- <div class=\"columns small-6\"> -->\n
+        \             <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Mediathek/Audios.jpg')\"
+        class=\"last with-image lileft   \"><a href=\"audios.html\" title=\"Audios\"
+        class=\"last with-image\" >Audios</a><p>Alle Audio-Formate von Engagement
+        Global k\xF6nnen Sie hier anh\xF6ren.</p></li>\n          \n          <!--
+        </div></div> -->\n  </ul>\n</div></div></li>\n        \n      \n  \n                <li
+        style=\"\" class=\"submenu   with-focus \"><a href=\"infozentrum.html\" title=\"Infozentrum\"
+        class=\"submenu\"  aria-haspopup=\"true\">Infozentrum</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"infozentrum.html\"
+        title=\"Infozentrum\" class=\"submenu\"    aria-haspopup=\"true\">Infozentrum</a></div><ul
+        class=\"level_2\">\n  \n  \n        <!-- <div class=\"row foundation col-50x50\">
+        -->\n      <!-- <div class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Infozentrum/EG_COVID_Navilayer.jpg')\"
+        class=\"first with-image lileft   \"><a href=\"corona-hilfen.html\" title=\"Corona-Hilfen\"
+        class=\"first with-image\" >Corona-Hilfen</a><p>Unterst\xFCtzung, Beratung
+        und Vernetzung w\xE4hrend der COVID-19-Pandemie</p></li>\n          \n      \n
+        \ \n            <!-- </div><div class=\"columns small-6\"> -->\n            <li
+        style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Infozentrum/Fragen.jpg')\"
+        class=\" with-image liright   \"><a href=\"haeufig-gestellte-fragen.html\"
+        title=\"H\xE4ufig gestellte Fragen\" class=\" with-image\" >H\xE4ufig gestellte
+        Fragen</a><p>Sie m\xF6chten sich engagieren? Hier sind die Antworten auf die
+        ersten Fragen.</p></li>\n          <!-- </div></div> -->\n    \n      \n  \n
+        \       <!-- <div class=\"row foundation col-50x50\"> -->\n      <!-- <div
+        class=\"columns small-6\"> -->\n              <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Infozentrum/Kontakt.jpg')\"
+        class=\" with-image lileft   \"><a href=\"kontakt.html\" title=\"Kontakt\"
+        class=\" with-image\" >Kontakt</a><p>Kontaktieren Sie uns per Kontaktformular
+        oder E-Mail oder rufen Sie uns an.</p></li>\n          \n      \n  \n            <!--
+        </div><div class=\"columns small-6\"> -->\n            <li style=\"background-image:url('files/1_Bilder/Bilder_EG/Bilder_Navigationslayer/Infozentrum/Anfahrt.jpg')\"
+        class=\"last with-image liright   \"><a href=\"anfahrt.html\" title=\"Anfahrt\"
+        class=\"last with-image\" >Anfahrt</a><p>Engagement Global hat ihren Hauptsitz
+        in Bonn. Hier finden Sie eine Anfahrtsbeschreibung.</p></li>\n          <!--
+        </div></div> -->\n    \n        </ul>\n</div></div></li>\n        \n      \n
+        \ \n                <li style=\"\" class=\"last nav-search   with-focus \"><a
+        href=\"suche.html\" title=\"Suche\" class=\"last nav-search\" rel=\"nofollow\"
+        ><span class=\"icon-magnifier\"></span></a></li>\n        \n        </ul>\n<a
+        id=\"skipNavigation15\" class=\"invisible\">&nbsp;</a>\n\n</div>\n</nav>\n\n\n<div
+        class=\"mainnav_placeholder\"></div>\n\n<!-- indexer::continue -->\n\n<!--
+        indexer::stop -->\n<div class=\"mod_search ce_form block\">\n\n        \n
+        \ \n<div class=\"mod_search_inside\">\n\n    <div class=\"mod_searchform_container\">\n\n
+        \       <form action=\"suche.html\" method=\"get\">\n            <div class=\"formbody\">\n
+        \                                   <input type=\"hidden\" name=\"id\" value=\"331\">\n
+        \                               <label for=\"ctrl_keywords_331\" class=\"invisible\">Suchbegriffe</label>\n
+        \               <input placeholder=\"Suchbegriff\" type=\"search\" name=\"keywords\"
+        id=\"ctrl_keywords_331\" class=\"text\" value=\"\">\n                <!--<input
+        type=\"submit\" id=\"ctrl_submit_331\" class=\"submit\" value=\"Suchen\">-->\n
+        \               <button id=\"ctrl_submit_331\"><span class=\"icon-magnifier\"></span></button>\n
+        \           </div>\n        </form>\n\n    </div>\n\n</div>\n\n<div id=\"acconthead\"
+        class=\"acconthead\"></div>\n\n\n</div>\n<!-- indexer::continue -->\n<!--
+        indexer::stop -->\n\n<nav class=\"mod_navigation mobilenavigation block\"
+        id=\"target_mobilenav\">\n\n  <div class=\"mobilenav__inside\">\n    <div
+        class=\"mobilenav__togglecontainer\">\n      <a class=\"toggle-mobile\" href=\"javascript:;\">\n
+        \       <span class=\"burger-box burger-menu\">\n\t\t  \t  <span class=\"inside\">\n
+        \           <span class=\"elem-1\"></span>\n            <span class=\"elem-2\"></span>\n
+        \           <span class=\"elem-3\"></span>\n            <span class=\"elem-4\"></span>\n\t\t
+        \ \t  </span>\n\t\t  \t</span>\n      </a>\n    </div>\n    <div class=\"mobilenav__title\">\n
+        \     Engagement Global    </div>\n    <div class=\"mobilenav__searchcontainer\">\n
+        \             <a href=\"suche.html\"><div class=\"icon-magnifier\"></div><span
+        class=\"hideme\">Suche</span></a>\n          </div>\n  </div>\n\n  <div class=\"mobilenav_layer\">\n
+        \ \n  <a href=\"veranstaltung-detail/bne-stiftungsforum-5-ps-for-future.html#skipNavigation196\"
+        class=\"skipinvisible\">Navigation \xFCberspringen</a>\n\n  \n<ul class=\"level_1\"
+        >\n            <li class=\"first\"><a href=\"./\" title=\"Service f\xFCr Entwicklungsinitiativen\"
+        class=\"first\" >Service f\xFCr Entwicklungsinitiativen</a></li>\n                <li><a
+        href=\"ihr-engagement.html\" title=\"Ihr Engagement\" >Ihr Engagement</a></li>\n
+        \               <li class=\"submenu trail\"><a href=\"unser-service.html\"
+        title=\"Unser Service\" class=\"submenu trail\"  aria-haspopup=\"true\">Unser
+        Service</a>\n<ul class=\"level_2\" >\n            <li class=\"first\"><a href=\"angebote-a-bis-z.html\"
+        title=\"Angebote A bis Z\" class=\"first\" >Angebote A-Z</a></li>\n                <li><a
+        href=\"beratung.html\" title=\"Beratung\" >Beratung</a></li>\n                <li><a
+        href=\"finanzielle-foerderung.html\" title=\"Finanzielle F\xF6rderung\" >Finanzielle
+        F\xF6rderung</a></li>\n                <li><a href=\"weiterbildung.html\"
+        title=\"Weiterbildung\" >Weiterbildung</a></li>\n                <li><a href=\"netzwerke.html\"
+        title=\"Netzwerke\" >Netzwerke</a></li>\n                <li class=\"submenu
+        trail last\"><a href=\"veranstaltungen.html\" title=\"Veranstaltungen\" class=\"submenu
+        trail last\"  aria-haspopup=\"true\">Veranstaltungen</a>\n<ul class=\"level_3\"
+        >\n            <li class=\"sibling first\"><a href=\"veranstaltungssuche.html\"
+        title=\"Erweiterte Suche\" class=\"sibling first\" rel=\"nofollow\" >Erweiterte
+        Suche</a></li>\n                <li class=\"sibling\"><a href=\"veranstaltungen-archiv.html\"
+        title=\"Veranstaltungen Archiv\" class=\"sibling\" >Veranstaltungen Archiv</a></li>\n
+        \               <li class=\"sibling\"><a href=\"programmuebergreifende-seminare.html\"
+        title=\"Programm\xFCbergreifende Seminare\" class=\"sibling\" >Programm\xFCbergreifende
+        Seminare</a></li>\n                <li class=\"sibling\"><a href=\"jahrespartnerschaft-bonn-2017.html\"
+        title=\"Jahrespartnerschaft Bonn 2017\" class=\"sibling\" >Jahrespartnerschaft
+        Bonn 2017</a></li>\n                <li class=\"sibling\"><a href=\"vorlesungsreihe-agenda-2030.html\"
+        title=\"Vorlesungsreihe Agenda 2030\" class=\"sibling\" >Vorlesungsreihe Agenda
+        2030</a></li>\n                <li class=\"sibling last\"><a href=\"socialbar-bonn.html\"
+        title=\"Socialbar Bonn\" class=\"sibling last\" >Socialbar Bonn</a></li>\n
+        \     </ul>\n</li>\n      </ul>\n</li>\n                <li><a href=\"ueber-uns.html\"
+        title=\"\xDCber uns\" >\xDCber uns</a></li>\n                <li><a href=\"presse.html\"
+        title=\"Presse\" >Presse</a></li>\n                <li><a href=\"mediathek-startseite.html\"
+        title=\"Mediathek\" >Mediathek</a></li>\n                <li><a href=\"infozentrum.html\"
+        title=\"Infozentrum\" >Infozentrum</a></li>\n                <li class=\"last\"><a
+        href=\"suche.html\" title=\"Suche\" class=\"last\" rel=\"nofollow\" >Suche</a></li>\n
+        \     </ul>\n\n  <a id=\"skipNavigation196\" class=\"invisible\">&nbsp;</a>\n\n
+        \ </div>\n\n</nav>\n<div class=\"mobilenav_placeholder\"></div>\n\n\n\n\n\n<!--
+        indexer::continue -->\n<!-- indexer::stop -->\n<div class=\"mod_dz_headerimage\">\n
+        \ <div class=\"dz_headerimage__large\" style=\"background-image:url('files/1_Bilder/Bilder_EG/Headergrafiken/Veranstaltung.jpg')\"></div>\n
+        \ <div class=\"dz_headerimage__medium\" style=\"background-image:url('files/1_Bilder/Bilder_EG/Headergrafiken/Headergrafiken_Tablet/Veranstaltung.jpg')\"></div>\n
+        \ <div class=\"dz_headerimage__small\" style=\"background-image:url('files/1_Bilder/Bilder_EG/Headergrafiken/Headerbilder_Mobile/Veranstaltung.jpg')\"></div>\n</div>\n<!--
+        indexer::continue -->\n<!-- indexer::stop -->\n<nav class=\"mod_dzbreadcrumb
+        breadcrumbnavigation block\" id=\"target_breadcrumb\">\n\n<a href=\"#skipNavigation19\"
+        class=\"invisible\"></a>\n<a id=\"srct\"></a>\n<div class=\"breadcrumb__inside\">\n
+        \ <div class=\"breadcrumb__mask\"></div>\n  <ul class=\"level_breadcrumb\"
+        role=\"menubar\">\n                                   <li style=\"z-index:
+        99\" class=\"with-focus    has-subitems\"><a href=\"unser-service.html\" title=\"Unser
+        Service\" role=\"menuitem\">Unser Service</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"unser-service.html\"
+        title=\"Unser Service\" class=\"\"    role=\"menuitem\" aria-haspopup=\"true\">Unser
+        Service</a></div>\n<ul class=\"level_1\" >\n            <li class=\"first\"><a
+        href=\"angebote-a-bis-z.html\" title=\"Angebote A bis Z\" class=\"first\"
+        >Angebote A-Z</a></li>\n                <li><a href=\"beratung.html\" title=\"Beratung\"
+        >Beratung</a></li>\n                <li><a href=\"finanzielle-foerderung.html\"
+        title=\"Finanzielle F\xF6rderung\" >Finanzielle F\xF6rderung</a></li>\n                <li><a
+        href=\"weiterbildung.html\" title=\"Weiterbildung\" >Weiterbildung</a></li>\n
+        \               <li><a href=\"netzwerke.html\" title=\"Netzwerke\" >Netzwerke</a></li>\n
+        \               <li class=\"trail last\"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" class=\"trail last\" >Veranstaltungen</a></li>\n
+        \     </ul>\n</div></div></li>\n      \n                                   <li
+        style=\"z-index: 98\" class=\"with-focus    has-subitems\"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" role=\"menuitem\">Veranstaltungen</a><div class=\"level2_container\"><div
+        class=\"level2_container__inside\"><div class=\"selflink\"><a href=\"veranstaltungen.html\"
+        title=\"Veranstaltungen\" class=\"\"    role=\"menuitem\" aria-haspopup=\"true\">Veranstaltungen</a></div>\n<ul
+        class=\"level_1\" >\n            <li class=\"sibling first\"><a href=\"veranstaltungssuche.html\"
+        title=\"Erweiterte Suche\" class=\"sibling first\" rel=\"nofollow\" >Erweiterte
+        Suche</a></li>\n                <li class=\"sibling\"><a href=\"veranstaltungen-archiv.html\"
+        title=\"Veranstaltungen Archiv\" class=\"sibling\" >Veranstaltungen Archiv</a></li>\n
+        \               <li class=\"sibling\"><a href=\"programmuebergreifende-seminare.html\"
+        title=\"Programm\xFCbergreifende Seminare\" class=\"sibling\" >Programm\xFCbergreifende
+        Seminare</a></li>\n                <li class=\"sibling\"><a href=\"jahrespartnerschaft-bonn-2017.html\"
+        title=\"Jahrespartnerschaft Bonn 2017\" class=\"sibling\" >Jahrespartnerschaft
+        Bonn 2017</a></li>\n                <li class=\"sibling\"><a href=\"vorlesungsreihe-agenda-2030.html\"
+        title=\"Vorlesungsreihe Agenda 2030\" class=\"sibling\" >Vorlesungsreihe Agenda
+        2030</a></li>\n                <li class=\"sibling last\"><a href=\"socialbar-bonn.html\"
+        title=\"Socialbar Bonn\" class=\"sibling last\" >Socialbar Bonn</a></li>\n
+        \     </ul>\n</div></div></li>\n      \n                                   <li
+        style=\"z-index: 97\" class=\"with-focus bc-last active  \"><a href=\"javascript:;\"
+        title=\"Veranstaltung Detail\" role=\"menuitem\">Veranstaltung Detail</a></li>\n
+        \     \n      </ul>\n</div>\n<a id=\"skipNavigation19\" class=\"invisible\">&nbsp;</a>\n\n\n</nav>\n<!--
+        indexer::continue -->            <!--</div>-->\n          </header>\n              \n
+        \     \n              <div class=\"container\">\n          <div class=\"container__inside
+        row\">\n\n                      <div class=\"main columns large-8\">\n              <div
+        id=\"target_content\" class=\"main__inside\">\n                \n<div class=\"mod_article
+        first last block\" id=\"article-2688\">\n  \n  \n<div class=\"mod_eventreader
+        block\">\n\n        \n  \n  \n<div class=\"event layout_full block upcoming\">\n\n
+        \ <div class=\"ce_table header-table table-event block\">\n    <div class=\"table-inner\">\n\n
+        \       \n      <h1>\n        BNE-StiftungsForum: 5 P\u2018s For Future!      </h1>\n\n\n
+        \     <table summary=\"Datum: Donnerstag, 16. Dezember 2021 Uhrzeit: 10 Uhr
+        bis 17 Uhr Ort: Klimahaus Bremerhaven Absender: EBD - Entwicklungsbezogene
+        Bildung in Deutschland Anmeldeschluss: Mittwoch, 15. Dezember 2021\" id=\"table_83\">\n\n
+        \       <!--\n        <caption>\n          BNE-StiftungsForum: 5 P\u2018s
+        For Future!        </caption>\n        -->\n\n        <tbody>\n\n        \n
+        \         <tr class=\"row_0 row_first even\">\n            <th class=\"col_0
+        col_first\" scope=\"row\">Datum:</th>\n            <td class=\"col_1 col_last\">Donnerstag,
+        16. Dezember 2021</td>\n          </tr>\n\n          \n\n                  <tr
+        class=\"row_1 odd\">\n            <th class=\"col_0 col_first\" scope=\"row\">Uhrzeit:</th>\n
+        \           <td class=\"col_1 col_last\">10 Uhr bis 17 Uhr</td>\n          </tr>\n
+        \         \n\n\n                  <tr class=\"row_1 odd\">\n            <th
+        class=\"col_0 col_first\" scope=\"row\">Ort:</th>\n            <td class=\"col_1
+        col_last\">Klimahaus Bremerhaven</td>\n          </tr>\n          \n\n                  <tr
+        class=\"row_1 odd\">\n            <th class=\"col_0 col_first\" scope=\"row\">Absender:</th>\n
+        \           <td class=\"col_1 col_last\">EBD - Entwicklungsbezogene Bildung
+        in Deutschland</td>\n          </tr>\n                    <tr class=\"row_1
+        odd\">\n            <th class=\"col_0 col_first\" scope=\"row\">Anmeldeschluss:</th>\n
+        \           <td class=\"col_1 col_last\">Mittwoch, 15. Dezember 2021</td>\n
+        \         </tr>\n          \n        \n\n        \n        \n\n        </tbody>\n
+        \     </table>\n\n\n                            <p class=\"link\">\n            <a
+        href=\"online-registrierung-crm.html?id=3858&lh=a9e6996cdf1a56ca0459a1bd425b24c1\">zur
+        Online-Anmeldung</a>\n          </p>\n            \n          \n    </div>\n
+        \ </div>\n\n\n  <!--<div class=\"ce_text\">-->\n  \n          \n  \n  <div
+        class=\"ce_text hint-grey wo-teaserlink block\"><div class=\"text_container\"><h2
+        class=\"standard\">Verschoben auf 2022</h2><p>Aufgrund der aktuellen Pandemiesituation
+        muss die Veranstaltung verschoben werden und wird voraussichtlich im Fr\xFChjahr
+        2022 stattfinden.</p><p>Interessenbekundungen zur Teilnahme k\xF6nnen Sie
+        gerne per Mail an Kai-Oliver Farr senden, die Kontaktdaten finden Sie am Ende
+        der Seite.</p></div></div><h2 class=\"standard\">Inhalt der Veranstaltung</h2><div
+        class=\"ce_text standard wo-teaserlink block\"><div class=\"text_container\"><p>Die
+        Deutsche KlimaStiftung und die Hamburger Au\xDFenstelle von Engagement Global
+        laden herzlich zu dem BNE-StiftungsForum \"5 P\u2018s For Future! Mit Bildung
+        f\xFCr nachhaltige Entwicklung (BNE) die UN-Nachhaltigkeitsziele (SDG) st\xE4rken\"
+        am 16. Dezember 2021 nach Bremerhaven ein!</p><p>PEOPLE (Mensch), PLANET (Planet),
+        PROSPERITY (Wohlstand), PEACE (Frieden) und PARTNERSHIP (Partnerschaft): Stiftungen
+        als wichtige Akteure der Zivilgesellschaft tragen durch ihre Arbeit bereits
+        in vielf\xE4ltigster Weise zur Umsetzung dieser Leitmotive der Agenda 2030
+        und ihrer 17 Ziele f\xFCr eine nachhaltige Entwicklung, den Sustainable Development
+        Goals (SDG), bei. Dabei spielt das Ziel 4 \u201EInklusive, gleichberechtigte
+        und hochwertige Bildung f\xFCr Alle\u201C eine wichtige Rolle, da fast 50
+        Prozent aller deutschen Stiftungen den Stiftungszweck \u201EBildung\u201C
+        verfolgen. Projekte im Sinne einer Bildung f\xFCr nachhaltige Entwicklung
+        (BNE) und nachhaltige Lebensweisen (Ziel 4.7), die als Querschnittsaufgabe
+        f\xFCr die Umsetzung aller 17 SDG von entscheidender Bedeutung ist, fallen
+        unter diesen Stiftungszweck.</p><p>Deshalb m\xF6chten wir noch mehr Stiftungen
+        dazu bewegen, BNE in ihre Arbeit zu integrieren und Stiftungen, die dies bereits
+        tun, weitere Anregungen f\xFCr BNE-Projekte in ihrer Stiftungsarbeit bieten.</p><p>Auf
+        unserem StiftungsForum erwartet Sie ein Erfahrungsaustausch, bei dem herausragende
+        Projektbeispiele und Vernetzungsm\xF6glichkeiten von und mit Stiftungen und
+        anderen Bildungs-Akteurinnen und -Akteuren zur Umsetzung der SDG durch BNE
+        vorgestellt werden.</p><p>BNE meint dabei alle Formen des Globalen Lernens,
+        also neben der \u201Eklassischen\u201C Umweltbildung zum Beispiel auch Friedens-
+        und Menschenrechtsp\xE4dagogik und Global Citizenship Education im Sinne des
+        SDG 4.7. </p></div></div><div class=\"ce_table standard block\"><h2>Programm</h2><table><thead><tr><th>Uhrzeit</th><th>Programm</th></tr></thead><tbody><tr><td>9:30
+        </td><td>Check-In mit Willkommens-Kaffee</td></tr><tr><td>10:00</td><td>Begr\xFC\xDFung
+        und Warm Up </br>\nArne Dunker und Dr. Annika Mannah (Deutsche KlimaStiftung)
+        und Kai-Oliver Farr (Engagement Global)\n</td></tr><tr><td>10:40</td><td><b>Impuls
+        1: </b>BNE in der Stiftungsarbeit </br>\nSabine S\xFC\xDF, Netzwerk Stiftungen
+        und Bildung</td></tr><tr><td>11:10</td><td><b>Workshop-Phase 1 </b> </br>\nWorkshop
+        PLANET</br>\nWorkshop PEOPLE</br>\nWorkshop PROSPERITY</br>\nWorkshop PEACE</br>\nWorkshop
+        PARTNERSHIP</br></td></tr><tr><td>12:50</td><td>Warm Up</td></tr><tr><td>13:00</td><td>Mittagessen</td></tr><tr><td>14:00</td><td><b>Impuls
+        2:</b> SDGs in der Stiftungsarbeit</br>\nStefan Schurig, Foundations 20</td></tr><tr><td>14:30</td><td><b>Workshop-Phase
+        2 mit Kaffeepause</b></br>\nWorkshop PLANET</br>\nWorkshop PEOPLE</br>\nWorkshop
+        PROSPERITY</br>\nWorkshop PEACE</br>\nWorkshop PARTNERSHIP</td></tr><tr><td>16:10</td><td>Warm
+        Up</td></tr><tr><td>16:20</td><td>Round-up aller Workshops und Matching</td></tr><tr><td>17:00</td><td>Ende</td></tr></tbody></table></div><h2
+        class=\"standard\">COVID-19 Hinweis</h2><div class=\"ce_text standard wo-teaserlink
+        block\"><div class=\"text_container\"><p>Die Veranstaltung wird in Pr\xE4senz,
+        nach Ma\xDFgabe aller Pandemie-Anforderungen (AHA- und 2G-Regel) stattfinden.
+        </p></div></div><h2 class=\"standard\">Veranstaltungsort</h2><div class=\"ce_text
+        standard wo-teaserlink block\"><div class=\"text_container\"><p>Das StiftungsForum
+        wird im Klimahaus\xAE Bremerhaven 8\xB0 Ost stattfinden.</p><p>Klimahaus\xAE
+        Bremerhaven 8\xB0 Ost </p><p>Am Langengrad 8 </p><p>27568 Bremerhaven</p></div></div>
+        \     <div class=\"ce_text links wo-teaserlink block\">\n\n        <h2>Kontakt</h2>\n
+        \       <div class=\"text_container\">\n\n          <p><strong>Kai-Oliver
+        Farr</strong><br>Telefon +49 40 4210658 14<br><a href=\"mailto:Kai-Oliver.Farr@engagement-global.de\"
+        target=\"_blank\">Kai-Oliver.Farr@engagement-global.de</a></p>        </div>\n
+        \     </div>\n            <div class=\"ce_text links wo-teaserlink block\">\n\n
+        \       <h2>Weitere Informationen</h2>\n        <div class=\"text_container\">\n\n
+        \         <p><a href=\"https://www.klimahaus-bremerhaven.de/corona.html\"
+        target=\"_blank\" class=\"content-link-standard\"\">Mehr Informationen zum
+        Hygienekonzept und Coronaregelungen im Klimahaus Bremerhaven</a></p>        </div>\n
+        \     </div>\n      \n  <!--</div>-->\n\n    \n  \n      <h2 class=\"ce_headline
+        with-border\">Anmeldung</h2>\n\n    \n              <div class=\"online-reg-link\">\n
+        \       <p>\n          <a href=\"online-registrierung-crm.html?id=3858&lh=a9e6996cdf1a56ca0459a1bd425b24c1\">zur
+        Online-Anmeldung</a>\n        </p>\n      </div>\n              \n\n\n\n    \n</div>\n\n\n\n<div
+        class=\"data-rtr-eventdate\" style=\"display:none;\">16.12.2021</div>\n\n<!--\n<div
+        class=\"floatbox\">\n<div class=\"back-bottom\"><a href=\"javascript:back(-1);\">Zur\xFCck<span
+        class=\"invisible\"> zur vorherigen Seite</span></a></div>\n</div>\n-->\n
+        \ <!-- indexer::stop -->\n  <p class=\"back\"><a href=\"javascript:history.go(-1)\"
+        title=\"Zur\xFCck\">Zur\xFCck</a></p>\n  <!-- indexer::continue -->\n\n  \n\n</div>\n\n
+        \ </div>\n              </div>\n                          </div>\n          \n
+        \                               \n                                    <aside
+        class=\"right columns large-4\">\n                <div class=\"right__inside\">\n
+        \                 \n<h2 class=\"hideme\">Weitere Informationen</h2>                </div>\n
+        \             </aside>\n                      \n          </div>\n        </div>\n
+        \     \n      \n      \n                        <footer class=\"footer\">\n
+        \           <div class=\"footer__inside\">\n              <h2 class=\"ce_headline
+        with-border social-share\">Seite weiterempfehlen</h2>\n<div class=\"shariff\"
+        data-mail-url=\"mailto:\" data-services=\"[&quot;twitter&quot;,&quot;facebook&quot;,&quot;mail&quot;]\"
+        data-lang=\"de\" data-orientation=\"horizontal\" data-theme=\"standard\" ></div>\n<div
+        class=\"footerlogos\">\n\t<div class=\"logobmz\">\n\t\t<a href=\"http://www.bmz.de/\"
+        target=\"_blank\"><img src=\"files/framework/img/logo_bmz.png\" alt=\"Logo
+        des Bundesministerium f\xFCr wirtschaftliche Zusammenarbeit und Entwicklung\"
+        /></a>\n\t</div>\n</div>            </div>\n          </footer>\n              \n
+        \           <footer class=\"navifooter\">\n        <div class=\"navifooter__inside\">\n
+        \         \n<div class=\"infophone show-inter-down\">\n\t<a id=\"infotel-2\"
+        href=tel:+498001887188 target=\"_blank\">Infotelefon: 0800 188 7 188</a>\n</div>\n<div
+        class=\"footernavigationmobile\">\n\t<ul >\n\t\t<li class=\"ico-gs\" ><a href=\"gebaerdensprache.html\">Geb\xE4rdensprache</a></li>\n\t\t<li
+        class=\"ico-ls\" ><a href=\"leichte-sprache.html\">Leichte Sprache</a></li>\n\t\t<li
+        class=\"\" ><a href=\"https://extra.engagement-global.de/\" target=\"_blank\">Community</a></li>\n\t</ul>\n</div><!--
+        indexer::stop -->\n\n<nav class=\"mod_customnav footernavigation block\">\n\n<div
+        class=\"nav__inside\">\n  \n<div class=\"navfooter__top\">\n  <a href=\"veranstaltung-detail.html#top\">Seitenanfang</a>\n
+        \ <!--<span class=\"print-footer\"> | <a href=\"javascript: window.print();\">Drucken</a></span>-->\n</div>\n<ul
+        class=\"level_1\">\n  <li class=\"navfooter__copyright\">\xA9 2021  Engagement
+        Global</li>\n            <li class=\"first\"><a href=\"impressum.html\" title=\"Impressum\"
+        class=\"first\" >Impressum</a></li>\n                <li><a href=\"datenschutz.html\"
+        title=\"Datenschutzerkl\xE4rung\" >Datenschutz</a></li>\n                <li><a
+        href=\"barrierefreiheit.html\" title=\"Barrierefreiheit\" >Barrierefreiheit</a></li>\n
+        \               <li class=\"last\"><a href=\"kontakt.html\" title=\"Kontakt\"
+        class=\"last\" >Kontakt</a></li>\n      </ul>\n\n</div>\n</nav>\n\n\n\n<!--
+        indexer::continue -->\n        </div>\n      </footer>\n      \n    </div>\n\n
+        \     \n  <script type=\"text/javascript\" src=\"files/eg_theme/js/main.min.js\"></script><script
+        src=\"bundles/contaodzsearchext/autocomplete.js\"></script><script src=\"bundles/contaodzsocialshare/shariff.complete.js\"></script><script
+        type=\"application/ld+json\">{\"@context\":{\"contao\":\"https:\\/\\/schema.contao.org\\/\"},\"@type\":\"contao:Page\",\"contao:title\":\"BNE-StiftungsForum:
+        5 P\\u2018s For Future!\",\"contao:pageId\":1009,\"contao:noSearch\":false,\"contao:protected\":false,\"contao:groups\":[],\"contao:fePreview\":false}</script>\n<!--
+        Matomo -->\n<script type=\"text/javascript\">\n  var _paq = window._paq ||
+        [];\n  /* tracker methods like \"setCustomDimension\" should be called before
+        \"trackPageView\" */\n  _paq.push([\"setDocumentTitle\", document.domain +
+        \"/\" + document.title]);\n  _paq.push(['trackPageView']);\n  _paq.push(['enableLinkTracking']);\n
+        \ (function() {\n    var u=\"//track.engagement-global.de/\";\n    _paq.push(['setTrackerUrl',
+        u+'matomo.php']);\n    _paq.push(['setSiteId', '1']);\n    var d=document,
+        g=d.createElement('script'), s=d.getElementsByTagName('script')[0];\n    g.type='text/javascript';
+        g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);\n
+        \ })();\n</script>\n<noscript><p><img src=\"//track.engagement-global.de/matomo.php?idsite=1&amp;rec=1\"
+        style=\"border:0;\" alt=\"\" /></p></noscript>\n<!-- End Matomo Code -->\n\n<!--
+        Google Tag Manager -->\n<noscript><iframe src=\"//www.googletagmanager.com/ns.html?id=GTM-N88JQL\"\n
+        \                 height=\"0\" width=\"0\"\n                  style=\"display:none;visibility:hidden\"></iframe></noscript>\n\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n
+        \   new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n
+        \   j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n
+        \   '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n})(window,document,'script','dataLayer','GTM-N88JQL');</script>\n<!--
+        End Google Tag Manager -->\n\n\n</body>\n</html>\n"
+    headers:
+      Access-Control-Allow-Origin:
+      - '*'
+      Age:
+      - '0'
+      Cache-Control:
+      - must-revalidate, no-cache, no-store, private
+      Connection:
+      - Upgrade, Keep-Alive
+      Contao-Cache:
+      - miss
+      Content-Length:
+      - '45754'
+      Content-Type:
+      - text/html; charset=utf-8
+      Date:
+      - Mon, 15 Nov 2021 20:39:44 GMT
+      Keep-Alive:
+      - timeout=15, max=100
+      Permissions-Policy:
+      - interest-cohort=()
+      Referrer-Policy:
+      - no-referrer-when-downgrade, strict-origin-when-cross-origin
+      Server:
+      - Apache
+      Set-Cookie:
+      - csrf_https-contao_csrf_token=oV-gqtyj5Rbrcu4WiOdOFiu8LbLqAPuwfz4aFfpnmFg;
+        path=/; secure; httponly; samesite=lax
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Upgrade:
+      - h2
+      X-Content-Type-Options:
+      - nosniff
+      X-XSS-Protection:
+      - 1; mode=block
+      x-powered-by:
+      - PHP/7.4.25
+    status:
+      code: 200
+      message: OK
+version: 1
