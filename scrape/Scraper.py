@@ -1,10 +1,11 @@
 from contextlib import contextmanager
+from datetime import datetime
 from multiprocessing import Process
 from scrapy.crawler import CrawlerProcess as ScrapyCrawlerProcess
 from scrapy.utils.project import get_project_settings
 from scrape.spiders.listings import spiders as listing_spiders
 from scrape.spiders.events import spiders as event_spiders
-from models import Event, Log
+from models import Event, EventSuggestion, Log
 import logging
 
 
@@ -70,10 +71,26 @@ class Scraper:
     def scrape_events_worker(log):
         Scraper.attach_logger(log)
         with Scraper.crawler_process() as process:
-            for event in Event.all():
+            for event in Scraper.events_to_scrape():
                 for spider in event_spiders:
                     if event.host in spider.allowed_domains:
                         process.crawl(spider, start_urls=[event.url], event_id=event.id)
+
+    # Get all events meeting one of two criteria:
+    # 1. published & upcoming
+    # 2. draft mode & not suggesting deletion
+    @staticmethod
+    def events_to_scrape():
+        return (
+            Event.query.join(Event.suggestion)
+            .filter(
+                ((Event.status == "published") & (Event.ends_at > datetime.now()))
+                | ((Event.status == "draft") & (EventSuggestion.status == None))
+                | ((Event.status == "draft") & (EventSuggestion.status != "deleted"))
+            )
+            .order_by("id")
+            .all()
+        )
 
     @staticmethod
     @contextmanager
