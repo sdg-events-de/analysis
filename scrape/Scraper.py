@@ -1,3 +1,4 @@
+import logging
 from contextlib import contextmanager
 from datetime import datetime
 from multiprocessing import Process
@@ -5,8 +6,8 @@ from scrapy.crawler import CrawlerProcess as ScrapyCrawlerProcess
 from scrapy.utils.project import get_project_settings
 from scrape.spiders.listings import spiders as listing_spiders
 from scrape.spiders.events import spiders as event_spiders
+from scrape.scrape_log import scrape_log
 from models import Event, EventSuggestion, Log
-import logging
 
 
 class LogFilter(logging.Filter):
@@ -70,11 +71,14 @@ class Scraper:
     @staticmethod
     def scrape_events_worker(log):
         Scraper.attach_logger(log)
+        events_scraped = 0
         with Scraper.crawler_process() as process:
             for event in Scraper.events_to_scrape():
                 for spider in event_spiders:
                     if event.host in spider.allowed_domains:
                         process.crawl(spider, start_urls=[event.url], event_id=event.id)
+                        events_scraped += 1
+        scrape_log.info(f"Scraped {events_scraped} events.")
 
     # Get all events meeting one of two criteria:
     # 1. published & upcoming
